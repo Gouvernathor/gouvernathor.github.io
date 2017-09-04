@@ -161,6 +161,7 @@ questions = [
     },
     {
         "question": "Military action by our nation is often necessary to protect it.",
+        "question_fr": "Les actions militaires de notre nation sont généralement necessaires pour la protéger.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -170,6 +171,7 @@ questions = [
     },
     {
         "question": "I support regional unions, such as the European Union.",
+        "question_fr": "Je soutiens les unions régionales, tel que l'Union Européenne.",
         "effect": {
             "econ": -5,
             "dipl": 10,
@@ -179,6 +181,7 @@ questions = [
     },
     {
         "question": "It is important to maintain our national sovereignty.",
+        "question_fr": "Il est important de préserver notre souveraineté nationale.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -188,6 +191,7 @@ questions = [
     },
     {
         "question": "A united world government would be beneficial to mankind.",
+        "question_fr": "Un gouvernement mondial serait bénéfique pour l'Humanité.",
         "effect": {
             "econ": 0,
             "dipl": 10,
@@ -197,6 +201,7 @@ questions = [
     },
     {
         "question": "It is more important to retain peaceful relations than to further our strength.",
+        "question_fr": "Il est plus important de garder les relations paisibles avec nos voisins plutôt que d'augmenter notre puissance.",
         "effect": {
             "econ": 0,
             "dipl": 10,
@@ -206,6 +211,7 @@ questions = [
     },
     {
         "question": "Wars do not need to be justified to other countries.",
+        "question_fr": "Les guerres n'ont pas à être justifiées aux autres pays.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -215,6 +221,7 @@ questions = [
     },
     {
         "question": "Military spending is a waste of money.",
+        "question_fr": "Les dépenses militaires sont un gaspillage d'argent.",
         "effect": {
             "econ": 0,
             "dipl": 10,
@@ -224,6 +231,7 @@ questions = [
     },
     {
         "question": "International aid is a waste of money.",
+        "question_fr": "Les aides internationales sont un gaspillage d'argent.",
         "effect": {
             "econ": -5,
             "dipl": -10,
@@ -233,6 +241,7 @@ questions = [
     },
     {
         "question": "My nation is great.",
+        "question_fr": "Ma nation est grande.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -242,6 +251,7 @@ questions = [
     },
     {
         "question": "Research should be conducted on an international scale.",
+        "question_fr": "La recherche devrait être conduite à une échelle internationale.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -251,6 +261,7 @@ questions = [
     },
     {
         "question": "Governments should be accountable to the international community.",
+        "question_fr": "Les gouvernements devraient être responsable devant la communauté internationale.",
         "effect": {
             "econ": 0,
             "dipl": 10,
@@ -260,6 +271,7 @@ questions = [
     },
     {
         "question": "Even when protesting an authoritarian government, violence is not acceptable.",
+        "question_fr": "Même pour contester face à un gouvernement autoritaire, la violence est inacceptable.",
         "effect": {
             "econ": 0,
             "dipl": 5,
@@ -269,6 +281,7 @@ questions = [
     },
     {
         "question": "My religious values should be spread as much as possible.",
+        "question_fr": "Les valeurs de ma religion devraient être diffusées le plus possible.",
         "effect": {
             "econ": 0,
             "dipl": -5,
@@ -278,6 +291,7 @@ questions = [
     },
     {
         "question": "Our nation's values should be spread as much as possible.",
+        "question_fr": "Les valeurs de ma nation devraient être diffusées le plus possible.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -287,6 +301,7 @@ questions = [
     },
     {
         "question": "It is very important to maintain law and order.",
+        "question_fr": "Il est très important de maintenir la loi et l'ordre.",
         "effect": {
             "econ": 0,
             "dipl": -5,
@@ -296,6 +311,7 @@ questions = [
     },
     {
         "question": "The general populace makes poor decisions.",
+        "question_fr": "La population prend généralement de mauvaises décisions.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -305,6 +321,7 @@ questions = [
     },
     {
         "question": "Victimless crimes (such as drug use) should not be crimes at all.",
+        "question_fr": "Les crimes et délis sans victimes (tel que la consomation de drogues) ne devraient même pas être considérés comme tel.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -314,6 +331,7 @@ questions = [
     },
     {
         "question": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
+        "question_fr": "Le sacrifice de certaines libertés civile est necessaire pour nous protéger des actes de terrorisme.",
         "effect": {
             "econ": 0,
             "dipl": 0,
