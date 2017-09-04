@@ -11,7 +11,7 @@ questions = [
     },
     {
         "question": "It is necessary for the government to intervene in the economy to protect consumers.",
-        "question_fr": "Il est necessaire que le gouvernement intervienne dans l'économie pour préserver les consommateurs",
+        "question_fr": "Il est necessaire que le gouvernement intervienne dans l'économie pour préserver les consommateurs.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -21,7 +21,7 @@ questions = [
     },
     {
         "question": "The freer the markets, the freer the people.",
-        "question_fr": "Plus le marché est libre, plus le peuple l'est également",
+        "question_fr": "Plus le marché est libre, plus le peuple l'est également.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -31,7 +31,7 @@ questions = [
     },
     {
         "question": "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
-        "question_fr": "Il est meilleur de maintenir un budget équilibré que d'assurer une protection sociale pour tous les citoyens",
+        "question_fr": "Il est meilleur de maintenir un budget équilibré que d'assurer une protection sociale pour tous les citoyens.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -41,6 +41,7 @@ questions = [
     },
     {
         "question": "Publicly-funded research is more beneficial to the people than leaving it to the market.",
+        "question_fr": "La recherche est plus bénéfique au peuple lorsqu'elle est publique que lorsqu'elle est laissée au marché.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -50,6 +51,7 @@ questions = [
     },
     {
         "question": "International trade is beneficial.",
+        "question_fr": "Les échanges commerciaux entre pays sont bénéfiques.",
         "effect": {
             "econ": -5,
             "dipl": 0,
@@ -59,6 +61,7 @@ questions = [
     },
     {
         "question": "From each according to his ability, to each according to his needs.",
+        "question_fr": "De chacun selon ses moyens, à chacun selon ses besoins.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -68,6 +71,7 @@ questions = [
     },
     {
         "question": "It would be best if social programs were abolished in favor of private charity.",
+        "question_fr": "Il serait meilleur si les programmes d'aides sociales étaient remplacées par des programmes de charité privée.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -77,6 +81,7 @@ questions = [
     },
     {
         "question": "Taxes should be increased on the rich to provide for the poor.",
+        "question_fr": "L'argent des riches doit être taxé pour être redistribué vers les pauvres.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -86,6 +91,7 @@ questions = [
     },
     {
         "question": "Inheritance is a legitimate form of wealth.",
+        "question_fr": "L'enrichissement par l'héritage est ligitime.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -95,6 +101,7 @@ questions = [
     },
     {
         "question": "Public utilities like roads and electricity should be publicly owned.",
+        "question_fr": "Les structures comme les routes et l'éléctricité ne devraient pas être des propriétés privées.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -104,6 +111,7 @@ questions = [
     },
     {
         "question": "Excessive government intervention is a threat to the economy.",
+        "question_fr": "L'invervention excessive du gouvernement dans l'économie est une menace.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -113,6 +121,7 @@ questions = [
     },
     {
         "question": "Those with a greater ability to pay should receive better healthcare.",
+        "question_fr": "Ceux qui peuvent payer d'avantage devraient être mieux soignés.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -122,6 +131,7 @@ questions = [
     },
     {
         "question": "Quality education is a right of all people.",
+        "question_fr": "L'accès à une éducation de qualité est un droit pour tous.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -131,6 +141,7 @@ questions = [
     },
     {
         "question": "The means of production should belong to the workers who use them.",
+        "question_fr": "Les moyens de production devraient appartenir aux travailleurs qui les utilisent.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -140,6 +151,7 @@ questions = [
     },
     {
         "question": "The United Nations should be abolished.",
+        "question_fr": "L'Organisation des Nations Unies (ONU) doit être dissoute.",
         "effect": {
             "econ": 0,
             "dipl": -10,
