@@ -1,6 +1,7 @@
 questions = [
     {
         "question": "Oppression by corporations is more of a concern than oppression by governments.",
+        "question_fr": "L'oppression par les corporations est plus préoccupante que l'oppression par les gouvernements.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -10,6 +11,7 @@ questions = [
     },
     {
         "question": "It is necessary for the government to intervene in the economy to protect consumers.",
+        "question_fr": "Il est necessaire que le gouvernement intervienne dans l'économie pour préserver les consommateurs",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -19,6 +21,7 @@ questions = [
     },
     {
         "question": "The freer the markets, the freer the people.",
+        "question_fr": "Plus le marché est libre, plus le peuple l'est également",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -28,6 +31,7 @@ questions = [
     },
     {
         "question": "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
+        "question_fr": "Il est meilleur de maintenir un budget équilibré que d'assurer une protection sociale pour tous les citoyens",
         "effect": {
             "econ": -10,
             "dipl": 0,
