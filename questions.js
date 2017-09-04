@@ -691,7 +691,7 @@ questions = [
     },
     {
         "question": "It is important that we further my group's goals above all others.",
-        "question_fr": "Il est important de nous favorisions les objectifs de mon groupe plutôt que ceux des autres.",
+        "question_fr": "Il est important de favoriser les objectifs de mon groupe plutôt que ceux des autres.",
         "effect": {
             "econ": -10,
             "dipl": -10,
