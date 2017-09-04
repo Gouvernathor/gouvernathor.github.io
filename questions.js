@@ -21,7 +21,7 @@ questions = [
     },
     {
         "question": "The freer the markets, the freer the people.",
-        "question_fr": "Plus le marché est libre, plus le peuple l'est également.",
+        "question_fr": "Plus le marché est libre, plus le peuple l'est.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -31,7 +31,7 @@ questions = [
     },
     {
         "question": "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
-        "question_fr": "Il est meilleur de maintenir un budget équilibré que d'assurer une protection sociale pour tous les citoyens.",
+        "question_fr": "Il est mieux de maintenir un budget équilibré que d'assurer une protection sociale pour tous les citoyens.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -71,7 +71,7 @@ questions = [
     },
     {
         "question": "It would be best if social programs were abolished in favor of private charity.",
-        "question_fr": "Il serait meilleur si les programmes d'aides sociales étaient remplacées par des programmes de charité privée.",
+        "question_fr": "Il serait mieux si les programmes d'aides sociales étaient remplacés par des programmes de charité privée.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -81,7 +81,7 @@ questions = [
     },
     {
         "question": "Taxes should be increased on the rich to provide for the poor.",
-        "question_fr": "L'argent des riches doit être taxé pour être redistribué vers les pauvres.",
+        "question_fr": "Les riches devraient être plus taxés en faveur des pauvres.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -201,7 +201,7 @@ questions = [
     },
     {
         "question": "It is more important to retain peaceful relations than to further our strength.",
-        "question_fr": "Il est plus important de garder les relations paisibles avec nos voisins plutôt que d'augmenter notre puissance.",
+        "question_fr": "Il est plus important de garder les relations paisibles avec nos voisins plutôt que d'augmenter notre puissance militaire.",
         "effect": {
             "econ": 0,
             "dipl": 10,
@@ -311,7 +311,7 @@ questions = [
     },
     {
         "question": "The general populace makes poor decisions.",
-        "question_fr": "La population prend généralement de mauvaises décisions.",
+        "question_fr": "La populace prend généralement de mauvaises décisions.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -401,7 +401,7 @@ questions = [
     },
     {
         "question": "The stronger the leadership, the better.",
-        "question_fr": "Plus fort est le leadership, meilleur cela est.",
+        "question_fr": "Plus fort est le leadership, mieux c'est.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -521,7 +521,7 @@ questions = [
     },
     {
         "question": "It is important that we think in the long term, beyond our lifespans.",
-        "question_fr": "Il est important que nous réfléchissons sur le long terme, au délà même de notre propre espérance de vie.",
+        "question_fr": "Il est important que nous réfléchissions sur le long terme, au délà même de notre propre espérance de vie.",
         "effect": {
             "econ": 0,
             "dipl": 0,
