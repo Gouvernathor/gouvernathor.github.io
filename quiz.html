@@ -47,18 +47,27 @@ src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
 stats"></a></div></noscript>
 
 <script>
-    var max_econ, max_dipl, max_govt, max_scty; // Max possible scores
-    max_econ = max_dipl = max_govt = max_scty = 0;
-    var econ, dipl, govt, scty; // User's scores
-    econ = dipl = govt = scty = 0;
+    var max_ecom, max_elib, ecom, elib;
+    max_ecom = max_elib = ecom = elib = 0;
+    var max_dint, max_dnat, dint, dnat;
+    max_dint = max_dnat = dint = dnat = 0;
+    var max_rlib, max_raut, rlib, raut;
+    max_rlib = max_raut = rlib = raut = 0;
+    var max_spro, max_stra, spro, stra;
+    max_spro = max_stra = spro = stra = 0;
+  
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_econ += Math.abs(questions[i].effect.econ)
-        max_dipl += Math.abs(questions[i].effect.dipl)
-        max_govt += Math.abs(questions[i].effect.govt)
-        max_scty += Math.abs(questions[i].effect.scty)
+        max_ecom += Math.abs(questions[i].effect.ecom)
+        max_elib += Math.abs(questions[i].effect.elib)
+        max_dint += Math.abs(questions[i].effect.dint)
+        max_dnat += Math.abs(questions[i].effect.dnat)
+        max_rlib += Math.abs(questions[i].effect.rlib)
+        max_raut += Math.abs(questions[i].effect.raut)
+        max_spro += Math.abs(questions[i].effect.spro)
+        max_stra += Math.abs(questions[i].effect.stra)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question_fr;
@@ -74,10 +83,14 @@ stats"></a></div></noscript>
     }
 
     function next_question(mult) {
-        econ += mult*questions[qn].effect.econ
-        dipl += mult*questions[qn].effect.dipl
-        govt += mult*questions[qn].effect.govt
-        scty += mult*questions[qn].effect.scty
+        ecom += mult*questions[qn].effect.ecom;
+        elib += mult*questions[qn].effect.elib;
+        dint += mult*questions[qn].effect.dint;
+        dnat += mult*questions[qn].effect.dnat;
+        rlib += mult*questions[qn].effect.rlib;
+        raut += mult*questions[qn].effect.raut;
+        spro += mult*questions[qn].effect.spro;
+        stra += mult*questions[qn].effect.stra;
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -91,10 +104,14 @@ stats"></a></div></noscript>
             return;
         }
         qn--;
-        econ -= prev_answer * questions[qn].effect.econ;
-        dipl -= prev_answer * questions[qn].effect.dipl;
-        govt -= prev_answer * questions[qn].effect.govt;
-        scty -= prev_answer * questions[qn].effect.scty;
+        ecom -= prev_answer * questions[qn].effect.ecom;
+        elib -= prev_answer * questions[qn].effect.elib;
+        dint -= prev_answer * questions[qn].effect.dint;
+        dnat -= prev_answer * questions[qn].effect.dnat;
+        rlib -= prev_answer * questions[qn].effect.rlib;
+        raut -= prev_answer * questions[qn].effect.raut;
+        spro -= prev_answer * questions[qn].effect.spro;
+        stra -= prev_answer * questions[qn].effect.stra;
         prev_answer = null;
         init_question();
 
@@ -104,10 +121,14 @@ stats"></a></div></noscript>
     }
     function results() {
         location.href = `results.html`
-            + `?e=${calc_score(econ,max_econ)}`
-            + `&d=${calc_score(dipl,max_dipl)}`
-            + `&g=${calc_score(govt,max_govt)}`
-            + `&s=${calc_score(scty,max_scty)}`
+            + `?e=${calc_score(ecom,max_ecom)}`
+            + `&d=${calc_score(elib,max_elib)}`
+            + `&g=${calc_score(dint,max_dint)}`
+            + `&s=${calc_score(dnat,max_dnat)}`
+            + `?e=${calc_score(rlib,max_rlib)}`
+            + `&d=${calc_score(raut,max_raut)}`
+            + `&g=${calc_score(spro,max_spro)}`
+            + `&s=${calc_score(stra,max_stra)}`
     }
 </script>
 </body>
