@@ -73,13 +73,13 @@
         
         for (var i = 0; i < questions.length; i++)
         {
-            max_economy += Math.abs( questions[i].effect.economy, 0);
-            communism   += Math.max(-questions[i].answer * questions[i].effect.economy, 0);
-            capitalism  += Math.max( questions[i].answer * questions[i].effect.economy, 0);
+            max_economy += Math.abs( questions[i].economy, 0);
+            communism   += Math.max(-questions[i].answer * questions[i].economy, 0);
+            capitalism  += Math.max( questions[i].answer * questions[i].economy, 0);
             
-            max_cause      += Math.abs(-questions[i].effect.cause, 0);
-            constructivism += Math.max(-questions[i].answer * questions[i].effect.cause, 0);
-            essentialism   += Math.max( questions[i].answer * questions[i].effect.cause, 0);
+            max_cause      += Math.abs(-questions[i].cause, 0);
+            constructivism += Math.max(-questions[i].answer * questions[i].cause, 0);
+            essentialism   += Math.max( questions[i].answer * questions[i].cause, 0);
         }
         
         location.href = `results.html`
