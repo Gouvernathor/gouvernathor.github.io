@@ -1,23 +1,16 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>8values Quiz</title>
+<title>7axis Quiz</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6511426299019766",
-    enable_page_level_ads: true
-  });
-</script>
 </head>
 <body>
 <script type="application/javascript"
         src="questions.js">
 </script>
-<h1>8values</h1>
+<h1>7axis</h1>
 <hr>
 <h2 style="text-align:center;" id="question-number">Loading...</h2>
 <p class="question" id="question-text"></p>
@@ -26,53 +19,18 @@
 <button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button> <br>
 <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Plutôt pas d'accord</button> <br>
 <button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Absolument pas d'accord</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button class="small_button_off" id="back_button_off">Back</button><br>
-
-<!-- Website visit statistics - no personal information is collected! -->
-<script type="text/javascript">
-var sc_project=11325211;
-var sc_invisible=1;
-var sc_security="fd9f0659";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
-stats"></a></div></noscript>
+<button class="small_button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
+<button class="small_button_off" id="back_button_off">Retour à la question précédente</button><br>
 
 <script>
-    var max_ecom, max_elib, ecom, elib;
-    max_ecom = max_elib = ecom = elib = 0;
-    var max_dint, max_dnat, dint, dnat;
-    max_dint = max_dnat = dint = dnat = 0;
-    var max_rlib, max_raut, rlib, raut;
-    max_rlib = max_raut = rlib = raut = 0;
-    var max_spro, max_stra, spro, stra;
-    max_spro = max_stra = spro = stra = 0;
-  
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
-    for (var i = 0; i < questions.length; i++) {
-        max_ecom += Math.abs(questions[i].effect.ecom)
-        max_elib += Math.abs(questions[i].effect.elib)
-        max_dint += Math.abs(questions[i].effect.dint)
-        max_dnat += Math.abs(questions[i].effect.dnat)
-        max_rlib += Math.abs(questions[i].effect.rlib)
-        max_raut += Math.abs(questions[i].effect.raut)
-        max_spro += Math.abs(questions[i].effect.spro)
-        max_stra += Math.abs(questions[i].effect.stra)
-    }
+    
     function init_question() {
-        document.getElementById("question-text").innerHTML = questions[qn].question_fr;
+        document.getElementById("question-text").innerHTML = questions[qn].question;
         document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " sur " + (questions.length);
-        if (prev_answer == null) {
+        if (qn == 0) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';
         } else {
@@ -83,16 +41,8 @@ stats"></a></div></noscript>
     }
 
     function next_question(mult) {
-        ecom += mult*questions[qn].effect.ecom;
-        elib += mult*questions[qn].effect.elib;
-        dint += mult*questions[qn].effect.dint;
-        dnat += mult*questions[qn].effect.dnat;
-        rlib += mult*questions[qn].effect.rlib;
-        raut += mult*questions[qn].effect.raut;
-        spro += mult*questions[qn].effect.spro;
-        stra += mult*questions[qn].effect.stra;
+		questions[qn].answer = mult
         qn++;
-        prev_answer = mult;
         if (qn < questions.length) {
             init_question();
         } else {
@@ -100,35 +50,43 @@ stats"></a></div></noscript>
         }
     }
     function prev_question() {
-        if (prev_answer == null) {
+        if (qn == 0) {
             return;
         }
         qn--;
-        ecom -= prev_answer * questions[qn].effect.ecom;
-        elib -= prev_answer * questions[qn].effect.elib;
-        dint -= prev_answer * questions[qn].effect.dint;
-        dnat -= prev_answer * questions[qn].effect.dnat;
-        rlib -= prev_answer * questions[qn].effect.rlib;
-        raut -= prev_answer * questions[qn].effect.raut;
-        spro -= prev_answer * questions[qn].effect.spro;
-        stra -= prev_answer * questions[qn].effect.stra;
-        prev_answer = null;
         init_question();
 
     }
-    function calc_score(score,max) {
-        return (100*(max+score)/(2*max)).toFixed(1)
+    function calc_score(score,max_value) {
+        return (100*(score)/(max_value)).toFixed(1);
     }
+    
+    
     function results() {
+        var max_economy = 0;
+        var communism = 0;
+        var capitalism = 0;
+        
+        var max_cause = 0;
+        var constructivism = 0;
+        var essentialism = 0;
+        
+        for (var i = 0; i < questions.length; i++)
+        {
+            max_economy += Math.abs( questions[i].effect.economy, 0);
+            communism   += Math.max(-questions[i].answer * questions[i].effect.economy, 0);
+            capitalism  += Math.max( questions[i].answer * questions[i].effect.economy, 0);
+            
+            max_cause      += Math.abs(-questions[i].effect.cause, 0);
+            constructivism += Math.max(-questions[i].answer * questions[i].effect.cause, 0);
+            essentialism   += Math.max( questions[i].answer * questions[i].effect.cause, 0);
+        }
+        
         location.href = `results.html`
-            + `?e=${calc_score(ecom,max_ecom)}`
-            + `&d=${calc_score(elib,max_elib)}`
-            + `&g=${calc_score(dint,max_dint)}`
-            + `&s=${calc_score(dnat,max_dnat)}`
-            + `?e=${calc_score(rlib,max_rlib)}`
-            + `&d=${calc_score(raut,max_raut)}`
-            + `&g=${calc_score(spro,max_spro)}`
-            + `&s=${calc_score(stra,max_stra)}`
+            + `?com=${calc_score(communism,max_economy)}`
+            + `&cap=${calc_score(capitalism,max_economy)}`
+            + `&con=${calc_score(constructivism,max_cause)}`
+            + `&ess=${calc_score(essentialism,max_cause)}`
     }
 </script>
 </body>

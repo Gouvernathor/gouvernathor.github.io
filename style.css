@@ -95,7 +95,7 @@ img.center {
     border-radius: 8pt;
     color: white;
     padding: 8pt;
-    width: 10%;
+    width: 20%;
     min-width: 100pt;
     text-align: center;
     text-decoration: none;
@@ -139,45 +139,99 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
-div.equality {
-    background-color: #f44336;
+div.neutral {
+    background-color: #dddddd;
+    text-align: center;
+    border-left-style: solid;
+}
+div.communism {
+    background-color: #E50000;
     text-align: left;
     border-right-style: solid;
 }
-div.wealth {
-    background-color: #00897b;
+div.capitalism {
+    background-color: #FFD000;
     text-align: right;
     border-left-style: solid;
 }
-div.liberty {
-    background-color: #ffeb3b;
+div.constructivism {
+    background-color: #b35ed1;
     text-align: left;
     border-right-style: solid;
 }
-div.authority {
-    background-color: #3f51b5;
+div.essentialism {
+    background-color: #73d15e;
     text-align: right;
     border-left-style: solid;
 }
-div.peace {
-    background-color: #03a9f4;
-    text-align: right;
-    border-left-style: solid;
-}
-div.might {
-    background-color: #ff9800;
+div.liberal {
+    background-color: #5ccdf4;
     text-align: left;
     border-right-style: solid;
 }
-div.progress {
-    background-color: #9c27b0;
+div.authoritarian {
+    background-color: #f49c60;
     text-align: right;
     border-left-style: solid;
+}
+div.productivist {
+    background-color: #1a40bf;
+    text-align: right;
+    border-left-style: solid;
+}
+div.ecology {
+    background-color: #05bb00;
+    text-align: left;
+    border-right-style: solid;
+}
+div.mondialist {
+    background-color: #00a5ff;
+    text-align: left;
+    border-right-style: solid;
 }
 div.tradition {
-    background-color: #8bc34a;
+    background-color: #ebe90e;
+    text-align: right;
+    border-left-style: solid;
+}
+div.reason {
+    background-color: #ff63d3;
     text-align: left;
     border-right-style: solid;
+}
+div.nationalist {
+    background-color: #ff5e00;
+    text-align: right;
+    border-left-style: solid;
+}
+div.revo {
+    background-color: #bd0871;
+    text-align: left;
+    border-right-style: solid;
+}
+div.refo {
+    background-color: #6dfac9;
+    text-align: right;
+    border-left-style: solid;
+}
+div.axis_titles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.axis_title {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    margin-top: 12pt;
+    margin-bottom: 0pt;
+    
+    font-weight: bold;
+    font-size: 200%;
+    display: block;
+    width: 100%;
 }
 span.weight-300 {
     font-weight: 300;
