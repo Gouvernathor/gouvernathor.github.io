@@ -2,7 +2,7 @@ questions = [
     
     /* ESSENTIALISME ************************************************ */
     {
-        question: "La place des hommes et des femmes dans la société peut-être en parti expliqué par la biologie.",
+        question: "La place des hommes et des femmes dans la société peut-être en partie expliquée par la biologie.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -13,7 +13,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Certains traits de charactère sont feminins alors que d'autre sont masculins.",
+        question: "Certains traits de caractère sont feminins alors que d'autre sont masculins.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -35,7 +35,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Les aggressions sexuelles sont en partie causées par les pulsions naturelles des hommes.",
+        question: "Les agressions sexuelles sont en partie causées par les pulsions naturelles des hommes.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -46,7 +46,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Les genres doivent être abolit.",
+        question: "Les genres doivent être abolies.",
         answer: 0,
         cause: -10,
         boundaries: 0,
@@ -90,7 +90,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Les personnes trans-genre ne seront jamais vraiment du genre qu'ils souhaitent immiter.",
+        question: "Les personnes transgenre ne seront jamais vraiment du genre qu'ils souhaitent immiter.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -133,21 +133,10 @@ questions = [
         rights: 0,
         strategy: 0
     },
-    {
-        question: "Les differences de traitements et de qualité de vie dans notre société montrent que le racisme est encore très présent.",
-        answer: 0,
-        cause: -10,
-        boundaries: 0,
-        economy: 0,
-        society: 0,
-        ecosystem: 0,
-        rights: 0,
-        strategy: 0
-    },
     
     /* NATIONALISME ************************************************* */
     {
-        question: "Un peu de chauvinisme dans les compétitions sportives est accepable.",
+        question: "Le chauvinisme pendant les compétitions sportives est acceptable.",
         answer: 0,
         cause: 0,
         boundaries: 10,
@@ -169,7 +158,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Les valeurs de mon pays son supérieurs à celles des autres.",
+        question: "Les valeurs de mon pays sont supérieurs à celles des autres.",
         answer: 0,
         cause: 0,
         boundaries: 10,
@@ -180,7 +169,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Le multi-culturalisme est un danger.",
+        question: "Le multiculturalisme est un danger.",
         answer: 0,
         cause: 0,
         boundaries: 10,
@@ -202,7 +191,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Les frontières doivent à terme être supprimées.",
+        question: "À terme, les frontières doivent être supprimées.",
         answer: 0,
         cause: 0,
         boundaries: -10,
@@ -224,7 +213,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Il est légitime pour un pays de défendre ses intérêts chez les autres pays en intervenant militairement.",
+        question: "Il est légitime pour un pays d'intervenir militairement à l'étranger pour défendre ses intérêts.",
         answer: 0,
         cause: 0,
         boundaries: 10,
@@ -235,7 +224,7 @@ questions = [
         strategy: 0
     },
     {
-        question: "Mon pays doit payer pour ses crimes passés.",
+        question: "Mon pays doit payer pour réparer les dégats causés par les crimes qu'il à commis à l'étranger.",
         answer: 0,
         cause: 0,
         boundaries: -10,
@@ -250,6 +239,17 @@ questions = [
         answer: 0,
         cause: 0,
         boundaries: -10,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 0,
+        strategy: 0
+    },
+    {
+        question: "Il faut enseigner l'Histoire d'une façon qui permet de créer un sentiment d'appartenance à la nation.",
+        answer: 0,
+        cause: 0,
+        boundaries: 10,
         economy: 0,
         society: 0,
         ecosystem: 0,
