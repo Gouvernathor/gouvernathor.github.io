@@ -1,26 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<title>7axes Quiz</title>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>7axes - Résultats</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<script type="application/javascript" src="questions.js"></script>
 </head>
 <body>
-<script type="application/javascript"
-        src="questions.js">
-</script>
+
+<div id="content">
+
 <h1>7axes</h1>
-<hr>
-<h2 style="text-align:center;" id="question-number">Loading...</h2>
+
+<h2 id="question-number">Chargement...</h2>
 <p class="question" id="question-text"></p>
-<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Absolument d'accord</button> <br>
-<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Plutôt d'accord</button> <br>
-<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button> <br>
-<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Plutôt pas d'accord</button> <br>
-<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Absolument pas d'accord</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
-<button class="small_button_off" id="back_button_off">Retour à la question précédente</button><br>
+<button class="buttonQuestion" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Absolument d'accord</button>
+<button class="buttonQuestion" onclick="next_question( 0.5)" style="background-color: #4caf50;">Plutôt d'accord</button>
+<button class="buttonQuestion" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button>
+<button class="buttonQuestion" onclick="next_question(-0.5)" style="background-color: #f44336;">Plutôt pas d'accord</button>
+<button class="buttonQuestion" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Absolument pas d'accord</button>
+<button class="button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
+<button class="button" id="back_button_off">Retour à la question précédente</button>
+
+<div id="footer">
+7axes est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
+</div>
+
+</div>
 
 <script>
     var qn = 0; // Question number
@@ -140,3 +148,4 @@
     }
 </script>
 </body>
+</html>

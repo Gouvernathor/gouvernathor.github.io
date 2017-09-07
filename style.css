@@ -1,248 +1,159 @@
-html {
-    background-color: #bbbbbb;
-    padding: 0px;
+body
+{
+	margin: 0;
+	font-family: Montserrat;
 }
-body {
-    width: 80%;
-    min-height: calc(100vh - 4em);
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #dddddd;
-    border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
-}
-p {
-    color: #444444;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1;
-    margin: 4pt;
-}
-p.value-description {
-    text-indent: -16pt;
-    margin-left: 20pt;
-}
-p.question {
-    margin: 16pt auto;
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    width: 70%;
-    min-width: 500pt;
-    min-height: 144pt;
-    background-color: #eeeeee;
-    padding: 16pt;
-    border-radius: 16pt;
-    font-size: 36pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
+#content
+{
+	background-color: #ebebeb;
+	box-shadow: 0vh 0vh 0.4vh #222222;
+	margin: 5vh;
 }
-h1 {
-    color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
-    text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
+
+#footer
+{
+	font-size: 1.8vh;
+	text-align: center;
+	padding: 2.5vh;
+	border-top: #C5C5C5 0.2vh solid;
 }
-h2 {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
+
+a
+{
+	color:#464646;
+	text-decoration: underline;
 }
-li {
-    font-size: 16pt;
-    text-indent: 16pt;
+
+h1
+{
+	font-size: 5vh;
+	text-align: center;
+	padding: 2.5vh;
+	border-bottom: #C5C5C5 0.2vh solid;
 }
-a {
-    font-family: inherit;
+
+h2
+{
+	font-size: 3vh;
+	text-align: center;
+	padding:0;
+	margin:0;
 }
-img.center {
-    display: block;
-    margin: 1em auto;
-    width: 50%;
-    min-width: 500pt;
+
+.axisEnd
+{
+	display: inline-block;
+	width:15vh;
+	height: 15vh;
+	vertical-align: middle;
+	z-index: 3;
+	position:relative;
 }
-.button {
-    background-color: #2196f3;
-    font-family: 'Montserrat', sans-serif;
+.axisEnd > img
+{
+	width:100%;
+	position: relative;
+	left: 5vh;
+}
+.axisEndLeft > img
+{
+	left: 5vh;
+}
+.axisEndRight > img
+{
+	left: -5vh;
+}
+.axisProgress
+{
+	display: inline-block;
+	width:calc(100% - 30vh);
+	height: 15vh;
+	vertical-align: middle;
+}
+.axisSubProgress
+{
+	display: inline-block;
+	height:5vh;
+	margin-top:5vh;
+	color: white;
+	font-size: 3.2vh;
+	box-shadow: 0vh 0vh 0.4vh #222222;
+	z-index: 2;
+	position:relative;
+}
+
+.question
+{
+	text-align: center;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:4vh;
+	padding:4vh;
+	height: 15vh;
+}
+
+.buttonQuestion, .button
+{
+	text-align: center;
+	width:35vh;
+	margin-top: 0;
+	margin-bottom: 1vh;
+	padding:1vh;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
     border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
+    border-radius: 0.5vh;
 }
-.small_button, .small_button_off {
-    background-color: #333;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 20%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
+
+.button
+{
+	background-color: #D7CFBA;
+	margin-top:6vh;
 }
-.small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
+
+.buttonQuestion
+{
+	color: white;
 }
-div.axis {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.axisNeutral
+{
+	background-color: #ebebeb;
+	color: black;
+	text-align: center;
+	z-index: 1;
+	position:relative;
 }
-div.bar {
-    height: 36pt;
-    line-height: 36pt;
-    padding: 8pt;
-    margin-top: 4pt;
-    margin-bottom: 4pt;
-    border-width: 4px;
-    border-right-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #222222;
-    background-color: #eeeeee;
-    display: block;
-    width: 50%;
+.axisConstructivism
+{
+	background-color: #850083;
+	text-align: right;
 }
-div.text-wrapper {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    color: #222222;
-    display: inline-block;
+.axisEssentialism
+{
+	background-color: #0c7c10;
+	text-align: left;
 }
-div.neutral {
-    background-color: #dddddd;
-    text-align: center;
-    border-left-style: solid;
+.axisInternationalism
+{
+	background-color: #007b97;
+	text-align: right;
 }
-div.communism {
-    background-color: #E50000;
-    text-align: left;
-    border-right-style: solid;
+.axisNationalism
+{
+	background-color: #855200;
+	text-align: left;
 }
-div.capitalism {
-    background-color: #FFD000;
-    text-align: right;
-    border-left-style: solid;
+.axisCommunism
+{
+	background-color: #970000;
+	text-align: right;
 }
-div.constructivism {
-    background-color: #b35ed1;
-    text-align: left;
-    border-right-style: solid;
-}
-div.essentialism {
-    background-color: #73d15e;
-    text-align: right;
-    border-left-style: solid;
-}
-div.liberal {
-    background-color: #5ccdf4;
-    text-align: left;
-    border-right-style: solid;
-}
-div.authoritarian {
-    background-color: #f49c60;
-    text-align: right;
-    border-left-style: solid;
-}
-div.productivist {
-    background-color: #1a40bf;
-    text-align: right;
-    border-left-style: solid;
-}
-div.ecology {
-    background-color: #05bb00;
-    text-align: left;
-    border-right-style: solid;
-}
-div.mondialist {
-    background-color: #00a5ff;
-    text-align: left;
-    border-right-style: solid;
-}
-div.tradition {
-    background-color: #ebe90e;
-    text-align: right;
-    border-left-style: solid;
-}
-div.reason {
-    background-color: #ff63d3;
-    text-align: left;
-    border-right-style: solid;
-}
-div.nationalist {
-    background-color: #ff5e00;
-    text-align: right;
-    border-left-style: solid;
-}
-div.revo {
-    background-color: #bd0871;
-    text-align: left;
-    border-right-style: solid;
-}
-div.refo {
-    background-color: #6dfac9;
-    text-align: right;
-    border-left-style: solid;
-}
-div.axis_titles {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-div.axis_title {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
-    
-    font-weight: bold;
-    font-size: 200%;
-    display: block;
-    width: 100%;
-}
-span.weight-300 {
-    font-weight: 300;
-}
-canvas {
-    border-color: #444444;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8pt;
-    display: block;
-    margin: 8pt;
-    margin-left: auto;
-    margin-right: auto;
+.axisCapitalism
+{
+	background-color: #002f85;
+	text-align: left;
 }

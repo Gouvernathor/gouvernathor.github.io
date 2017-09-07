@@ -1,171 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<title>7axes Results</title>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>7axes - Résultats</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-
 <body>
+
+<div id="content">
+
 <h1>7axes</h1>
-<hr>
 
-<h1>Résultats</h1>
+<h2>Constructivisme vs. Essentialisme</h2>
 
-<div class="axis_titles">
-	<div class="axis_title">Constructivisme</div>
-	<div class="axis_title" style="text-align:center">Cause</div>
-	<div class="axis_title" style="text-align:right">Essentialisme</div>
-</div>
-<div class="axis">
-    <img id="img-constructivism" src="value_images/constructivism.svg" height="128pt"/>
-    <div class="bar constructivism" id="bar-constructivism"><div class="text-wrapper" id="constructivism"></div></div>
-    <div class="bar neutral" id="bar-cause"><div class="text-wrapper" id="cause"></div></div>
-    <div class="bar essentialism" id="bar-essentialism"><div class="text-wrapper" id="essentialism"></div></div>
-    <img id="img-essentialism" src="value_images/essentialism.svg" height="128pt"/>
-</div>
+<div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Constructivisme" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="constructivism" class="axisSubProgress axisConstructivism"></div><!--
+--><div id="cause" class="axisSubProgress axisNeutral"></div><!--
+--><div id="essentialism" class="axisSubProgress axisEssentialism"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/essentialism.png" alt="Essentialisme" \></div>
 
-<div class="axis_titles">
-	<div class="axis_title">Internationalisme</div>
-	<div class="axis_title" style="text-align:center">Appartenance</div>
-	<div class="axis_title" style="text-align:right">Nationalisme</div>
-</div>
-<div class="axis">
-    <img id="img-mondialist" src="value_images/mondialist.svg" height="128pt"/>
-    <div class="bar mondialist" id="bar-mondialist"><div class="text-wrapper" id="mondialist"></div></div>
-    <div class="bar neutral" id="bar-boundaries"><div class="text-wrapper" id="boundaries"></div></div>
-    <div class="bar nationalist" id="bar-nationalist"><div class="text-wrapper" id="nationalist"></div></div>
-    <img id="img-nationalist" src="value_images/nationalist.svg" height="128pt"/>
-</div>
+<h2>Internationalisme vs. Nationalisme</h2>
 
-<div class="axis_titles">
-	<div class="axis_title">Communisme</div>
-	<div class="axis_title" style="text-align:center">Economie</div>
-	<div class="axis_title" style="text-align:right">Capitalisme</div>
-</div>
-<div class="axis">
-    <img id="img-communism" src="value_images/communism.svg" height="128pt"/>
-    <div class="bar communism" id="bar-communism"><div class="text-wrapper" id="communism"></div></div>
-    <div class="bar neutral" id="bar-economy"><div class="text-wrapper" id="economy"></div></div>
-    <div class="bar capitalism" id="bar-capitalism"><div class="text-wrapper" id="capitalism"></div></div>
-    <img id="img-capitalism" src="value_images/capitalism.svg" height="128pt"/>
-</div>
+<div class="axisEnd axisEndLeft"><img src="images/internationalism.png" alt="Internationalisme" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="internationalism" class="axisSubProgress axisInternationalism"></div><!--
+--><div id="boundaries" class="axisSubProgress axisNeutral"></div><!--
+--><div id="nationalism" class="axisSubProgress axisNationalism"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/nationalism.png" alt="Nationalisme" \></div>
 
-<div class="axis_titles">
-	<div class="axis_title">Progressisme</div>
-	<div class="axis_title" style="text-align:center">Société</div>
-	<div class="axis_title" style="text-align:right">Conservatisme</div>
-</div>
-<div class="axis">
-    <img id="img-reason" src="value_images/reason.svg" height="128pt"/>
-    <div class="bar reason" id="bar-reason"><div class="text-wrapper" id="reason"></div></div>
-    <div class="bar neutral" id="bar-society"><div class="text-wrapper" id="society"></div></div>
-    <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
-    <img id="img-tradition" src="value_images/tradition.svg" height="128pt"/>
-</div>
+<h2>Communisme vs. Capitalisme</h2>
 
-<div class="axis_titles">
-	<div class="axis_title">Écologie</div>
-	<div class="axis_title" style="text-align:center">Humanité et nature</div>
-	<div class="axis_title" style="text-align:right">Productivisme</div>
-</div>
-<div class="axis">
-    <img id="img-ecology" src="value_images/ecology.svg" height="128pt"/>
-    <div class="bar ecology" id="bar-ecology"><div class="text-wrapper" id="ecology"></div></div>
-    <div class="bar neutral" id="bar-ecosystem"><div class="text-wrapper" id="ecosystem"></div></div>
-    <div class="bar productivist" id="bar-productivist"><div class="text-wrapper" id="productivist"></div></div>
-    <img id="img-productivist" src="value_images/productivist.svg" height="128pt"/>
-</div>
+<div class="axisEnd axisEndLeft"><img src="images/communism.png" alt="Communisme" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="communism" class="axisSubProgress axisCommunism"></div><!--
+--><div id="economy" class="axisSubProgress axisNeutral"></div><!--
+--><div id="capitalism" class="axisSubProgress axisCapitalism"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/capitalism.png" alt="Capitalisme" \></div>
 
-<div class="axis_titles">
-	<div class="axis_title">Libertaire</div>
-	<div class="axis_title" style="text-align:center">Droits</div>
-	<div class="axis_title" style="text-align:right">Autoritarisme</div>
-</div>
-<div class="axis">
-    <img id="img-liberal" src="value_images/liberal.svg" height="128pt"/>
-    <div class="bar liberal" id="bar-liberal"><div class="text-wrapper" id="liberal"></div></div>
-    <div class="bar neutral" id="bar-rights"><div class="text-wrapper" id="rights"></div></div>
-    <div class="bar authoritarian" id="bar-authoritarian"><div class="text-wrapper" id="authoritarian"></div></div>
-    <img id="img-authoritarian" src="value_images/authoritarian.svg" height="128pt"/>
+<h2>Progressisme vs. Conservatisme</h2>
+
+<div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Progressisme" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="progressism" class="axisSubProgress axisProgressisme"></div><!--
+--><div id="society" class="axisSubProgress axisNeutral"></div><!--
+--><div id="conservatism" class="axisSubProgress axisConservatism"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Conservatisme" \></div>
+
+<h2>Écologie vs. Productivisme</h2>
+
+<div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Écologie" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="ecology" class="axisSubProgress axisEcology"></div><!--
+--><div id="ecosystem" class="axisSubProgress axisNeutral"></div><!--
+--><div id="productivism" class="axisSubProgress axisProductivism"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Productivisme" \></div>
+
+<h2>Libertaire vs. Autoritarisme</h2>
+
+<div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Libertaire" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="liberal" class="axisSubProgress axisLiberal"></div><!--
+--><div id="rights" class="axisSubProgress axisNeutral"></div><!--
+--><div id="authoritarian" class="axisSubProgress axisAuthoritarian"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Autoritarisme" \></div>
+
+<h2>Révolution vs. Réformisme</h2>
+
+<div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Révolution" \></div><!--
+--><div class="axisProgress"><!--
+--><div id="revo" class="axisSubProgress axisRevo"></div><!--
+--><div id="strategy" class="axisSubProgress axisNeutral"></div><!--
+--><div id="refo" class="axisSubProgress axisRefo"></div>
+</div><!--
+--><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Réformisme" \></div>
+
+<div id="footer">
+7axes est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
 </div>
 
-<div class="axis_titles">
-	<div class="axis_title">Révolution</div>
-	<div class="axis_title" style="text-align:center">Stratégie</div>
-	<div class="axis_title" style="text-align:right">Réformisme</div>
 </div>
-<div class="axis">
-    <img id="img-revo" src="value_images/revo.svg" height="128pt"/>
-    <div class="bar revo" id="bar-revo"><div class="text-wrapper" id="revo"></div></div>
-    <div class="bar neutral" id="bar-strategy"><div class="text-wrapper" id="strategy"></div></div>
-    <div class="bar refo" id="bar-refo"><div class="text-wrapper" id="refo"></div></div>
-    <img id="img-refo" src="value_images/refo.svg" height="128pt"/>
-</div>
-
-<hr/>
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Retour à l'accueil</button> <br>
 
 <script>
-    function getQueryVariable(variable)
-    {
-           var query = window.location.search.substring(1)
-           var vars = query.split("&")
-           for (var i=0;i<vars.length;i++) {
-                   var pair = vars[i].split("=")
-                   if(pair[0] == variable) {
-                        if(pair[1] == "NaN") {return 0} else {return pair[1]/100;}
-                   }pair[1]
-           }
-           return 0;
-    }
+function getQueryVariable(variable)
+{
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for(var i=0;i<vars.length;i++)
+	{
+		var pair = vars[i].split("=")
+		if(pair[0] == variable)
+		{
+			if(pair[1] == "NaN")
+			{
+				return 0
+			}
+			else
+			{
+				return pair[1]/100;
+			}
+		}
+	}
+	return 0;
+}
 
-    function setBarValue(name, value) {
-        innerel = document.getElementById(name)
-        outerel = document.getElementById("bar-" + name)
-        outerel.style.width = ((100*value).toFixed(1) + "%")
-        innerel.innerHTML = ((100*value).toFixed(0) + "%")
-        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-            innerel.style.visibility = "hidden"
-        }
-    }
+function setAxisValue(name, value)
+{
+	axis = document.getElementById(name)
+	axis.style.width = ((100*value).toFixed(1) + "%")
+	axis.innerHTML = ((100*value).toFixed(0) + "%")
+}
 
-    communism  = getQueryVariable("com");
-    capitalism = getQueryVariable("cap");
-    constructivism  = getQueryVariable("con");
-    essentialism = getQueryVariable("ess");
-    liberal  = getQueryVariable("lib");
-    authoritarian = getQueryVariable("aut");
-    revo  = getQueryVariable("rev");
-    refo = getQueryVariable("ref");
-    ecology  = getQueryVariable("eco");
-    productivist = getQueryVariable("pro");
-    mondialist  = getQueryVariable("mon");
-    nationalist = getQueryVariable("nat");
-    tradition  = getQueryVariable("tra");
-    reason = getQueryVariable("rea");
+constructivism  = getQueryVariable("con");
+essentialism = getQueryVariable("ess");
+setAxisValue("constructivism", constructivism);
+setAxisValue("essentialism", essentialism);
+setAxisValue("cause", 1-constructivism-essentialism);
 
-    setBarValue("tradition", tradition);
-    setBarValue("reason", reason);
-    setBarValue("society", 1-tradition-reason);
-    setBarValue("communism", communism);
-    setBarValue("capitalism", capitalism);
-    setBarValue("economy", 1-communism-capitalism);
-    setBarValue("constructivism", constructivism);
-    setBarValue("essentialism", essentialism);
-    setBarValue("cause", 1-constructivism-essentialism);
-    setBarValue("liberal", liberal);
-    setBarValue("authoritarian", authoritarian);
-    setBarValue("rights", 1-liberal-authoritarian);
-    setBarValue("revo", revo);
-    setBarValue("refo", refo);
-    setBarValue("strategy", 1-revo-refo);
-    setBarValue("ecology", ecology);
-    setBarValue("productivist", productivist);
-    setBarValue("ecosystem", 1-ecology-productivist);
-    setBarValue("mondialist", mondialist);
-    setBarValue("nationalist", nationalist);
-    setBarValue("boundaries", 1-mondialist-nationalist);
-    </script>
+internationalism  = getQueryVariable("mon");
+nationalism = getQueryVariable("nat");
+setAxisValue("internationalism", internationalism);
+setAxisValue("nationalism", nationalism);
+setAxisValue("boundaries", 1-internationalism-nationalism);
+
+communism  = getQueryVariable("com");
+capitalism = getQueryVariable("cap");
+setAxisValue("communism", communism);
+setAxisValue("capitalism", capitalism);
+setAxisValue("economy", 1-communism-capitalism);
+
+progressism  = getQueryVariable("rea");
+conservatism = getQueryVariable("tra");
+setAxisValue("progressism", progressism);
+setAxisValue("conservatism", conservatism);
+setAxisValue("society", 1-progressism-conservatism);
+
+ecology  = getQueryVariable("eco");
+productivism = getQueryVariable("pro");
+setAxisValue("ecology", ecology);
+setAxisValue("productivism", productivism);
+setAxisValue("ecosystem", 1-ecology-productivism);
+
+liberal  = getQueryVariable("lib");
+authoritarian = getQueryVariable("aut");
+setAxisValue("liberal", liberal);
+setAxisValue("authoritarian", authoritarian);
+setAxisValue("rights", 1-liberal-authoritarian);
+
+revo  = getQueryVariable("rev");
+refo = getQueryVariable("ref");
+setAxisValue("revo", revo);
+setAxisValue("refo", refo);
+setAxisValue("strategy", 1-revo-refo);
+
+</script>
 </body>
+</html>
