@@ -17,9 +17,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/constructivism.png" alt="Constructivisme" \></div><!--
 --><div class="axisProgress"><!--
---><div id="constructivism" class="axisSubProgress axisConstructivism"></div><!--
---><div id="cause" class="axisSubProgress axisNeutral"></div><!--
---><div id="essentialism" class="axisSubProgress axisEssentialism"></div>
+--><div id="constructivism" class="axisSubProgress axisConstructivism"><span id="constructivismText"></span></div><!--
+--><div id="cause" class="axisSubProgress axisNeutral"><span id="causeText"></span></div><!--
+--><div id="essentialism" class="axisSubProgress axisEssentialism"><span id="essentialismText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/essentialism.png" alt="Essentialisme" \></div>
 
@@ -27,9 +27,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/internationalism.png" alt="Internationalisme" \></div><!--
 --><div class="axisProgress"><!--
---><div id="internationalism" class="axisSubProgress axisInternationalism"></div><!--
---><div id="boundaries" class="axisSubProgress axisNeutral"></div><!--
---><div id="nationalism" class="axisSubProgress axisNationalism"></div>
+--><div id="internationalism" class="axisSubProgress axisInternationalism"><span id="internationalismText"></span></div><!--
+--><div id="boundaries" class="axisSubProgress axisNeutral"><span id="boundariesText"></span></div><!--
+--><div id="nationalism" class="axisSubProgress axisNationalism"><span id="nationalismText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/nationalism.png" alt="Nationalisme" \></div>
 
@@ -37,9 +37,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/communism.png" alt="Communisme" \></div><!--
 --><div class="axisProgress"><!--
---><div id="communism" class="axisSubProgress axisCommunism"></div><!--
---><div id="economy" class="axisSubProgress axisNeutral"></div><!--
---><div id="capitalism" class="axisSubProgress axisCapitalism"></div>
+--><div id="communism" class="axisSubProgress axisCommunism"><span id="communismText"></span></div><!--
+--><div id="economy" class="axisSubProgress axisNeutral"><span id="economyText"></span></div><!--
+--><div id="capitalism" class="axisSubProgress axisCapitalism"><span id="capitalismText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/capitalism.png" alt="Capitalisme" \></div>
 
@@ -47,9 +47,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/progressism.png" alt="Progressisme" \></div><!--
 --><div class="axisProgress"><!--
---><div id="progressism" class="axisSubProgress axisProgressism"></div><!--
---><div id="society" class="axisSubProgress axisNeutral"></div><!--
---><div id="conservatism" class="axisSubProgress axisConservatism"></div>
+--><div id="progressism" class="axisSubProgress axisProgressism"><span id="progressismText"></span></div><!--
+--><div id="society" class="axisSubProgress axisNeutral"><span id="societyText"></span></div><!--
+--><div id="conservatism" class="axisSubProgress axisConservatism"><span id="conservatismText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Conservatisme" \></div>
 
@@ -57,9 +57,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Écologie" \></div><!--
 --><div class="axisProgress"><!--
---><div id="ecology" class="axisSubProgress axisEcology"></div><!--
---><div id="ecosystem" class="axisSubProgress axisNeutral"></div><!--
---><div id="productivism" class="axisSubProgress axisProductivism"></div>
+--><div id="ecology" class="axisSubProgress axisEcology"><span id="ecologyText"></span></div><!--
+--><div id="ecosystem" class="axisSubProgress axisNeutral"><span id="ecosystemText"></span></div><!--
+--><div id="productivism" class="axisSubProgress axisProductivism"><span id="productivismText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Productivisme" \></div>
 
@@ -67,9 +67,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Libertaire" \></div><!--
 --><div class="axisProgress"><!--
---><div id="liberal" class="axisSubProgress axisLiberal"></div><!--
---><div id="rights" class="axisSubProgress axisNeutral"></div><!--
---><div id="authoritarian" class="axisSubProgress axisAuthoritarism"></div>
+--><div id="liberal" class="axisSubProgress axisLiberal"><span id="liberalText"></span></div><!--
+--><div id="rights" class="axisSubProgress axisNeutral"><span id="rightsText"></span></div><!--
+--><div id="authoritarian" class="axisSubProgress axisAuthoritarism"><span id="authoritarianText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Autoritarisme" \></div>
 
@@ -77,9 +77,9 @@
 
 <div class="axisEnd axisEndLeft"><img src="images/neutral.png" alt="Révolution" \></div><!--
 --><div class="axisProgress"><!--
---><div id="revo" class="axisSubProgress axisRevo"></div><!--
---><div id="strategy" class="axisSubProgress axisNeutral"></div><!--
---><div id="refo" class="axisSubProgress axisRefo"></div>
+--><div id="revo" class="axisSubProgress axisRevo"><span id="revoText"></span></div><!--
+--><div id="strategy" class="axisSubProgress axisNeutral"><span id="strategyText"></span></div><!--
+--><div id="refo" class="axisSubProgress axisRefo"><span id="refoText"></span></div>
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Réformisme" \></div>
 
@@ -124,9 +124,11 @@ function getQueryVariable(variable)
 
 function setAxisValue(name, value)
 {
-	axis = document.getElementById(name)
+	var axis = document.getElementById(name)
 	axis.style.width = ((100*value).toFixed(1) + "%")
-	axis.innerHTML = ((100*value).toFixed(0) + "%")
+	
+	var text = document.getElementById(name+"Text")
+	text.innerHTML = ((100*value).toFixed(0) + "%")
 }
 
 function setBonus(name, value)

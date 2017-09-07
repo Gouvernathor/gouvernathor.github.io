@@ -7,16 +7,16 @@ body
 #content
 {
 	background-color: #ebebeb;
-	box-shadow: 0vh 0vh 0.4vh #222222;
-	margin: 5vh;
+	box-shadow: 0vmin 0vmin 0.4vmin #222222;
+	margin: 5vmin;
 }
 
 #footer
 {
-	font-size: 1.8vh;
+	font-size: 1.8vmin;
 	text-align: center;
-	padding: 2.5vh;
-	border-top: #C5C5C5 0.2vh solid;
+	padding: 2.5vmin;
+	border-top: #C5C5C5 0.2vmin solid;
 }
 
 a
@@ -27,15 +27,15 @@ a
 
 h1
 {
-	font-size: 5vh;
+	font-size: 5vmin;
 	text-align: center;
-	padding: 2.5vh;
-	border-bottom: #C5C5C5 0.2vh solid;
+	padding: 2.5vmin;
+	border-bottom: #C5C5C5 0.2vmin solid;
 }
 
 h2
 {
-	font-size: 3vh;
+	font-size: 3vmin;
 	text-align: center;
 	padding:0;
 	margin:0;
@@ -44,8 +44,8 @@ h2
 .axisEnd
 {
 	display: inline-block;
-	width:15vh;
-	height: 15vh;
+	width:15vmin;
+	height: 15vmin;
 	vertical-align: middle;
 	z-index: 3;
 	position:relative;
@@ -54,64 +54,76 @@ h2
 {
 	width:100%;
 	position: relative;
-	left: 5vh;
+	left: 5vmin;
 }
 .axisEndLeft > img
 {
-	left: 5vh;
+	left: 5vmin;
 }
 .axisEndRight > img
 {
-	left: -5vh;
+	left: -5vmin;
 }
 .axisProgress
 {
 	display: inline-block;
-	width:calc(100% - 30vh);
-	height: 15vh;
+	width:calc(100% - 30vmin);
+	height: 15vmin;
 	vertical-align: middle;
 }
 .axisSubProgress
 {
 	display: inline-block;
-	height:5vh;
-	margin-top:5vh;
+	height:5vmin;
+	margin-top:5vmin;
 	color: white;
-	font-size: 3.2vh;
-	box-shadow: 0vh 0vh 0.4vh #222222;
+	font-size: 3.2vmin;
+	box-shadow: 0vmin 0vmin 0.4vmin #222222;
 	z-index: 2;
 	position:relative;
 }
+.axisSubProgress span
+{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1.1vmin;
+	padding-right: 1.1vmin;
+}
 
+.questionBox
+{
+	display: table;
+	text-align: center;
+	margin-bottom:4vmin;
+    margin-left: auto;
+    margin-right: auto;
+	padding:4vmin;
+	height: 15vmin;
+}
 .question
 {
-	text-align: center;
-	width:80%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:4vh;
-	padding:4vh;
-	height: 15vh;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .buttonQuestion, .button
 {
 	text-align: center;
-	width:35vh;
+	width:35vmin;
 	margin-top: 0;
-	margin-bottom: 1vh;
-	padding:1vh;
+	margin-bottom: 1vmin;
+	padding:1vmin;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
-    border: none;
-    border-radius: 0.5vh;
+	border: none;
+	border-radius: 0.5vmin;
 }
 
 .button
 {
 	background-color: #D7CFBA;
-	margin-top:6vh;
+	margin-top:6vmin;
 }
 
 .buttonQuestion
@@ -203,6 +215,6 @@ h2
 }
 .bonus
 {
-	width:15vh;
-	height: 15vh;
+	width:15vmin;
+	height: 15vmin;
 }
