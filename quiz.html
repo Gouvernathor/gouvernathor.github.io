@@ -159,8 +159,8 @@ function results()
 		
 		if(questions[i].bonus != "")
 		{
-			bonusValue = Math.max(0, questions[i].answer*questions[i].bonus);
-			bonus.push(bonusValue+"=100");
+			bonusValue = Math.max(0, questions[i].answer*100);
+			bonus.push(questions[i].bonus+"="+bonusValue);
 		}
 	}
 	
