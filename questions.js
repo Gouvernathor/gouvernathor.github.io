@@ -10,7 +10,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Dans l'espèce humaine, l'homosexualité est autant naturelle que l'hétérosexualité.",
@@ -21,7 +22,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy: 0,
+        bonus: ""
     },
     {
         question: "Les différences de traitements et de qualité de vie dans notre société montrent que le racisme est encore très présent.",
@@ -32,7 +34,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les sciences dites « dures » sont subjectives et reproduisent les structures sociales de notre société.",
@@ -43,7 +46,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les catégories « homme » et « femme » sont des constructions sociales qu'il convient de dépasser.",
@@ -54,7 +58,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "La place des hommes et des femmes dans la société peut-être en partie expliquée par la biologie.",
@@ -65,7 +70,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Certains traits de caractère sont féminins alors que d'autre sont masculins.",
@@ -76,7 +82,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les agressions sexuelles sont en partie causées par les pulsions naturelles des hommes.",
@@ -87,7 +94,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Un enfant doit être éduqué par son père et sa mère biologique car c'est le modèle naturel.",
@@ -98,7 +106,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "La biologie permet d'expliquer les différences de comportement entre différents groupes ethniques.",
@@ -109,7 +118,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les personnes transgenres ne seront jamais vraiment du genre qu’ils veulent atteindre.",
@@ -120,7 +130,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les membres d'une même nation ou d'une même culture ont des traits caractéristiques immuables qui les définissent.",
@@ -131,7 +142,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     
     /* NATIONALISME ************************************************* */
@@ -144,7 +156,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il faut défendre ses idéaux, même si cela revient à trahir son pays.",
@@ -155,7 +168,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Mon pays doit payer pour réparer les dégâts causés par les crimes qu'il a commis à l'étranger.",
@@ -166,7 +180,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Si les conditions et les normes sont compatibles, il faut supprimer les taxes pour les produits étrangers.",
@@ -177,7 +192,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le chauvinisme pendant les compétitions sportives est acceptable.",
@@ -188,7 +204,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les citoyens doivent être prioritaire par rapport aux étrangers.",
@@ -199,7 +216,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les valeurs de mon pays sont supérieurs à celles des autres.",
@@ -210,7 +228,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le multiculturalisme est un danger.",
@@ -221,7 +240,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Un bon citoyen est patriote.",
@@ -232,7 +252,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il est légitime pour un pays d'intervenir militairement à l'étranger pour défendre ses intérêts.",
@@ -243,7 +264,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il faut enseigner l'Histoire d'une façon qui permet de créer un sentiment d'appartenance à la nation.",
@@ -254,7 +276,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     
     /* ECONOMIE ***************************************************** */
@@ -268,7 +291,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Une entreprise privée employant des salariés commet un acte comparable au vol.",
@@ -279,7 +303,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il est important que la santé reste majoritairement publique.",
@@ -290,7 +315,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "L'énergie et les infrastructures de transport doivent être publique.",
@@ -301,7 +327,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les décisions prisent par les actionnaires des entreprises privés ont des effets globalement négatifs sur la société.",
@@ -312,7 +339,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "L'accès à un bien ne doit pas être déterminé par son prix mais par le besoin d'une personne.",
@@ -323,7 +351,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le marché du travail est une aliénation.",
@@ -334,7 +363,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "La recherche de son propre profit est saine pour l'économie.",
@@ -345,7 +375,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "C'est le mérite qui explique la différence de richesse entre deux personnes.",
@@ -356,7 +387,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Actuellement, un salarié seul est libre de ses choix lors de la signature de son contrat avec son future employeur.",
@@ -367,7 +399,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il n'y a pas de problème à ce que les écoles et les universités puissent être privée.",
@@ -378,7 +411,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les délocalisations sont un mal nécessaire pour améliorer la production.",
@@ -389,7 +423,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il est normal qu'il y ait des riches et des pauvres.",
@@ -400,7 +435,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les marchés s’autorégulent quand ils ne sont pas entravés.",
@@ -411,7 +447,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     
     /* SOCIETE ****************************************************** */
@@ -425,7 +462,8 @@ questions = [
         society: -10,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Je n’ai aucun problème avec le fait que d’autres langues officielles soient ajoutées dans la constitution de mon pays.",
@@ -436,7 +474,8 @@ questions = [
         society: -10,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il faut supprimer le mariage.",
@@ -447,7 +486,8 @@ questions = [
         society: -10,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les homosexuelles n’ont pas à avoir une égalité de traitement avec les hétérosexuelles en ce qui concerne le mariage, la filiation, l’adoption ou la procréation.",
@@ -458,7 +498,8 @@ questions = [
         society: 10,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Dans certaines conditions, la peine de mort est justifiée.",
@@ -469,7 +510,8 @@ questions = [
         society: 10,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     
     /* ECOLOGIE ***************************************************** */
@@ -483,7 +525,8 @@ questions = [
         society: 0,
         ecosystem: -10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Les OGM doivent être interdits en dehors de la recherche.",
@@ -494,7 +537,8 @@ questions = [
         society: 0,
         ecosystem: -10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le réchauffement climatique doit être combattu.",
@@ -505,7 +549,8 @@ questions = [
         society: 0,
         ecosystem: -10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Nous devons accepter de changer notre mode de consommation pour limiter l’exploitation de la nature.",
@@ -516,7 +561,8 @@ questions = [
         society: 0,
         ecosystem: -10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il est important de maintenir la biodiversité dans nos aliments, même si cela est moins efficace.",
@@ -527,7 +573,8 @@ questions = [
         society: 0,
         ecosystem: -10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "A long terme, il faut coloniser les autres corps du système solaire.",
@@ -538,7 +585,8 @@ questions = [
         society: 0,
         ecosystem: 10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Transformer durablement les écosystèmes pour augmenter la qualité de vie des humains est légitime.",
@@ -549,7 +597,8 @@ questions = [
         society: 0,
         ecosystem: 10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Il faut massivement investir dans la recherche pour améliorer la productivité.",
@@ -560,7 +609,8 @@ questions = [
         society: 0,
         ecosystem: 10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le transhumanisme sera bénéfique car il permettra d’améliorer nos capacités.",
@@ -571,7 +621,8 @@ questions = [
         society: 0,
         ecosystem: 10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le nucléaire, quand il est bien entretenu, est une bonne source d’énergie.",
@@ -582,7 +633,8 @@ questions = [
         society: 0,
         ecosystem: 10,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     
     /* LIBERTAIRE *************************************************** */
@@ -596,7 +648,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: -10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Tout Etat exerce une oppression sur son peuple.",
@@ -607,7 +660,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: -10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Tout citoyen devrait être en mesure d’utiliser Internet de façon anonyme.",
@@ -618,7 +672,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: -10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "L’État ne devrait pas intervenir dans l’économie.",
@@ -629,7 +684,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: -10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "La démocratie ne peut pas fonctionner et seule une élite formée est capable de diriger un pays correctement.",
@@ -640,7 +696,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "Le but du système judiciaire est de punir ceux qui ont enfreint les règles.",
@@ -651,7 +708,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     {
         question: "La surveillance permet de garantir les libertés.",
@@ -662,7 +720,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 10,
-        strategy: 0
+        strategy:0,
+        bonus: ""
     },
     
     /* STRATEGIE **************************************************** */
@@ -676,7 +735,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 10
+        strategy: 10,
+        bonus: ""
     },
     {
         question: "La violence n'est jamais une solution.",
@@ -687,7 +747,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 10
+        strategy: 10,
+        bonus: ""
     },
     {
         question: "Changer le système de façon radicale est contre-productif. Il faut plutôt transformer la société progressivement.",
@@ -698,7 +759,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 10
+        strategy: 10,
+        bonus: ""
     },
     {
         question: "Les révolutions finissent toujours mal.",
@@ -709,7 +771,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 10
+        strategy: 10,
+        bonus: ""
     },
     {
         question: "Il faut toujours militer dans le strict respect de la loi.",
@@ -720,7 +783,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 10
+        strategy: 10,
+        bonus: ""
     },
     {
         question: "Les élections sont inutiles car elles permettent au système de se maintenir.",
@@ -731,7 +795,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: -10
+        strategy: -10,
+        bonus: ""
     },
     {
         question: "Militer au sein des institutions politiques en place n’est pas suffisant pour transformer la société.",
@@ -742,7 +807,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: -10
+        strategy: -10,
+        bonus: ""
     },
     {
         question: "« Le pouvoir ne doit pas être conquis, il doit être détruit ».",
@@ -753,7 +819,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: -10
+        strategy: -10,
+        bonus: ""
     },
     
     /* BONUS ******************************************************** */
@@ -767,7 +834,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: "cpl"
     },
     {
         question: "Ma religion doit se diffuser le plus largement possible.",
@@ -778,7 +846,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: "rel"
     },
     {
         question: "Une bonne politique, c’est une politique pragmatique et sans idéologie.",
@@ -789,7 +858,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: "pra"
     },
     {
         question: "Il faut mettre en place une monarchie afin de fédérer le peuple et préserver notre souveraineté.",
@@ -800,7 +870,8 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy:0,
+        bonus: "roy"
     },
     {
         question: "Les humains ne doivent plus manger ou exploiter les animaux vivants.",
@@ -811,6 +882,7 @@ questions = [
         society: 0,
         ecosystem: 0,
         rights: 0,
-        strategy: 0
+        strategy: 0,
+        bonus: "veg"
     }
 ];

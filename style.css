@@ -197,3 +197,12 @@ h2
 	background-color: #0ee4c8;
 	text-align: left;
 }
+.bonusList
+{
+	text-align:center;
+}
+.bonus
+{
+	width:15vh;
+	height: 15vh;
+}

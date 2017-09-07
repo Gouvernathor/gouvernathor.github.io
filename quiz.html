@@ -125,6 +125,7 @@ function results()
 	var max_strategy = 0;
 	var revo = 0;
 	var refo = 0;
+	var bonus = []
 	
 	for (var i = 0; i < questions.length; i++)
 	{
@@ -155,9 +156,15 @@ function results()
 		max_strategy += Math.abs( questions[i].strategy, 0);
 		revo         += Math.max(-questions[i].answer * questions[i].strategy, 0);
 		refo         += Math.max( questions[i].answer * questions[i].strategy, 0);
+		
+		if(questions[i].bonus != "")
+		{
+			bonusValue = Math.max(0, questions[i].answer*questions[i].bonus);
+			bonus.push(bonusValue+"=100");
+		}
 	}
 	
-	location.href = `results.html`
+	url = `results.html`
 		+ `?con=${calc_score(constructivism,max_cause)}`
 		+ `&ess=${calc_score(essentialism,max_cause)}`
 		+ `&mon=${calc_score(mondialist,max_boundaries)}`
@@ -172,6 +179,10 @@ function results()
 		+ `&aut=${calc_score(authoritarian,max_rights)}`
 		+ `&rev=${calc_score(revo,max_strategy)}`
 		+ `&ref=${calc_score(refo,max_strategy)}`
+	
+	url = url + "&"+bonus.join("&")
+	
+	location.href = url;
 }
 </script>
 </body>

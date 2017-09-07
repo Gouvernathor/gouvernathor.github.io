@@ -83,6 +83,16 @@
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Réformisme" \></div>
 
+<h2>Bonus</h2>
+
+<div class="bonusList">
+	<img id="complotism" src="images/complotism.png" alt="Complotisme" class="bonus" \>
+	<img id="religion" src="images/religion.png" alt="Religion" class="bonus" \>
+	<img id="pragmatism" src="images/pragmatism.png" alt="Pragmatisme" class="bonus" \>
+	<img id="veganism" src="images/veganism.png" alt="Véganisme" class="bonus" \>
+	<img id="monarchism" src="images/bonus.png" alt="Monarchisme" class="bonus" \>
+</div>
+
 <div id="footer">
 7axes est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
 </div>
@@ -117,6 +127,19 @@ function setAxisValue(name, value)
 	axis = document.getElementById(name)
 	axis.style.width = ((100*value).toFixed(1) + "%")
 	axis.innerHTML = ((100*value).toFixed(0) + "%")
+}
+
+function setBonus(name, value)
+{
+	axis = document.getElementById(name)
+	if(value > 0.3)
+	{
+		axis.style.display = "inline";
+	}
+	else
+	{
+		axis.style.display = "none";
+	}
 }
 
 constructivism  = getQueryVariable("con");
@@ -160,6 +183,18 @@ refo = getQueryVariable("ref");
 setAxisValue("revo", revo);
 setAxisValue("refo", refo);
 setAxisValue("strategy", 1-revo-refo);
+
+veganism  = getQueryVariable("veg");
+pragmatism  = getQueryVariable("pra");
+complotism  = getQueryVariable("cpl");
+religion  = getQueryVariable("rel");
+monarchism  = getQueryVariable("roy");
+
+setBonus("veganism", veganism);
+setBonus("pragmatism", pragmatism);
+setBonus("complotism", complotism);
+setBonus("religion", religion);
+setBonus("monarchism", monarchism);
 
 </script>
 </body>
