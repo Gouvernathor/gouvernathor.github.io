@@ -83,15 +83,19 @@
 </div><!--
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Réformisme" \></div>
 
-<h2>Bonus</h2>
+<div id="bonusBox">
+	<h2>Bonus</h2>
 
-<div class="bonusList">
+	<div class="bonusList" id="bonusList">
 	<img id="complotism" src="images/complotism.png" alt="Complotisme" class="bonus" \>
 	<img id="religion" src="images/religion.png" alt="Religion" class="bonus" \>
 	<img id="pragmatism" src="images/pragmatism.png" alt="Pragmatisme" class="bonus" \>
 	<img id="veganism" src="images/veganism.png" alt="Véganisme" class="bonus" \>
 	<img id="monarchism" src="images/bonus.png" alt="Monarchisme" class="bonus" \>
+	</div>
 </div>
+
+<button class="button" onclick="location.href='index.html';">Retour à l'accueil</button>
 
 <div id="footer">
 7axes est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
@@ -192,11 +196,18 @@ complotism  = getQueryVariable("cpl");
 religion  = getQueryVariable("rel");
 monarchism  = getQueryVariable("roy");
 
-setBonus("veganism", veganism);
-setBonus("pragmatism", pragmatism);
-setBonus("complotism", complotism);
-setBonus("religion", religion);
-setBonus("monarchism", monarchism);
+if(veganism + pragmatism + complotism + religion + monarchism > 0.3)
+{
+	setBonus("veganism", veganism);
+	setBonus("pragmatism", pragmatism);
+	setBonus("complotism", complotism);
+	setBonus("religion", religion);
+	setBonus("monarchism", monarchism);
+}
+else
+{
+	document.getElementById("bonusBox").style.display = "none";
+}
 
 </script>
 </body>

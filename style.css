@@ -17,6 +17,7 @@ body
 	text-align: center;
 	padding: 2.5vmin;
 	border-top: #C5C5C5 0.2vmin solid;
+	margin-top: 6vmin;
 }
 
 a
@@ -104,12 +105,13 @@ h2
 {
 	display: table-cell;
 	vertical-align: middle;
+	font-size: 2.5vmin;
 }
 
 .buttonQuestion, .button
 {
 	text-align: center;
-	width:35vmin;
+	width:40vmin;
 	margin-top: 0;
 	margin-bottom: 1vmin;
 	padding:1vmin;
@@ -118,6 +120,7 @@ h2
 	display:block;
 	border: none;
 	border-radius: 0.5vmin;
+	font-size: 2.5vmin;
 }
 
 .button
