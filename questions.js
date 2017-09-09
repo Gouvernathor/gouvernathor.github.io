@@ -14,7 +14,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Dans l'espèce humaine, l'homosexualité est autant naturelle que l'hétérosexualité.",
+        question: "Les différences de traitements et de qualité de vie dans notre société montrent que le racisme est encore très présent.",
         answer: 0,
         cause: -10,
         boundaries: 0,
@@ -26,19 +26,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Les différences de traitements et de qualité de vie dans notre société montrent que le racisme est encore très présent.",
-        answer: 0,
-        cause: -10,
-        boundaries: 0,
-        economy: 0,
-        society: 0,
-        ecosystem: 0,
-        rights: 0,
-        strategy:0,
-        bonus: ""
-    },
-    {
-        question: "Les sciences dites « dures » sont subjectives et reproduisent les structures sociales de notre société.",
+        question: "Les sciences dites « dures » sont subjectives et reproduisent les structures de notre société.",
         answer: 0,
         cause: -10,
         boundaries: 0,
@@ -62,7 +50,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "La place des hommes et des femmes dans la société peut-être en partie expliquée par la biologie.",
+        question: "La place des hommes et des femmes dans la société peut être en partie expliquée par la biologie.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -74,7 +62,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Certains traits de caractère sont féminins alors que d'autre sont masculins.",
+        question: "Les différences hormonales expliquent certaines différences de caractère entre les hommes et les femmes.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -98,18 +86,6 @@ questions = [
         bonus: ""
     },
     {
-        question: "Un enfant doit être éduqué par son père et sa mère biologique car c'est le modèle naturel.",
-        answer: 0,
-        cause: 10,
-        boundaries: 0,
-        economy: 0,
-        society: 0,
-        ecosystem: 0,
-        rights: 0,
-        strategy:0,
-        bonus: ""
-    },
-    {
         question: "La biologie permet d'expliquer les différences de comportement entre différents groupes ethniques.",
         answer: 0,
         cause: 10,
@@ -122,7 +98,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Les personnes transgenres ne seront jamais vraiment du genre qu’ils veulent atteindre.",
+        question: "Les personnes transgenres ne seront jamais vraiment du genre qu’elles veulent atteindre.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -135,6 +111,18 @@ questions = [
     },
     {
         question: "Les membres d'une même nation ou d'une même culture ont des traits caractéristiques immuables qui les définissent.",
+        answer: 0,
+        cause: 10,
+        boundaries: 0,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Biologiquement, l'espèce humaine est faite pour l'heterosexualité.",
         answer: 0,
         cause: 10,
         boundaries: 0,
@@ -196,10 +184,34 @@ questions = [
         bonus: ""
     },
     {
-        question: "Le chauvinisme pendant les compétitions sportives est acceptable.",
+        question: "Le chauvinisme pendant les compétitions sportives n’est pas acceptable.",
         answer: 0,
         cause: 0,
-        boundaries: 10,
+        boundaries: -10,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Je suis autant concerné par les habitants des autres pays que par ceux de mon pays.",
+        answer: 0,
+        cause: 0,
+        boundaries: -10,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Les étrangers vivant dans mon pays doivent pouvoir agir politiquement à égalité avec les porteurs de la nationalité.",
+        answer: 0,
+        cause: 0,
+        boundaries: -10,
         economy: 0,
         society: 0,
         ecosystem: 0,
@@ -279,6 +291,18 @@ questions = [
         strategy:0,
         bonus: ""
     },
+    {
+        question: "La recherche produite par mon pays ne devrait pas être accessible aux autres. ",
+        answer: 0,
+        cause: 0,
+        boundaries: 10,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
     
     /* ECONOMIE ***************************************************** */
     
@@ -343,7 +367,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "L'accès à un bien ne doit pas être déterminé par son prix mais par le besoin d'une personne.",
+        question: "L'accès à un bien ne doit pas être déterminé par son prix mais par le besoin de la communauté.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -355,7 +379,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Le marché du travail est une aliénation.",
+        question: "Le marché du travail asservit les travailleurs.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -367,7 +391,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "La recherche de son propre profit est saine pour l'économie.",
+        question: "La recherche de son profit personnel est saine pour l'économie.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -427,7 +451,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Il est normal qu'il y ait des riches et des pauvres.",
+        question: "Il est acceptable qu'il y ait des riches et des pauvres.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -490,6 +514,42 @@ questions = [
         bonus: ""
     },
     {
+        question: "Les étrangers enrichissent notre culture.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: -10,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "L’influence de la religion doit diminuer.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: -10,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Une langue est défini par ceux qui l’utilisent et non pas par des académiciens.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: -10,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
         question: "Les homosexuelles n’ont pas à avoir une égalité de traitement avec les hétérosexuelles en ce qui concerne le mariage, la filiation, l’adoption ou la procréation.",
         answer: 0,
         cause: 0,
@@ -503,6 +563,18 @@ questions = [
     },
     {
         question: "Dans certaines conditions, la peine de mort est justifiée.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: 10,
+        ecosystem: 0,
+        rights: 0,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Les progrès techniques ne doivent pas changer trop rapidement la société.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -565,7 +637,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Il est important de maintenir la biodiversité dans nos aliments, même si cela est moins efficace.",
+        question: "Il est important d'encourager une agriculture qui maintienne une biodiversité alimentaire, même si son rendement est inférieur.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -688,6 +760,30 @@ questions = [
         bonus: ""
     },
     {
+        question: "Les prisons sont généralement injustes.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: -10,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "La consommation de drogues (alcool, drogues, tabac, …) ne doit pas être encadrée par la loi, que ce soit par des changements de tarif ou des interdictions.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: -10,
+        strategy:0,
+        bonus: ""
+    },
+    {
         question: "La démocratie ne peut pas fonctionner et seule une élite formée est capable de diriger un pays correctement.",
         answer: 0,
         cause: 0,
@@ -713,6 +809,30 @@ questions = [
     },
     {
         question: "La surveillance permet de garantir les libertés.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 10,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Le sacrifice de certaines libertés civiles est nécessaire pour protéger des actes de terrorisme.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 10,
+        strategy:0,
+        bonus: ""
+    },
+    {
+        question: "Sans aucune forme de hiérarchies, il est impossible pour la population de se coordonner",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -787,7 +907,7 @@ questions = [
         bonus: ""
     },
     {
-        question: "Les élections sont inutiles car elles permettent au système de se maintenir.",
+        question: "Les élections organisées par l'État ne peuvent pas changer la société en profondeur.",
         answer: 0,
         cause: 0,
         boundaries: 0,
@@ -811,7 +931,19 @@ questions = [
         bonus: ""
     },
     {
-        question: "« Le pouvoir ne doit pas être conquis, il doit être détruit ».",
+        question: "L'insurrection est nécessaire pour transformer la société en profondeur.",
+        answer: 0,
+        cause: 0,
+        boundaries: 0,
+        economy: 0,
+        society: 0,
+        ecosystem: 0,
+        rights: 0,
+        strategy: -10,
+        bonus: ""
+    },
+    {
+        question: "Les actes de violence des manifestants sont parfois légitimes.",
         answer: 0,
         cause: 0,
         boundaries: 0,

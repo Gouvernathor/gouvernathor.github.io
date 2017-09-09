@@ -51,7 +51,7 @@
 --><div id="society" class="axisSubProgress axisNeutral"><span id="societyText"></span></div><!--
 --><div id="conservatism" class="axisSubProgress axisConservatism"><span id="conservatismText"></span></div>
 </div><!--
---><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Conservatisme" \></div>
+--><div class="axisEnd axisEndRight"><img src="images/conservatism.png" alt="Conservatisme" \></div>
 
 <h2>Écologie vs. Productivisme</h2>
 
@@ -84,14 +84,31 @@
 --><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Réformisme" \></div>
 
 <div id="bonusBox">
-	<h2>Bonus</h2>
+	<h2>Caractéristiques supplémentaires</h2>
 
-	<div class="bonusList" id="bonusList">
-	<img id="complotism" src="images/complotism.png" alt="Complotisme" class="bonus" \>
-	<img id="religion" src="images/religion.png" alt="Religion" class="bonus" \>
-	<img id="pragmatism" src="images/pragmatism.png" alt="Pragmatisme" class="bonus" \>
-	<img id="veganism" src="images/veganism.png" alt="Véganisme" class="bonus" \>
-	<img id="monarchism" src="images/bonus.png" alt="Monarchisme" class="bonus" \>
+	<div id="pragmatism" class="description">
+	<img src="images/pragmatism.png" alt="Pragmatisme" />
+	<p><b>Pragmatisme : </b>pour vous, la politique revient à objectivement regarder où sont les problèmes, et chercher à les résoudre en fonction des moyens disponible. La philosiphie et les idéologies en générales sont mises de coté au profit de la gestion.</p>
+	</div>
+
+	<div id="complotism" class="description">
+	<img src="images/complotism.png" alt="Complotisme" />
+	<p><b>Complotisme : </b>les grands problèmes de notre société sont l'oeuvre d'un petit groupe de personnes. Il est donc indispensable de les trouver, d'informer le public de leurs objectifs et de les neutraliser.</p>
+	</div>
+
+	<div id="veganism" class="description">
+	<img src="images/veganism.png" alt="Véganisme" />
+	<p><b>Véganisme : </b>les humains doivent arrêter à tout prix la consommation et l'exploitation des êtres dit « sensibles ».</p>
+	</div>
+
+	<div id="monarchism" class="description">
+	<img src="images/monarchism.png" alt="Monarchisme" />
+	<p><b>Monarchisme : </b>la société devraient être organisée autour d'un roi.</p>
+	</div>
+
+	<div id="religion" class="description">
+	<img src="images/religion.png" alt="Missionnaire" />
+	<p><b>Missionnaire : </b>pour vous, la religion est importante, surtout la votre. Il convient donc de la diffuser le plus largement possible sur l'ensemble du globe.</p>
 	</div>
 </div>
 
@@ -140,7 +157,8 @@ function setBonus(name, value)
 	axis = document.getElementById(name)
 	if(value > 0.3)
 	{
-		axis.style.display = "inline";
+		axis.style.display = "block";
+		axis.style.opacity = value*value;
 	}
 	else
 	{

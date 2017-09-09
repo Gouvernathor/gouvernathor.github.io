@@ -109,7 +109,7 @@ h2
 	padding:4vmin;
 	height: 15vmin;
 }
-.question
+.questionBox div
 {
 	display: table-cell;
 	vertical-align: middle;
