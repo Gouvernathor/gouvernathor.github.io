@@ -6,6 +6,7 @@
 	<title>7axes - Résultats</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -127,7 +128,8 @@
 	</div>
 </div>
 
-<button class="button" onclick="location.href='index.html';">Retour à l'accueil</button>
+<a class="button buttonTwitter" href="" id="buttonTwitter">Tweet</a>
+<a class="button" href="index.html">Retour à l'accueil</a>
 
 <div id="footer">
 7axes est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
@@ -231,6 +233,12 @@ if(!bonusEnabled)
 {
 	bonusBox = document.getElementById("bonusBox")
 	bonusBox.style.display = "none";
+}
+
+twitterButton = document.getElementById("buttonTwitter")
+if(twitterButton)
+{
+	twitterButton.href = "https://twitter.com/intent/tweet?text=Mon%20profil%20politique%20avec%20%238axes%20:%20"+encodeURIComponent(location.href);
 }
 
 </script>

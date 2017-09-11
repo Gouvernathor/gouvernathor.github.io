@@ -136,37 +136,6 @@ h2
 	min-height: 10vmin;
 }
 
-.buttonQuestion, .button
-{
-	text-align: center;
-	width:40vmin;
-	margin-top: 0;
-	margin-bottom: 1vmin;
-	padding:1vmin;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-	border: none;
-	border-radius: 0.5vmin;
-	font-size: 2.5vmin;
-}
-
-.navButtons
-{
-	margin-top:5vmin;
-	margin-bottom:5vmin;
-}
-
-.button
-{
-	background-color: #D7CFBA;
-}
-
-.buttonQuestion
-{
-	color: white;
-}
-
 .axisNeutral
 {
 	background-color: #ebebeb;
@@ -263,4 +232,52 @@ h2
 {
 	width:15vmin;
 	height: 15vmin;
+}
+
+.navButtons
+{
+	margin-top:5vmin;
+	margin-bottom:5vmin;
+}
+
+.buttonQuestion, .button
+{
+	text-align: center;
+	width:40vmin;
+	margin-top: 0;
+	margin-bottom: 1vmin;
+	padding:1vmin;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border: none;
+	border-radius: 0.5vmin;
+	font-size: 2.5vmin;
+	text-decoration: none;
+	
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition: .5s;
+}
+.button:hover
+{
+	background-color: #ffffff;
+}
+
+.button
+{
+	background-color: #D7CFBA;
+}
+
+.buttonQuestion
+{
+	color: white;
+}
+
+.buttonTwitter
+{
+	background-color: #00aced;
+	color: white;
 }

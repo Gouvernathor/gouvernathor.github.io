@@ -652,6 +652,10 @@ questions = [
 			{
 				axis: "s",
 				value: 10
+			},
+			{
+				axis: "j",
+				value: 10
 			}
 		]
 	},
@@ -938,16 +942,6 @@ questions = [
 		]
 	},
 	{
-		question: "La peine de mort est parfois nécessaire.",
-		answer: 0,
-		values: [
-			{
-				axis: "j",
-				value: 10
-			}
-		]
-	},
-	{
 		question: "Le sacrifice de certaines libertés civiles est nécessaire pour se protéger des actes de terrorisme.",
 		answer: 0,
 		values: [
@@ -994,7 +988,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1004,7 +998,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1014,7 +1008,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1024,7 +1018,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1034,7 +1028,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1044,7 +1038,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1054,7 +1048,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -1064,7 +1058,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1074,7 +1068,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1084,7 +1078,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1094,7 +1088,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1104,7 +1098,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1114,7 +1108,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1124,7 +1118,7 @@ questions = [
 		values: [
 			{
 				axis: "t",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -1154,7 +1148,7 @@ questions = [
 		answer: 0,
 		values: [
 			{
-				axis: "mona",
+				axis: "prag",
 				value: 10
 			}
 		]
@@ -1164,7 +1158,7 @@ questions = [
 		answer: 0,
 		values: [
 			{
-				axis: "anar",
+				axis: "mona",
 				value: 10
 			}
 		]
@@ -1184,7 +1178,7 @@ questions = [
 		answer: 0,
 		values: [
 			{
-				axis: "prag",
+				axis: "anar",
 				value: 10
 			}
 		]
