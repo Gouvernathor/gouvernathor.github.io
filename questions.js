@@ -425,7 +425,7 @@ questions = [
 	},
     /* MARKET ******************************************************* */
 	{
-		question: "L’économie de marché est optimal quand elle n’est pas régulée.",
+		question: "L’économie de marché est optimale quand elle n’est pas régulée.",
 		answer: 0,
 		values: [
 			{
@@ -616,7 +616,7 @@ questions = [
 		]
 	},
 	{
-		question: "Une langue est défini par ceux qui l’utilisent et non pas par des académiciens.",
+		question: "Une langue est définie par ceux qui l’utilisent et non pas par des académiciens.",
 		answer: 0,
 		values: [
 			{
