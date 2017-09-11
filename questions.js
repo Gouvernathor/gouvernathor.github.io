@@ -122,7 +122,7 @@ questions = [
 		]
 	},
 	{
-		question: "Biologiquement, l'espèce humaine est faite pour l'heterosexualité.",
+		question: "Biologiquement, l'espèce humaine est faite pour l'héterosexualité.",
 		answer: 0,
 		values: [
 			{
@@ -132,7 +132,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'égoïsme est prépondérante dans l'espèce humaine, indépendamment du contexte.",
+		question: "L'égoïsme est prépondérant dans l'espèce humaine, indépendamment du contexte.",
 		answer: 0,
 		values: [
 			{
@@ -213,7 +213,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les citoyens doivent être prioritaire par rapport aux étrangers.",
+		question: "Les citoyens doivent être prioritaires par rapport aux étrangers.",
 		answer: 0,
 		values: [
 			{
@@ -223,7 +223,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les valeurs de mon pays sont supérieurs à celles des autres.",
+		question: "Les valeurs de mon pays sont supérieures à celles des autres.",
 		answer: 0,
 		values: [
 			{
@@ -314,7 +314,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'énergie et les infrastructures de transport doivent être publique.",
+		question: "L'énergie et les infrastructures de transport doivent être publiques.",
 		answer: 0,
 		values: [
 			{
@@ -324,7 +324,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les brevets ne devrait pas exister.",
+		question: "Les brevets ne devraient pas exister.",
 		answer: 0,
 		values: [
 			{
@@ -435,7 +435,7 @@ questions = [
 		]
 	},
 	{
-		question: "Actuellement, un salarié seul est libre de ses choix lors de la signature de son contrat avec son future employeur.",
+		question: "Actuellement, un salarié seul est libre de ses choix lors de la signature de son contrat avec son futur employeur.",
 		answer: 0,
 		values: [
 			{
@@ -545,7 +545,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les prêts contractés par la sphère publique ne doivent pas nécessairement être remboursé.",
+		question: "Les prêts contractés par la sphère publique ne doivent pas nécessairement être remboursés.",
 		answer: 0,
 		values: [
 			{
@@ -555,7 +555,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut subventionner certains secteurs ou certains type d’emploi.",
+		question: "Il faut subventionner certains secteurs ou certains types d’emploi.",
 		answer: 0,
 		values: [
 			{
@@ -872,7 +872,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les personnes sortant de prison doivent être accompagnés dans leur réinsertion.",
+		question: "Les personnes sortant de prison doivent être accompagnées dans leur réinsertion.",
 		answer: 0,
 		values: [
 			{
