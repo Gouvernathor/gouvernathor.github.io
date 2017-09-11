@@ -235,6 +235,16 @@ h2
 	background-color: #e6cc27;
 	text-align: left;
 }
+.axisRegulation
+{
+	background-color: #eb1a66;
+	text-align: right;
+}
+.axisLaissez
+{
+	background-color: #0ee4c8;
+	text-align: left;
+}
 .axisRevo
 {
 	background-color: #eb1a66;

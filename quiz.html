@@ -103,89 +103,47 @@ function calc_score(score,max_value)
 
 function results()
 {
-	var max_cause = 0;
-	var constructivism = 0;
-	var essentialism = 0;
+	var axes = {};
 	
-	var max_boundaries = 0;
-	var nationalist = 0;
-	var mondialist = 0;
-	
-	var max_economy = 0;
-	var communism = 0;
-	var capitalism = 0;
-	
-	var max_society = 0;
-	var reason = 0;
-	var tradition = 0;
-	
-	var max_ecosystem = 0;
-	var ecology = 0;
-	var productivist = 0;
-	
-	var max_rights = 0;
-	var liberal = 0;
-	var authoritarian = 0;
-	
-	var max_strategy = 0;
-	var revo = 0;
-	var refo = 0;
-	var bonus = []
-	
-	for (var i = 0; i < questions.length; i++)
+	for(var i=0; i<questions.length; i++)
 	{
-		max_cause      += Math.abs(-questions[i].cause, 0);
-		constructivism += Math.max(-questions[i].answer * questions[i].cause, 0);
-		essentialism   += Math.max( questions[i].answer * questions[i].cause, 0);
-		
-		max_boundaries += Math.abs( questions[i].boundaries, 0);
-		mondialist     += Math.max(-questions[i].answer * questions[i].boundaries, 0);
-		nationalist    += Math.max( questions[i].answer * questions[i].boundaries, 0);
-		
-		max_economy += Math.abs( questions[i].economy, 0);
-		communism   += Math.max(-questions[i].answer * questions[i].economy, 0);
-		capitalism  += Math.max( questions[i].answer * questions[i].economy, 0);
-		
-		max_society += Math.abs( questions[i].society, 0);
-		reason      += Math.max(-questions[i].answer * questions[i].society, 0);
-		tradition   += Math.max( questions[i].answer * questions[i].society, 0);
-		
-		max_ecosystem += Math.abs( questions[i].ecosystem, 0);
-		ecology       += Math.max(-questions[i].answer * questions[i].ecosystem, 0);
-		productivist  += Math.max( questions[i].answer * questions[i].ecosystem, 0);
-		
-		max_rights    += Math.abs( questions[i].rights, 0);
-		liberal       += Math.max(-questions[i].answer * questions[i].rights, 0);
-		authoritarian += Math.max( questions[i].answer * questions[i].rights, 0);
-		
-		max_strategy += Math.abs( questions[i].strategy, 0);
-		revo         += Math.max(-questions[i].answer * questions[i].strategy, 0);
-		refo         += Math.max( questions[i].answer * questions[i].strategy, 0);
-		
-		if(questions[i].bonus != "")
+		q = questions[i];
+		for(var j=0; j<q.values.length; j++)
 		{
-			bonusValue = Math.max(0, questions[i].answer*100);
-			bonus.push(questions[i].bonus+"="+bonusValue);
+			a = q.values[j];
+			if(!(a.axis in axes))
+			{
+				axes[a.axis] = {
+					neg: 0,
+					pos: 0,
+					sum: 0
+				}
+			}
+			
+			axes[a.axis].neg += Math.max(-q.answer * a.value, 0);
+			axes[a.axis].pos += Math.max( q.answer * a.value, 0);
+			axes[a.axis].sum += Math.abs( a.value );
 		}
 	}
 	
-	url = `results.html`
-		+ `?con=${calc_score(constructivism,max_cause)}`
-		+ `&ess=${calc_score(essentialism,max_cause)}`
-		+ `&mon=${calc_score(mondialist,max_boundaries)}`
-		+ `&nat=${calc_score(nationalist,max_boundaries)}`
-		+ `&com=${calc_score(communism,max_economy)}`
-		+ `&cap=${calc_score(capitalism,max_economy)}`
-		+ `&rea=${calc_score(reason,max_society)}`
-		+ `&tra=${calc_score(tradition,max_society)}`
-		+ `&eco=${calc_score(ecology,max_ecosystem)}`
-		+ `&pro=${calc_score(productivist,max_ecosystem)}`
-		+ `&lib=${calc_score(liberal,max_rights)}`
-		+ `&aut=${calc_score(authoritarian,max_rights)}`
-		+ `&rev=${calc_score(revo,max_strategy)}`
-		+ `&ref=${calc_score(refo,max_strategy)}`
+	url = ""
+	for(var aK in axes)
+	{
+		if(axes[aK].neg > 0)
+		{
+			if(url != "")
+				url += "&"
+			url += aK+"0="+calc_score(axes[aK].neg, axes[aK].sum)
+		}
+		if(axes[aK].pos > 0)
+		{
+			if(url != "")
+				url += "&"
+			url += aK+"1="+calc_score(axes[aK].pos, axes[aK].sum)
+		}
+	}
 	
-	url = url + "&"+bonus.join("&")
+	url = "results.html?"+url
 	
 	location.href = url;
 }
