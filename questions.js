@@ -993,7 +993,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les révolutions finissent toujours mal.",
+		question: "Les révolutions sont condamnées à toujours finir mal.",
 		answer: 0,
 		values: [
 			{
