@@ -525,7 +525,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le niveau des salaires doit être contrôlé pour garantir qu’un travailleur peut vivre de son travail.",
+		question: "Le niveau des salaires doit être contrôlé pour garantir qu’un travailleur puisse vivre de son travail.",
 		answer: 0,
 		values: [
 			{
