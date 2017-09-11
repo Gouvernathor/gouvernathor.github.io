@@ -430,7 +430,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -440,7 +440,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -450,7 +450,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -460,7 +460,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -470,7 +470,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -480,7 +480,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -490,7 +490,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: -10
+				value: 10
 			}
 		]
 	},
@@ -500,7 +500,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -510,7 +510,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -520,7 +520,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -530,7 +530,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -540,7 +540,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -550,7 +550,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
@@ -560,7 +560,7 @@ questions = [
 		values: [
 			{
 				axis: "m",
-				value: 10
+				value: -10
 			}
 		]
 	},
