@@ -1103,7 +1103,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le hacking peut être est un outil de lutte.",
+		question: "Le hacking est un outil de lutte légitime.",
 		answer: 0,
 		values: [
 			{
