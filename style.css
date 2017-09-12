@@ -4,11 +4,47 @@ body
 	font-family: Montserrat;
 }
 
-#content
+#header
+{
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	
+	box-shadow: 0vmin 0vmin 0.8vmin #222222;
+	background-color: #500076;
+	color: white;
+	z-index:5;
+	
+	text-align: center;
+}
+
+#header h1
+{
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+	font-size: 2.6em;
+}
+
+#header a
+{
+	color: white;
+	text-decoration: none;
+}
+
+#mainFrame
 {
 	background-color: #ebebeb;
 	box-shadow: 0vmin 0vmin 0.4vmin #222222;
 	margin: 5vmin;
+	padding-bottom: 2vmin;
+	border-radius: 1vmin;
+}
+
+#content
+{
+	padding-top: 3em;
 }
 
 #footer
@@ -33,20 +69,48 @@ a
 	text-decoration: underline;
 }
 
-h1
-{
-	font-size: 5vmin;
-	text-align: center;
-	padding: 2.5vmin;
-	border-bottom: #C5C5C5 0.2vmin solid;
-}
-
 h2
 {
 	font-size: 3vmin;
 	text-align: center;
-	padding:0;
+	padding:2vmin;
 	margin:0;
+}
+
+.simpleText
+{
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 2vmin;
+	padding-left:2vmin;
+	padding-right:2vmin;
+}
+
+.columnContainer
+{
+	position: relative;
+}
+.columnLeft
+{
+	float: left;
+	width: 100%;
+}
+.columnRight
+{
+	float: left;
+	width: 100%;
+	margin-bottom: 4vmin;
+}
+@media screen and (min-width: 80em )
+{
+	.columnLeft
+	{
+		width: 50%;
+	}
+	.columnRight
+	{
+		width: 50%;
+	}
 }
 
 .axisEnd
@@ -107,17 +171,17 @@ h2
     margin-left: auto;
     margin-right: auto;
 	padding:4vmin;
-	height: 15vmin;
+	height: 10vmin;
 }
 .questionBox div
 {
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 2.5vmin;
+	font-size: 2vmin;
 }
 .description
 {
-	font-size: 2.5vmin;
+	font-size: 2vmin;
 	margin:2vmin;
 	margin-top:3vmin;
 }
@@ -136,6 +200,37 @@ h2
 	min-height: 10vmin;
 }
 
+.axisDesc
+{
+
+}
+.axisDescLeft, .axisDescRight
+{
+	width:50%;
+	display: inline-block;
+	position: relative;
+	top: 4vmin;
+	z-index: 4;
+	font-size:2.5vmin;
+}
+.axisDescLeft
+{
+	text-align:left;
+}
+.axisDescRight
+{
+	text-align:right;
+}
+.axisDescLeft p
+{
+	margin:0;
+	margin-left: 16vmin;
+}
+.axisDescRight p
+{
+	margin:0;
+	margin-right: 16vmin;
+}
 .axisNeutral
 {
 	background-color: #ebebeb;
@@ -224,6 +319,7 @@ h2
 	background-color: #0ee4c8;
 	text-align: left;
 }
+
 .bonusList
 {
 	text-align:center;
@@ -238,18 +334,20 @@ h2
 {
 	margin-top:5vmin;
 	margin-bottom:5vmin;
+	margin-left:auto;
+	margin-right:auto;
+	width:40vmin;
 }
 
 .buttonQuestion, .button
 {
 	text-align: center;
-	width:40vmin;
+	width:100%;
 	margin-top: 0;
 	margin-bottom: 1vmin;
-	padding:1vmin;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
+	padding-top:1vmin;
+	padding-bottom:1vmin;
+	display: inline-block;
 	border: none;
 	border-radius: 0.5vmin;
 	font-size: 2.5vmin;
@@ -263,12 +361,14 @@ h2
 }
 .button:hover
 {
-	background-color: #ffffff;
+	background-color: white;
+	color: #500076;
 }
 
 .button
 {
-	background-color: #D7CFBA;
+	background-color: #500076;
+	color: white;
 }
 
 .buttonQuestion
@@ -280,4 +380,33 @@ h2
 {
 	background-color: #00aced;
 	color: white;
+	width: calc(33% - 0.5vmin);
+	margin-right: 0.5vmin;
+}
+.buttonTwitter:hover
+{
+	color: #00aced;
+}
+.buttonFacebook
+{
+	background-color: #3B5998;
+	color: white;
+	width: calc(33% - 1vmin);
+	margin-left: 0.5vmin;
+	margin-right: 0.5vmin;
+}
+.buttonFacebook:hover
+{
+	color: #3B5998;
+}
+.buttonReddit
+{
+	background-color: #ff5700;
+	color: white;
+	width: calc(33% - 0.5vmin);
+	margin-left: 0.5vmin;
+}
+.buttonReddit:hover
+{
+	color: #ff5700;
 }

@@ -892,7 +892,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut aider ceux qui commettent des crimes à ne plus recommencer.",
+		question: "Les conditions de vie des détenus doivent être grandement améliorées.",
 		answer: 0,
 		values: [
 			{
@@ -922,7 +922,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le but du système judiciaire est de punir ceux qui ont enfreint la loi.",
+		question: "Le but du système judiciaire doit être de punir ceux qui ont enfreint la loi.",
 		answer: 0,
 		values: [
 			{

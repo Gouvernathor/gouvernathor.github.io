@@ -3,36 +3,45 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>7axes - Résultats</title>
+	<title>PolitiScales - Quiz</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="application/javascript" src="questions.js"></script>
 </head>
 <body>
 
+<header>
+	<div id="header"><h1><a href="index.html">PolitiScales</a></h1></div>
+</header>
+
 <div id="content">
+	<div id="mainFrame">
 
-<h1>7axes</h1>
+		<h2 id="question-number">Chargement...</h2>
+		<div class="questionBox">
+			<div>
+				<p id="question-text">Vous allez être confronté à une série d'affirmations. Pour chacune d'elles, cliquez sur le bouton correspondant à votre opinion.</p>
+			</div>
+		</div>
+		<div class="navButtons">
+			<button class="buttonQuestion" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Absolument d'accord</button>
+			<button class="buttonQuestion" onclick="next_question( 0.66)" style="background-color: #4caf50;">Plutôt d'accord</button>
+			<button class="buttonQuestion" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button>
+			<button class="buttonQuestion" onclick="next_question(-0.66)" style="background-color: #f44336;">Plutôt pas d'accord</button>
+			<button class="buttonQuestion" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Absolument pas d'accord</button>
+		</div>
 
-<h2 id="question-number">Chargement...</h2>
-<div class="questionBox">
-	<div>
-		<p id="question-text">Vous allez être confronté à une série d'affirmations. Pour chacune d'elles, cliquez sur le bouton correspondant à votre opinion.</p>
+		<div class="navButtons">
+			<button class="button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
+			<button class="button" onclick="location.href='index.html';" id="back_button_off">Retour à l'accueil</button>
+		</div>
+
 	</div>
 </div>
-<button class="buttonQuestion" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Absolument d'accord</button>
-<button class="buttonQuestion" onclick="next_question( 0.66)" style="background-color: #4caf50;">Plutôt d'accord</button>
-<button class="buttonQuestion" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button>
-<button class="buttonQuestion" onclick="next_question(-0.66)" style="background-color: #f44336;">Plutôt pas d'accord</button>
-<button class="buttonQuestion" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Absolument pas d'accord</button>
-<div class="navButtons">
-	<button class="button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
-	<button class="button" onclick="location.href='index.html';" id="back_button_off">Retour à l'accueil</button>
-</div>
-<div id="footer">
-7axes est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
-</div>
 
+<div id="footer">
+PolitiScales est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
 </div>
 
 <script>
