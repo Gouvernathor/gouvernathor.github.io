@@ -25,16 +25,17 @@
 			</div>
 		</div>
 		<div class="navButtons">
-			<button class="buttonQuestion" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Absolument d'accord</button>
-			<button class="buttonQuestion" onclick="next_question( 0.66)" style="background-color: #4caf50;">Plutôt d'accord</button>
-			<button class="buttonQuestion" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button>
-			<button class="buttonQuestion" onclick="next_question(-0.66)" style="background-color: #f44336;">Plutôt pas d'accord</button>
-			<button class="buttonQuestion" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Absolument pas d'accord</button>
+			<button class="buttonQuestion" onclick="next_question(1)" style="background-color: #1b5e20;">Absolument d'accord</button>
+			<button class="buttonQuestion" onclick="next_question(2/3)" style="background-color: #4caf50;">Plutôt d'accord</button>
+			<button class="buttonQuestion" onclick="next_question(0)" style="background-color: #bbbbbb;">Neutre ou hésitant</button>
+			<button class="buttonQuestion" onclick="next_question(-2/3)" style="background-color: #f44336;">Plutôt pas d'accord</button>
+			<button class="buttonQuestion" onclick="next_question(-1)" style="background-color: #b71c1c;">Absolument pas d'accord</button>
 		</div>
 
 		<div class="navButtons">
 			<button class="button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
 			<button class="button" onclick="location.href='index.html';" id="back_button_off">Retour à l'accueil</button>
+			<button class="button" onclick="simulate()">Répondre aléatoirement</button>
 		</div>
 
 	</div>
@@ -107,7 +108,7 @@ function prev_question()
 
 function calc_score(score,max_value)
 {
-	return (100*(score)/(max_value)).toFixed(1);
+	return (100*(score)/(max_value)).toFixed(0);
 }
 
 function results()
@@ -117,38 +118,52 @@ function results()
 	for(var i=0; i<questions.length; i++)
 	{
 		q = questions[i];
-		for(var j=0; j<q.values.length; j++)
+		
+		for(var j=0; j<q.valuesYes.length; j++)
 		{
-			a = q.values[j];
+			a = q.valuesYes[j];
 			if(!(a.axis in axes))
 			{
 				axes[a.axis] = {
-					neg: 0,
-					pos: 0,
+					val: 0,
 					sum: 0
 				}
 			}
 			
-			axes[a.axis].neg += Math.max(-q.answer * a.value, 0);
-			axes[a.axis].pos += Math.max( q.answer * a.value, 0);
-			axes[a.axis].sum += Math.abs( a.value );
+			if(q.answer > 0)
+			{
+				axes[a.axis].val += q.answer * a.value;
+			}
+			axes[a.axis].sum += Math.max(a.value, 0);
+		}
+		
+		for(var j=0; j<q.valuesNo.length; j++)
+		{
+			a = q.valuesNo[j];
+			if(!(a.axis in axes))
+			{
+				axes[a.axis] = {
+					val: 0,
+					sum: 0
+				}
+			}
+			
+			if(q.answer < 0)
+			{
+				axes[a.axis].val -= q.answer * a.value;
+			}
+			axes[a.axis].sum += Math.max(a.value, 0);
 		}
 	}
 	
 	url = ""
 	for(var aK in axes)
 	{
-		if(axes[aK].neg > 0)
+		if(axes[aK].val > 0)
 		{
 			if(url != "")
 				url += "&"
-			url += aK+"0="+calc_score(axes[aK].neg, axes[aK].sum)
-		}
-		if(axes[aK].pos > 0)
-		{
-			if(url != "")
-				url += "&"
-			url += aK+"1="+calc_score(axes[aK].pos, axes[aK].sum)
+			url += aK+"="+calc_score(axes[aK].val, axes[aK].sum)
 		}
 	}
 	
@@ -156,6 +171,71 @@ function results()
 	
 	location.href = url;
 }
+
+rand_c = Math.random();
+rand_b = Math.random();
+rand_s = Math.random();
+rand_j = Math.random();
+rand_p = Math.random();
+rand_m = Math.random();
+rand_e = Math.random();
+rand_t = Math.random();
+
+rand_per_axis = {
+	c0: rand_c,
+	c1: 1 - rand_c,
+	b0: rand_b,
+	b1: 1 - rand_b,
+	s0: rand_s,
+	s1: 1 - rand_s,
+	j0: rand_j,
+	j1: 1 - rand_j,
+	p0: rand_p,
+	p1: 1 - rand_p,
+	m0: rand_m,
+	m1: 1 - rand_m,
+	e0: rand_e,
+	e1: 1 - rand_e,
+	t0: rand_t,
+	t1: 1 - rand_t,
+}
+
+function simulate()
+{
+	prop = 0.0;
+	propCounter = 0;
+	for(var j=0; j<questions[qn].valuesYes.length; j++)
+	{
+		a = questions[qn].valuesYes[j];
+		if(a.axis in rand_per_axis)
+		{
+			prop += rand_per_axis[a.axis];
+			propCounter++;
+		}
+	}
+	for(var j=0; j<questions[qn].valuesNo.length; j++)
+	{
+		a = questions[qn].valuesNo[j];
+		if(a.axis in rand_per_axis)
+		{
+			prop += 1.0 - rand_per_axis[a.axis];
+			propCounter++;
+		}
+	}
+	
+	if(propCounter > 0)
+		prop /= propCounter;
+	else
+		prop = 0.5;
+	
+	dice = Math.random();
+	
+	if(dice < prop)
+		next_question(1);
+	else
+		next_question(-1);
+}
+
 </script>
 </body>
 </html>

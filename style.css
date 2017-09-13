@@ -410,3 +410,13 @@ h2
 {
 	color: #ff5700;
 }
+
+.flagDecoration
+{
+	text-align:center;
+}
+.flagDecoration canvas
+{
+	border: solid 1px grey;
+	max-width: 70vmin;
+}

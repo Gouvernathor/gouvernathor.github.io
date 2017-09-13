@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="application/javascript" src="flags.js"></script>
 </head>
 
 <body>
@@ -23,6 +24,8 @@
 		<p class="simpleText">
 			Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat.
 		</p>
+
+		<div class="flagDecoration"><canvas id="generatedFlag" width="512" height="256"></canvas><div id="slogan"></div></div>
 
 		<div class="navButtons">
 			<a class="button buttonTwitter" href="" id="buttonTwitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><!--
@@ -126,6 +129,11 @@
 			<p><b>Pragmatisme : </b>la politique revient à objectivement regarder où sont les problèmes, et chercher à les résoudre en fonction des moyens disponible. La philosophie et les idéologies en générales sont mises de coté au profit de la gestion.</p>
 			</div>
 
+			<div id="femiBonus" class="description">
+			<img src="images/feminism.png" alt="Féminisme radical" />
+			<p><b>Féminisme radical : </b>le genre doit disparaitre pour mettre à mort le patriarcat.</p>
+			</div>
+
 			<div id="compBonus" class="description">
 			<img src="images/complotism.png" alt="Complotisme" />
 			<p><b>Complotisme : </b>les grands problèmes de notre société sont l'oeuvre d'un petit groupe de personnes. Il est donc indispensable de les trouver, d'informer le public de leurs objectifs et de les neutraliser.</p>
@@ -147,6 +155,9 @@
 			</div>
 		</div>
 
+		<div class="navButtons">
+			<a class="button" href="quiz.html">Recommencer le test</a>
+		</div>
 	</div>
 </div>
 
@@ -190,13 +201,13 @@ function setAxisValue(name, value)
 	text.innerHTML = ((100*value).toFixed(0) + "%");
 }
 
-function setBonus(name, value)
+function setBonus(name, value, limit)
 {
 	axis = document.getElementById(name)
 	if(!axis)
 		return
 	
-	if(value > 0.3)
+	if(value > limit)
 	{
 		axis.style.display = "block";
 		axis.style.opacity = value*value;
@@ -218,15 +229,17 @@ axes = [
 	"t"
 ]
 
-bonus = [
-	"comp",
-	"prag",
-	"reli",
-	"mona",
-	"vega",
-	"anar",
-	"pros"
-]
+bonus = {
+	anar: 0.9,
+	prag: 0.5,
+	femi: 0.9,
+	comp: 0.9,
+	vega: 0.5,
+	reli: 0.5,
+	mona: 0.5,
+}
+
+characteristics = []
 
 for(var i=0; i<axes.length; i++)
 {
@@ -235,15 +248,200 @@ for(var i=0; i<axes.length; i++)
 	setAxisValue(axes[i]+"AxisNeg", negativeValue);
 	setAxisValue(axes[i]+"AxisPos", positiveValue);
 	setAxisValue(axes[i]+"AxisMid", 1-negativeValue-positiveValue);
+	
+	if(negativeValue > positiveValue)
+	{
+		characteristics.push({ name: axes[i]+"0", value: negativeValue});
+	}
+	else
+	{
+		characteristics.push({ name: axes[i]+"1", value: positiveValue});
+	}
 }
 
 bonusEnabled = 0
-for(var i=0; i<bonus.length; i++)
+for(var b in bonus)
 {
-	value = getQueryVariable(bonus[i]+"1");
-	if(value > 0.3)
-		bonusEnabled = 1
-	setBonus(bonus[i]+"Bonus", value);
+	
+	value = getQueryVariable(b);
+	
+	setBonus(b+"Bonus", value, bonus[b]);
+	
+	if(value > bonus[b])
+	{
+		bonusEnabled = 1;
+		characteristics.push({ name: b, value: value});
+	}
+}
+
+characteristics.sort(function(a, b)
+{
+	return a.value < b.value;
+});
+
+charSlogan = {
+	c0: "Égalité",
+	b0: "Humanité",
+	b1: "Patrie",
+	p0: "Socialisme",
+	p1: "Travail",
+	m1: "Liberté",
+	s1: "Famille",
+	j0: "Justice",
+	j1: "Ordre",
+	e0: "Ecologie",
+	t0: "Révolution",
+	anar1: "Anarchie"
+}
+
+function findFlagColors()
+{
+	colors = [];
+	
+	for(var i=0; i<flagColors.length; i++)
+	{
+		var accepted = 1;
+		
+		var mainValue = 0;
+	
+		for(var j=0; j<flagColors[i].cond.length; j++)
+		{
+			var charFound = 0;
+			for(var k=0; k<characteristics.length; k++)
+			{
+				if(characteristics[k].name == flagColors[i].cond[j].name)
+				{
+					charFound = 1;
+					if(characteristics[k].value < flagColors[i].cond[j].vmin || characteristics[k].value > flagColors[i].cond[j].vmax)
+						accepted = 0;
+					else if(value  == 0)
+					{
+						mainValue = characteristics[k].value;
+					}
+					
+					break;
+				}
+			}
+			
+			if(!charFound)
+				accepted = 0;
+			
+			if(!accepted)
+				break;
+		}
+		
+		if(accepted)
+		{
+			colors.push({ bgColor: flagColors[i].bgColor, fgColor: flagColors[i].fgColor, value: mainValue });
+		}
+	}
+	
+	colors.sort(function(a, b) { return a.value < b.value; });
+	
+	return colors;
+}
+
+function findFlagShape(numColors)
+{
+	for(var i=0; i<flagShapes.length; i++)
+	{
+		var accepted = 1;
+		
+		if(flagShapes[i].numColors > numColors)
+			accepted = 0;
+		else
+		{
+			for(var j=0; j<flagShapes[i].cond.length; j++)
+			{
+				var charFound = 0;
+				for(var k=0; k<characteristics.length; k++)
+				{
+					if(characteristics[k].name == flagShapes[i].cond[j].name)
+					{
+						charFound = 1;
+						if(characteristics[k].value < flagShapes[i].cond[j].vmin || characteristics[k].value > flagShapes[i].cond[j].vmax)
+							accepted = 0;
+						
+						break;
+					}
+				}
+				
+				if(!charFound)
+					accepted = 0;
+				
+				if(!accepted)
+					break;
+			}
+		}
+		
+		if(accepted)
+			return i;
+	}
+	
+	return -1;
+}
+
+function findFlagSymbol()
+{
+	for(var i=0; i<flagSymbols.length; i++)
+	{
+		var accepted = 1;
+		
+		for(var j=0; j<flagSymbols[i].cond.length; j++)
+		{
+			var charFound = 0;
+			for(var k=0; k<characteristics.length; k++)
+			{
+				if(characteristics[k].name == flagSymbols[i].cond[j].name)
+				{
+					charFound = 1;
+					if(characteristics[k].value < flagSymbols[i].cond[j].vmin || characteristics[k].value > flagSymbols[i].cond[j].vmax)
+						accepted = 0;
+					
+					break;
+				}
+			}
+			
+			if(!charFound)
+				accepted = 0;
+			
+			if(!accepted)
+				break;
+		}
+		
+		if(accepted)
+			return flagSymbols[i].id;
+	}
+	
+	return -1;
+}
+
+sloganDiv = document.getElementById("slogan");
+if(sloganDiv)
+{
+	selectedSlogan = []
+	
+	for(var i=0; i<characteristics.length; i++)
+	{
+		if(characteristics[i].value > 0 && charSlogan.hasOwnProperty(characteristics[i].name))
+		{
+			selectedSlogan.push({ text: charSlogan[characteristics[i].name], value: characteristics[i].value });
+		}
+	}
+	
+	selectedSlogan.sort(function(a, b) { return a.value < b.value; });
+	
+	var counter = 0;
+	for(var i=0; i<selectedSlogan.length; i++)
+	{
+		if(sloganDiv.innerHTML != "")
+			sloganDiv.innerHTML += " · ";
+		sloganDiv.innerHTML += selectedSlogan[i].text;
+		counter++;
+		
+		if(counter >= 3)
+			break;
+	}
 }
 
 if(!bonusEnabled)
@@ -268,6 +466,77 @@ redditButton = document.getElementById("buttonReddit")
 if(redditButton)
 {
 	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title=Mon%20profil%20politique%20avec%20PolitiScales";
+}
+
+var sprites = new Image();
+sprites.src = 'images/flag_sprites.png';
+
+sprites.onload = function()
+{
+	flag = document.getElementById("generatedFlag");
+	if(flag)
+	{
+		var ctx = flag.getContext("2d");
+		
+		var spriteX = 256;
+		var spriteY = 128;
+		
+		var symbolId = findFlagSymbol();
+		var colors = findFlagColors();
+		
+		if(colors.length <= 0)
+			colors.push({ bgColor: "#ffffff", fgColor: "#000000" });
+		
+		var flagId = findFlagShape(colors.length);
+		
+		if(flagId < 0)
+		{
+			ctx.beginPath();
+			ctx.rect(0, 0, 512, 256);
+			ctx.fillStyle = "#ffffff";
+			ctx.fill();
+		}
+		else
+		{
+			for(var i=0; i<flagShapes[flagId].shapes.length; i++)
+			{
+				var path = flagShapes[flagId].shapes[i];
+				var numPoints = path.length/2;
+				
+				ctx.beginPath();
+				ctx.moveTo(path[1]*512, path[2]*256);
+				
+				for(var j=1; j<numPoints; j++)
+				{
+					ctx.lineTo(path[1+j*2+0]*512, path[1+j*2+1]*256);
+				}
+				ctx.fillStyle = colors[path[0]].bgColor;
+				ctx.fill();
+			}
+			
+			spriteX = flagShapes[flagId].symbol[0]*512;
+			spriteY = flagShapes[flagId].symbol[1]*256;
+		}
+		
+		if(symbolId >= 0)
+		{
+			var tmpC = document.createElement('canvas');
+			tmpC.width = sprites.width;
+			tmpC.height = sprites.height;
+			var tmpCtx = tmpC.getContext('2d');
+			var coloredSprites = tmpCtx.getImageData(0, 0, tmpC.width, tmpC.height);
+			
+			tmpCtx.beginPath();
+			tmpCtx.rect(0, 0, tmpC.width, tmpC.height);
+			tmpCtx.fillStyle = colors[0].fgColor;
+			tmpCtx.fill();
+			
+			tmpCtx.globalCompositeOperation = "destination-in";
+			tmpCtx.drawImage(sprites, 0, 0);
+			
+			ctx.drawImage(tmpC, symbolId*128, 0, 128, 128, spriteX-64, spriteY-64, 128, 128);
+		}
+	}
 }
 
 </script>
