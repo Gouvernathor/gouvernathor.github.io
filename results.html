@@ -303,6 +303,7 @@ function findFlagColors()
 		var accepted = 1;
 		
 		var mainValue = 0;
+		var mainValueFound = 0;
 	
 		for(var j=0; j<flagColors[i].cond.length; j++)
 		{
@@ -314,8 +315,9 @@ function findFlagColors()
 					charFound = 1;
 					if(characteristics[k].value < flagColors[i].cond[j].vmin || characteristics[k].value > flagColors[i].cond[j].vmax)
 						accepted = 0;
-					else if(value  == 0)
+					else if(!mainValueFound)
 					{
+						mainValueFound = 1;
 						mainValue = characteristics[k].value;
 					}
 					
@@ -337,6 +339,11 @@ function findFlagColors()
 	}
 	
 	colors.sort(function(a, b) { return a.value < b.value; });
+	
+	for(var i=0; i<colors.length; i++)
+	{
+		console.log(colors[i].bgColor+" -> "+colors[i].value);
+	}
 	
 	return colors;
 }

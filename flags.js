@@ -335,7 +335,7 @@ flagColors = [
 	},
 	//Ecologie
 	{
-		bgColor: "#058b0e",
+		bgColor: "#1AB324",
 		fgColor: "#ffffff",
 		cond:
 		[
