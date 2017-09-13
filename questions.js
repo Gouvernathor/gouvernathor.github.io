@@ -1613,7 +1613,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les actes de violence des manifestants sont parfois légitimes.",
+		question: "La lutte armée au sein d'un pays est parfois necessaire.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1645,7 +1645,7 @@ questions = [
 		]
 	},
 	{
-		question: "Militer au sein des institutions politiques en place n’est pas suffisant pour transformer la société.",
+		question: "Militer au sein des institutions politiques en place n’est pas n'est pas pertinent pour transformer la société.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1661,7 +1661,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les élections organisées par l'État ne peuvent pas changer la société en profondeur. ",
+		question: "Les élections organisées par l'État ne peuvent pas remettre en question les pouvoirs en place.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1757,7 +1757,7 @@ questions = [
 		]
 	},
 	{
-		question: "La violence n'est jamais une solution.",
+		question: "La violence contre les personnes n'est jamais une solution.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1805,7 +1805,7 @@ questions = [
 		]
 	},
 	{
-		question: "La société peut changer si l’on change notre façon de consommer.",
+		question: "Les changements des modes de vie individuels peuvent provoquer des changements de société.",
 		answer: 0,
 		valuesYes: [
 			{
