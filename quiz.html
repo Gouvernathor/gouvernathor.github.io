@@ -35,7 +35,9 @@
 		<div class="navButtons">
 			<button class="button" onclick="prev_question()" id="back_button">Retour à la question précédente</button>
 			<button class="button" onclick="location.href='index.html';" id="back_button_off">Retour à l'accueil</button>
-			<button class="button" onclick="simulate()">Répondre aléatoirement</button>
+		</div>
+		<div class="navButtons">
+			<button class="button" onclick="simulate()">Voir un résultat aléatoire</button>
 		</div>
 
 	</div>
@@ -202,38 +204,41 @@ rand_per_axis = {
 
 function simulate()
 {
-	prop = 0.0;
-	propCounter = 0;
-	for(var j=0; j<questions[qn].valuesYes.length; j++)
+	while(qn < questions.length)
 	{
-		a = questions[qn].valuesYes[j];
-		if(a.axis in rand_per_axis)
+		prop = 0.0;
+		propCounter = 0;
+		for(var j=0; j<questions[qn].valuesYes.length; j++)
 		{
-			prop += rand_per_axis[a.axis];
-			propCounter++;
+			a = questions[qn].valuesYes[j];
+			if(a.axis in rand_per_axis)
+			{
+				prop += rand_per_axis[a.axis];
+				propCounter++;
+			}
 		}
-	}
-	for(var j=0; j<questions[qn].valuesNo.length; j++)
-	{
-		a = questions[qn].valuesNo[j];
-		if(a.axis in rand_per_axis)
+		for(var j=0; j<questions[qn].valuesNo.length; j++)
 		{
-			prop += 1.0 - rand_per_axis[a.axis];
-			propCounter++;
+			a = questions[qn].valuesNo[j];
+			if(a.axis in rand_per_axis)
+			{
+				prop += 1.0 - rand_per_axis[a.axis];
+				propCounter++;
+			}
 		}
+		
+		if(propCounter > 0)
+			prop /= propCounter;
+		else
+			prop = 0.2;
+		
+		dice = Math.random();
+		
+		if(dice < prop)
+			next_question(1);
+		else
+			next_question(-1);
 	}
-	
-	if(propCounter > 0)
-		prop /= propCounter;
-	else
-		prop = 0.2;
-	
-	dice = Math.random();
-	
-	if(dice < prop)
-		next_question(1);
-	else
-		next_question(-1);
 }
 
 </script>
