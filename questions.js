@@ -488,7 +488,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le salariat est comparable au vol, et représente donc une forme d’esclavage moderne.",
+		question: "Le salariat par une entreprise privée est une forme de vol contre les travailleurs.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1677,7 +1677,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le hacking est un outil de lutte légitime.",
+		question: "Le piratage informatique a une place légitime dans la lutte politique.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1866,7 +1866,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "Les humains ne doivent plus manger ou exploiter les animaux vivants.",
+		question: "Les humains ne doivent ni manger, ni exploiter les animaux.",
 		answer: 0,
 		valuesYes: [
 			{
