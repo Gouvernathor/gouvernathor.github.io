@@ -664,7 +664,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est acceptable que certains secteurs de l'industrie soit privés.",
+		question: "Il est acceptable que certains secteurs de l'industrie soient privés.",
 		answer: 0,
 		valuesYes: [
 			{
