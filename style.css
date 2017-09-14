@@ -404,7 +404,7 @@ h2
 {
 	background-color: #00aced;
 	color: white;
-	width: calc(33% - 0.5vmin);
+	width: calc(25% - 0.5vmin);
 	margin-right: 0.5vmin;
 }
 .buttonTwitter:hover
@@ -415,7 +415,7 @@ h2
 {
 	background-color: #3B5998;
 	color: white;
-	width: calc(33% - 1vmin);
+	width: calc(25% - 1vmin);
 	margin-left: 0.5vmin;
 	margin-right: 0.5vmin;
 }
@@ -427,12 +427,36 @@ h2
 {
 	background-color: #ff5700;
 	color: white;
-	width: calc(33% - 0.5vmin);
+	width: calc(25% - 1vmin);
 	margin-left: 0.5vmin;
+	margin-right: 0.5vmin;
 }
 .buttonReddit:hover
 {
 	color: #ff5700;
+}
+.buttonLink
+{
+	background-color: #500076;
+	color: white;
+	width: calc(25% - 0.5vmin);
+	margin-left: 0.5vmin;
+}
+.buttonLink:hover
+{
+	color: #500076;
+}
+.buttonLinkGood
+{
+	background-color: #0EB31A;
+	color: white;
+	width: calc(25% - 0.5vmin);
+	margin-left: 0.5vmin;
+}
+.buttonLinkGood:hover
+{
+	background-color: #0EB31A;
+	color: white;
 }
 
 .flagDecoration
@@ -448,4 +472,19 @@ h2
 {
 	padding-top: 3vmin;
 	font-size: 4.3vmin;
+}
+.urlToCopyContainer
+{
+	width:100%;
+	text-align:center;
+	display:none;
+}
+.urlToCopy
+{
+	width:50vmin;
+	background-color: white;
+	display:inline-block;
+	padding:1vmin;
+	z-index:6;
+	border-radius:1vmin;
 }

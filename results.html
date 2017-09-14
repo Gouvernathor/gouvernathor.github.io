@@ -30,12 +30,13 @@
 		</p>
 
 		<div class="flagDecoration"><canvas id="generatedFlag" width="512" height="256"></canvas><div id="slogan"></div></div>
-
 		<div class="navButtons">
 			<a class="button buttonTwitter" href="" id="buttonTwitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><!--
 			--><a class="button buttonFacebook" href="" id="buttonFacebook"><i class="fa fa-facebook" aria-hidden="true"></i></a><!--
-			--><a class="button buttonReddit" href="" id="buttonReddit"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+			--><a class="button buttonReddit" href="" id="buttonReddit"><i class="fa fa-reddit" aria-hidden="true"></i></a><!--
+			--><a class="button buttonLink" onclick="shareLink();" id="buttonLink"><i class="fa fa-link" aria-hidden="true"></i></a>
 		</div>
+		<div id="urlToCopyContainer" class="urlToCopyContainer"><div id="urlToCopy" class="urlToCopy"></div></div>
 
 		<hr/>
 
@@ -170,6 +171,48 @@ PolitiScales est une initiative du Discord « La Commune », librement inspirée
 </div>
 
 <script>
+var urlToCopy = document.getElementById("urlToCopy")
+if(urlToCopy)
+{
+	urlToCopy.innerHTML = location.href;
+}
+
+function shareLink()
+{
+	var urlToCopy = document.getElementById("urlToCopy")
+	var urlToCopyContainer = document.getElementById("urlToCopyContainer")
+	if(urlToCopy && urlToCopyContainer)
+	{
+		urlToCopyContainer.style.display = "block";
+		var range = document.createRange();
+		range.selectNode(urlToCopy);
+		window.getSelection().addRange(range);
+
+		try
+		{
+			// Now that we've selected the anchor text, execute the copy command
+			//~ if(document.execCommand('copy'))
+			{
+				var button = document.getElementById("buttonLink")
+				if(button)
+				{
+					button.className = "button buttonLinkGood";
+					setTimeout(function()
+					{
+						var buttonTimeout = document.getElementById("buttonLink")
+						if(buttonTimeout)
+							button.className = "button buttonLink";
+					}, 2000);
+				}
+			}
+		} 
+		catch (err)
+		{
+			
+		}
+	}
+}
+
 function getQueryVariable(variable)
 {
 	var query = window.location.search.substring(1);
@@ -347,11 +390,6 @@ function findFlagColors()
 	}
 	
 	colors.sort(function(a, b) { return a.value < b.value; });
-	
-	for(var i=0; i<colors.length; i++)
-	{
-		console.log(colors[i].bgColor+" -> "+colors[i].value);
-	}
 	
 	return colors;
 }
