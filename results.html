@@ -197,8 +197,12 @@ function setAxisValue(name, value)
 	var text = document.getElementById(name+"Text")
 	if(!text)
 		return
+	
 	axis.style.width = ((100*value).toFixed(1) + "%");
+	
 	text.innerHTML = ((100*value).toFixed(0) + "%");
+	if (text.offsetWidth > axis.offsetWidth)
+		text.style.visibility = "hidden";
 }
 
 function setBonus(name, value, limit)
