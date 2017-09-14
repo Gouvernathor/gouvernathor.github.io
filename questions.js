@@ -423,7 +423,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est légitime pour un pays d'intervenir militairement à l'étranger pour défendre ses intérêts.",
+		question: "Il est légitime pour un pays d'intervenir militairement à l'étranger pour défendre ses intérêts économiques.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1468,7 +1468,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le fichage doit être très encadré et le recoupage de base de données interdit.",
+		question: "Le fichage doit être très encadré et le recoupage des base de données interdit.",
 		answer: 0,
 		valuesYes: [
 			{
