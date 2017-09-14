@@ -231,7 +231,7 @@ flagColors = [
 	//Monarichisme
 	{
 		bgColor: "#ffffff",
-		fgColor: "#000000",
+		fgColor: "#1218bb",
 		cond:
 		[
 			{

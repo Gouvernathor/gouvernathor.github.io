@@ -54,7 +54,7 @@
 				--><div id="jAxisMid" class="axisSubProgress axisNeutral"><span id="jAxisMidText"></span></div><!--
 				--><div id="jAxisPos" class="axisSubProgress axisAuthoritarism"><span id="jAxisPosText"></span></div>
 				</div><!--
-				--><div class="axisEnd axisEndRight"><img src="images/neutral.png" alt="Justice punitive" \></div>
+				--><div class="axisEnd axisEndRight"><img src="images/justice_hard.png" alt="Justice punitive" \></div>
 
 				<div class="axisDesc"><div class="axisDescLeft"><p>Progressisme</p></div><div class="axisDescRight"><p>Conservatisme</p></div></div>
 				<div class="axisEnd axisEndLeft"><img src="images/progressism.png" alt="Libertaire" \></div><!--
@@ -423,6 +423,7 @@ function findFlagSymbol()
 	return -1;
 }
 
+generatedSlogan = "";
 sloganDiv = document.getElementById("slogan");
 if(sloganDiv)
 {
@@ -441,14 +442,16 @@ if(sloganDiv)
 	var counter = 0;
 	for(var i=0; i<selectedSlogan.length; i++)
 	{
-		if(sloganDiv.innerHTML != "")
-			sloganDiv.innerHTML += " · ";
-		sloganDiv.innerHTML += selectedSlogan[i].text;
+		if(generatedSlogan != "")
+			generatedSlogan += " · ";
+		generatedSlogan += selectedSlogan[i].text;
 		counter++;
 		
 		if(counter >= 3)
 			break;
 	}
+	
+	sloganDiv.innerHTML = generatedSlogan;
 }
 
 if(!bonusEnabled)

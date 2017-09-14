@@ -232,9 +232,9 @@ function simulate()
 		else
 			prop = 0.2;
 		
-		dice = Math.random();
-		
-		if(dice < prop)
+		if(Math.random() < 0.1)
+			next_question(0);
+		else if(Math.random() < prop)
 			next_question(1);
 		else
 			next_question(-1);
