@@ -19,12 +19,36 @@ body
 	text-align: center;
 }
 
+.headerLeft
+{
+	width: 15vmin;
+	display:inline-block;
+	font-size: 5vmin;
+	text-align:left;
+	padding-left:2vmin;
+}
+
+.headerMiddle
+{
+	width: calc(100% - 34vmin);
+	display:inline-block;
+}
+
+.headerRight
+{
+	width: 15vmin;
+	display:inline-block;
+	font-size: 5vmin;
+	text-align:right;
+	padding-right:2vmin;
+}
+
 #header h1
 {
 	margin:0;
 	padding:0;
 	vertical-align:middle;
-	font-size: 2.6em;
+	font-size: 5vmin;
 }
 
 #header a

@@ -13,7 +13,11 @@
 <body>
 
 <header>
-	<div id="header"><h1><a href="index.html">PolitiScales</a></h1></div>
+	<div id="header">
+		<div class="headerLeft"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a> <a href="help.html"><i class="fa fa-question-circle-o " aria-hidden="true"></i></a></div><!--
+		--><div class="headerMiddle"><h1><a href="index.html">PolitiScales</a></h1></div><!--
+		--><div class="headerRight"><a href="https://twitter.com/PolitiScales"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+	</div>
 </header>
 
 <div id="content">
@@ -22,7 +26,7 @@
 		<h2>Résultats</h2>
 
 		<p class="simpleText">
-			Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat.
+			Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat. Pour plus d'information sur les differents axes, <a href="help.html">consultez la page d'aide</a>.
 		</p>
 
 		<div class="flagDecoration"><canvas id="generatedFlag" width="512" height="256"></canvas><div id="slogan"></div></div>
@@ -467,7 +471,7 @@ if(!bonusEnabled)
 twitterButton = document.getElementById("buttonTwitter")
 if(twitterButton)
 {
-	twitterButton.href = "https://twitter.com/intent/tweet?text=Mon%20profil%20politique%20avec%20%23PolitiScales%20:%20"+encodeURIComponent(location.href);
+	twitterButton.href = "https://twitter.com/intent/tweet?text=Mon%20résultat%20sur%20%23PolitiScales%20:%20"+encodeURI(generatedSlogan)+"%20"+encodeURIComponent(location.href);
 }
 
 facebookButton = document.getElementById("buttonFacebook")
@@ -479,7 +483,7 @@ if(facebookButton)
 redditButton = document.getElementById("buttonReddit")
 if(redditButton)
 {
-	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title=Mon%20profil%20politique%20avec%20PolitiScales";
+	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title=Mon%20résultat%20sur%20%23PolitiScales%20:%20";
 }
 
 var sprites = new Image();
