@@ -472,7 +472,7 @@ questions = [
 	},
     /* PRODUCTION *************************************************** */
 	{
-		question: "Les moyens de production ne devraient pas pouvoir être des propriétés privées.",
+		question: "Nul ne doit s'enrichir par le fait de posséder une entreprise, un logement ou un terrain.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -552,7 +552,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'accès à un bien ne doit pas être déterminé par son prix mais par le besoin de la communauté.",
+		question: "Il faut mettre en place des assemblées pour répartir les productions vers les consommateurs en fonction des besoins.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -616,7 +616,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il n'y a pas de problème à ce que des écoles et des universités puissent être privées.",
+		question: "Il n'y a pas de problème à ce que certaines écoles et universités puissent être privées.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -664,7 +664,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut privatiser l'industrie de l’armement.",
+		question: "Il est acceptable que certains secteurs de l'industrie soit privés.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1038,7 +1038,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les homosexuelles n’ont pas à avoir une égalité de traitement avec les hétérosexuelles en ce qui concerne le mariage, la filiation, l’adoption ou la procréation.",
+		question: "Les homosexuels n’ont pas à avoir une égalité de traitement avec les hétérosexuels en ce qui concerne le mariage, la filiation, l’adoption ou la procréation.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1404,7 +1404,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les peines “plancher” sont injustes.",
+		question: "Il est injuste de fixer une peine minimale pour un délit ou un crime.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1645,7 +1645,7 @@ questions = [
 		]
 	},
 	{
-		question: "Militer au sein des institutions politiques en place n’est pas n'est pas pertinent pour transformer la société.",
+		question: "Militer au sein des institutions politiques en place n’est pas pertinent pour transformer la société.",
 		answer: 0,
 		valuesYes: [
 			{
