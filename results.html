@@ -616,11 +616,11 @@ sprites.onload = function()
 
 function shareFacebook()
 {
-	uri = location.href
+	uri = location.href:
+	
 	FB.ui({
-		method: 'feed',
-		link: uri,
-		caption: "Mon résultat sur #PolitiScales : "+generatedSlogan,
+	quote: "Mon résultat sur #PolitiScales : "+generatedSlogan,
+	href: uri,
 	}, function(response){});
 }
 
