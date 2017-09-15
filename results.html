@@ -533,13 +533,13 @@ if(!bonusEnabled)
 twitterButton = document.getElementById("buttonTwitter")
 if(twitterButton)
 {
-	twitterButton.href = "https://twitter.com/intent/tweet?text="+encodeURI("Mon résultat sur #PolitiScales : "+generatedSlogan+" ")+encodeURIComponent(location.href);
+	twitterButton.href = "https://twitter.com/intent/tweet?text="+encodeURIComponent("Mon résultat sur #PolitiScales : "+generatedSlogan+" ")+encodeURIComponent(location.href);
 }
 
 redditButton = document.getElementById("buttonReddit")
 if(redditButton)
 {
-	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title="+encodeURI("Mon résultat sur #PolitiScales : "+generatedSlogan+" ");
+	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent("Mon résultat sur #PolitiScales : "+generatedSlogan+" ");
 }
 
 var sprites = new Image();
