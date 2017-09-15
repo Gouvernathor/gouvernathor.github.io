@@ -549,6 +549,8 @@ function shareFacebook()
 	uri = location.href;
 	
 	FB.ui({
+	method: 'share',
+	hashtag: '#PolitiScales',
 	quote: "Mon résultat sur #PolitiScales : "+generatedSlogan,
 	href: uri,
 	}, function(response){});
