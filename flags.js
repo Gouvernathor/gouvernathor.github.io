@@ -550,7 +550,7 @@ flagSymbols = [
 			}
 		]
 	},
-	//Monarichisme
+	//Monarchisme
 	{
 		id: 2,
 		cond:
