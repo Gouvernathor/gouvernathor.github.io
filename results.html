@@ -544,6 +544,16 @@ if(redditButton)
 var sprites = new Image();
 sprites.src = 'images/flag_sprites.png';
 
+function shareFacebook()
+{
+	uri = location.href;
+	
+	FB.ui({
+	quote: "Mon résultat sur #PolitiScales : "+generatedSlogan,
+	href: uri,
+	}, function(response){});
+}
+
 sprites.onload = function()
 {
 	flag = document.getElementById("generatedFlag");
@@ -612,16 +622,6 @@ sprites.onload = function()
 			ctx.drawImage(tmpC, symbolId*128, 0, 128, 128, spriteX-64*spriteS, spriteY-64*spriteS, 128*spriteS, 128*spriteS);
 		}
 	}
-}
-
-function shareFacebook()
-{
-	uri = location.href;
-	
-	FB.ui({
-	quote: "Mon résultat sur #PolitiScales : "+generatedSlogan,
-	href: uri,
-	}, function(response){});
 }
 
 </script>
