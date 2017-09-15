@@ -12,6 +12,26 @@
 
 <body>
 
+<!-- Facebook integration -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '104413813609065',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <header>
 	<div id="header">
 		<div class="headerLeft"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a> <a href="help.html"><i class="fa fa-question-circle-o " aria-hidden="true"></i></a></div><!--
@@ -32,7 +52,7 @@
 		<div class="flagDecoration"><canvas id="generatedFlag" width="512" height="256"></canvas><div id="slogan"></div></div>
 		<div class="navButtons">
 			<a class="button buttonTwitter" href="" id="buttonTwitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><!--
-			--><a class="button buttonFacebook" href="" id="buttonFacebook"><i class="fa fa-facebook" aria-hidden="true"></i></a><!--
+			--><a class="button buttonFacebook" onclick="shareFacebook();"><i class="fa fa-facebook" aria-hidden="true"></i></a><!--
 			--><a class="button buttonReddit" href="" id="buttonReddit"><i class="fa fa-reddit" aria-hidden="true"></i></a><!--
 			--><a class="button buttonLink" onclick="shareLink();" id="buttonLink"><i class="fa fa-link" aria-hidden="true"></i></a>
 		</div>
@@ -509,19 +529,13 @@ if(!bonusEnabled)
 twitterButton = document.getElementById("buttonTwitter")
 if(twitterButton)
 {
-	twitterButton.href = "https://twitter.com/intent/tweet?text=Mon%20résultat%20sur%20%23PolitiScales%20:%20"+encodeURI(generatedSlogan)+"%20"+encodeURIComponent(location.href);
-}
-
-facebookButton = document.getElementById("buttonFacebook")
-if(facebookButton)
-{
-	facebookButton.href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(location.href);
+	twitterButton.href = "https://twitter.com/intent/tweet?text="+encodeURI("Mon résultat sur #PolitiScales : "+generatedSlogan+" ")+encodeURIComponent(location.href);
 }
 
 redditButton = document.getElementById("buttonReddit")
 if(redditButton)
 {
-	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title=Mon%20résultat%20sur%20%23PolitiScales%20:%20";
+	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title="+encodeURI("Mon résultat sur #PolitiScales : "+generatedSlogan+" ");
 }
 
 var sprites = new Image();
@@ -536,6 +550,7 @@ sprites.onload = function()
 		
 		var spriteX = 256;
 		var spriteY = 128;
+		var spriteS = 1.0;
 		
 		var symbolId = findFlagSymbol();
 		var colors = findFlagColors();
@@ -572,6 +587,7 @@ sprites.onload = function()
 			
 			spriteX = flagShapes[flagId].symbol[0]*512;
 			spriteY = flagShapes[flagId].symbol[1]*256;
+			spriteS = flagShapes[flagId].symbol[2];
 		}
 		
 		if(symbolId >= 0)
@@ -590,9 +606,19 @@ sprites.onload = function()
 			tmpCtx.globalCompositeOperation = "destination-in";
 			tmpCtx.drawImage(sprites, 0, 0);
 			
-			ctx.drawImage(tmpC, symbolId*128, 0, 128, 128, spriteX-64, spriteY-64, 128, 128);
+			ctx.drawImage(tmpC, symbolId*128, 0, 128, 128, spriteX-64*spriteS, spriteY-64*spriteS, 128*spriteS, 128*spriteS);
 		}
 	}
+}
+
+function shareFacebook()
+{
+	uri = location.href
+	FB.ui({
+		method: 'feed',
+		link: uri,
+		caption: "Mon résultat sur #PolitiScales : "+generatedSlogan,
+	}, function(response){});
 }
 
 </script>
