@@ -142,7 +142,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les différences hormonales expliquent certaines différences de comportement entre les hommes et les femmes.",
+		question: "Les différences hormonales expliquent certaines différences de traits de caractère entre les hommes et les femmes.",
 		answer: 0,
 		valuesYes: [
 			{
