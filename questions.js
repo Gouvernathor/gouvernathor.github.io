@@ -38,7 +38,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les sciences dites « dures » sont subjectives et reproduisent les structures de notre société.",
+		question: "Les sciences, même celles dites « dures », ne sont pas absolues et sont conditionnées par notre société.",
 		answer: 0,
 		valuesYes: [
 			{
