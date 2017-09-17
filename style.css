@@ -205,23 +205,34 @@ h2
 }
 .description
 {
-	font-size: 2vmin;
 	margin:2vmin;
 	margin-top:3vmin;
 }
-.description img
-{
-	float:left;
-	width:15vmin;
-	height: 15vmin;
-	vertical-align: middle;
-}
-.description p
+.descText, .descTextMono
 {
 	display: inline-block;
-	vertical-align: middle;
-	width:calc(100% - 20vmin);
-	min-height: 10vmin;
+	
+	text-align: justify;
+	vertical-align: top;
+	text-justify: inter-word;
+	font-size: 2vmin;
+}
+.descText
+{
+	width:calc(100% - 30vmin);
+}
+.descTextMono
+{
+	width:calc(100% - 15vmin);
+}
+.descImg
+{
+	display: inline-block;
+}
+.descImg img
+{
+	width:15vmin;
+	height: 15vmin;
 }
 
 .axisDesc

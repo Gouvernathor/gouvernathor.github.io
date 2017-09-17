@@ -38,7 +38,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les sciences, même celles dites « dures », ne sont pas absolues et sont conditionnées par notre société.",
+		question: "Les sciences, même la physique ou la biologie, ne sont pas absolues et sont conditionnées par notre société.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -214,7 +214,7 @@ questions = [
 		]
 	},
 	{
-		question: "Biologiquement, l'espèce humaine est faite pour l'héterosexualité.",
+		question: "Biologiquement, l'espèce humaine est faite pour l'hétérosexualité.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -295,7 +295,7 @@ questions = [
 		]
 	},
 	{
-		question: "Si les conditions et les normes sont compatibles, il faut supprimer les taxes pour les produits étrangers.",
+		question: "Si deux pays ont une économie, des systèmes sociaux, et des normes environnementales similaires, alors le libre échange entre eux ne pose aucune problème.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1339,7 +1339,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le nucléaire, quand il est bien entretenu, est une bonne source d’énergie.",
+		question: "La fission nucléaire, quand elle est bien entretenue, est une bonne source d’énergie.",
 		answer: 0,
 		valuesYes: [
 			{
