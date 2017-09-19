@@ -295,7 +295,7 @@ questions = [
 		]
 	},
 	{
-		question: "Si deux pays ont une économie, des systèmes sociaux, et des normes environnementales similaires, alors le libre échange entre eux ne pose aucune problème.",
+		question: "Si deux pays ont une économie, des systèmes sociaux, et des normes environnementales similaires, alors le libre échange entre eux ne pose aucun problème.",
 		answer: 0,
 		valuesYes: [
 			{
