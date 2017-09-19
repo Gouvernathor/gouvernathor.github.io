@@ -841,7 +841,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut simplifier le code du travail pour diminuer le chômage.",
+		question: "Il faut supprimer des règlementations dans code du travail pour encourager les entreprises à embaucher.",
 		answer: 0,
 		valuesYes: [
 			{
