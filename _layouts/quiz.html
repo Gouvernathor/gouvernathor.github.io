@@ -1,0 +1,222 @@
+{% include header.html %}
+
+<h2 id="question-number">{{ site.t[page.language].quiz_loading }}</h2>
+<div class="questionBox">
+	<div>
+		<p id="question-text"></p>
+	</div>
+</div>
+<div class="navButtons">
+	<button class="buttonQuestion" onclick="next_question(1)" style="background-color: #1b5e20;">{{ site.t[page.language].quiz_btn_yes1 }}</button>
+	<button class="buttonQuestion" onclick="next_question(2/3)" style="background-color: #4caf50;">{{ site.t[page.language].quiz_btn_yes0 }}</button>
+	<button class="buttonQuestion" onclick="next_question(0)" style="background-color: #bbbbbb;">{{ site.t[page.language].quiz_btn_neutral }}</button>
+	<button class="buttonQuestion" onclick="next_question(-2/3)" style="background-color: #f44336;">{{ site.t[page.language].quiz_btn_no0 }}</button>
+	<button class="buttonQuestion" onclick="next_question(-1)" style="background-color: #b71c1c;">{{ site.t[page.language].quiz_btn_no1 }}</button>
+</div>
+
+<div class="navButtons">
+	<button class="button" onclick="prev_question()" id="back_button">{{ site.t[page.language].quiz_btn_back_q }}</button>
+	<button class="button" onclick="location.href='{{ site.basepath }}/{{ page.language }}/';" id="back_button_off">{{ site.t[page.language].quiz_btn_back_i }}</button>
+</div>
+<div class="navButtons">
+	<button class="button" onclick="simulate()">{{ site.t[page.language].quiz_btn_random }}</button>
+</div>
+
+<script type="application/javascript" src="{{ site.basepath }}/questions_{{ page.language }}.js"></script>
+<script>
+var qn = 0; // Question number
+var prev_answer = null;
+
+function shuffle(array)
+{
+	var i = 0 , j = 0 , temp = null;
+
+	for (i = array.length - 1; i > 0; i -= 1)
+	{
+		j = Math.floor(Math.random() * (i + 1));
+		temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+	}
+}
+shuffle(questions)
+
+init_question();
+
+function init_question()
+{
+	document.getElementById("question-text").innerHTML = questions[qn].question;
+	document.getElementById("question-number").innerHTML = "{{ site.t[page.language].quiz_question_counter }}".replace("%num%", (qn + 1)).replace("%sum%", questions.length);
+	if (qn == 0)
+	{
+		document.getElementById("back_button").style.display = 'none';
+		document.getElementById("back_button_off").style.display = 'block';
+	}
+	else
+	{
+		document.getElementById("back_button").style.display = 'block';
+		document.getElementById("back_button_off").style.display = 'none';
+	}
+
+}
+
+function next_question(mult) {
+	questions[qn].answer = mult
+	qn++;
+	
+	if (qn < questions.length)
+	{
+		init_question();
+	}
+	else
+	{
+		results();
+	}
+}
+function prev_question()
+{
+	if (qn == 0)
+	{
+		return;
+	}
+	qn--;
+	init_question();
+
+}
+
+function calc_score(score,max_value)
+{
+	return (100*(score)/(max_value)).toFixed(0);
+}
+
+function results()
+{
+	var axes = {};
+	
+	for(var i=0; i<questions.length; i++)
+	{
+		q = questions[i];
+		
+		for(var j=0; j<q.valuesYes.length; j++)
+		{
+			a = q.valuesYes[j];
+			if(!(a.axis in axes))
+			{
+				axes[a.axis] = {
+					val: 0,
+					sum: 0
+				}
+			}
+			
+			if(q.answer > 0)
+			{
+				axes[a.axis].val += q.answer * a.value;
+			}
+			axes[a.axis].sum += Math.max(a.value, 0);
+		}
+		
+		for(var j=0; j<q.valuesNo.length; j++)
+		{
+			a = q.valuesNo[j];
+			if(!(a.axis in axes))
+			{
+				axes[a.axis] = {
+					val: 0,
+					sum: 0
+				}
+			}
+			
+			if(q.answer < 0)
+			{
+				axes[a.axis].val -= q.answer * a.value;
+			}
+			axes[a.axis].sum += Math.max(a.value, 0);
+		}
+	}
+	
+	url = ""
+	for(var aK in axes)
+	{
+		if(axes[aK].val > 0)
+		{
+			if(url != "")
+				url += "&"
+			url += aK+"="+calc_score(axes[aK].val, axes[aK].sum)
+		}
+	}
+	
+	url = "../results?"+url
+	
+	location.href = url;
+}
+
+rand_c = Math.random();
+rand_b = Math.random();
+rand_s = Math.random();
+rand_j = Math.random();
+rand_p = Math.random();
+rand_m = Math.random();
+rand_e = Math.random();
+rand_t = Math.random();
+
+rand_per_axis = {
+	c0: rand_c,
+	c1: 1 - rand_c,
+	b0: rand_b,
+	b1: 1 - rand_b,
+	s0: rand_s,
+	s1: 1 - rand_s,
+	j0: rand_j,
+	j1: 1 - rand_j,
+	p0: rand_p,
+	p1: 1 - rand_p,
+	m0: rand_m,
+	m1: 1 - rand_m,
+	e0: rand_e,
+	e1: 1 - rand_e,
+	t0: rand_t,
+	t1: 1 - rand_t,
+}
+
+function simulate()
+{
+	while(qn < questions.length)
+	{
+		prop = 0.0;
+		propCounter = 0;
+		for(var j=0; j<questions[qn].valuesYes.length; j++)
+		{
+			a = questions[qn].valuesYes[j];
+			if(a.axis in rand_per_axis)
+			{
+				prop += rand_per_axis[a.axis];
+				propCounter++;
+			}
+		}
+		for(var j=0; j<questions[qn].valuesNo.length; j++)
+		{
+			a = questions[qn].valuesNo[j];
+			if(a.axis in rand_per_axis)
+			{
+				prop += 1.0 - rand_per_axis[a.axis];
+				propCounter++;
+			}
+		}
+		
+		if(propCounter > 0)
+			prop /= propCounter;
+		else
+			prop = 0.2;
+		
+		if(Math.random() < 0.1)
+			next_question(0);
+		else if(Math.random() < prop)
+			next_question(1);
+		else
+			next_question(-1);
+	}
+}
+
+</script>
+
+{% include footer.html %}

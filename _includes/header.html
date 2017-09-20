@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>{{ site.name }} - {{ page.title }}</title>
+	<meta name="description" content="{{ site.t[page.language].index_welcome }}" />
+	<link rel="stylesheet" href="{{ site.basepath }}/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta property="og:url" content="https://discordlacommune.github.io/politiscales/{{ page.language }}/" />
+	<meta property="og:title" content="{{ site.name }}" />
+	<meta property="og:locale" content="{{ page.language }}" />
+	<meta property="og:description" content="{{ site.t[page.language].index_welcome }}" />
+	<meta property="og:image" content="https://discordlacommune.github.io/politiscales/images/facebook-preview.png" />
+
+</head>
+<body>
+
+<!-- Facebook integration -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '104413813609065',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<header>
+	<div id="header">
+		<div class="headerLeft"><a href="./"><i class="fa fa-home" aria-hidden="true"></i></a> <a href="../help"><i class="fa fa-question-circle-o " aria-hidden="true"></i></a></div><!--
+		--><div class="headerMiddle"><h1><a href="{{ site.basepath }}/{{ page.language }}/">{{ site.name }}</a></h1></div><!--
+		--><div class="headerRight"><a href="https://twitter.com/PolitiScales"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+	</div>
+</header>
+
+<div id="content">
+	<div id="mainFrame">
