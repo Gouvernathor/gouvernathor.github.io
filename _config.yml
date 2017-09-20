@@ -1,5 +1,5 @@
 name: PolitiScales
-basepath: 
+basepath: /politiscales/
 
 plugins:
   - jekyll-redirect-from
