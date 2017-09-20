@@ -552,7 +552,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut mettre en place des assemblées pour rationner les productions vers les consommateurs en fonction des besoins.",
+		question: "Il faut mettre en place des assemblées pour répartir les productions vers les consommateurs en fonction des besoins.",
 		answer: 0,
 		valuesYes: [
 			{
