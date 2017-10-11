@@ -13,6 +13,10 @@ collections:
       permalink: fr_FR/:name/
       title: Français
       output: true
+   de_DE:
+      permalink: de_DE/:name/
+      title: Deutsch
+      output: true
 
 t:
    en_US:
@@ -161,6 +165,102 @@ t:
       help_communism1: Le <b>communisme</b> est une doctrine politique très vaste. Dans ce test, une prépondérance pour le communisme signifie simplement que vous êtes partisans de la propriété publique des moyens de productions.
       help_communism2: Le <b>capitalisme</b> est lui aussi un concept très ambivalent. Dans ce test, une prépondérance pour le capitalisme signifie simplement que vous êtes partisans de la propriété privée des moyens de productions.
       help_regulationism1: Cet axe représente l'attitude que doit avoir un état dans une économie de marché où une part importante des moyens de production sont privés. Libéraux et keynésiens s’opposent ainsi sur la méthode à adopter sans toutefois remettre en question le capitalisme. Si vous êtes plutôt capitaliste, cet axe représente votre but en matière d’économie. Si vous êtes communiste, cet axe représente ce que vous pouvez attendre de moins mauvais du système actuel.
+      help_regulationism2: Le <b>régulationnisme</b>, ou interventionnisme, est une idée selon laquelle l’activité économique doit être régulée dans l’intérêt de tous. Cela peut passer par la législation, la planification, les subventions, une imposition variable…
+      help_regulationism3: À l’inverse, le <b>laissez-faire</b> est une idée selon laquelle l’activité économique ne doit pas être régulée, car elle répondrait d’elle-même à l’intérêt général. Cela peut passer par une faible législation, peu ou pas de subventions, une imposition fixe et souvent faible, voire la suppression complète du rôle de l’État en matière d’économie.
+      help_ecology1: <b>L’écologie</b>, en politique, privilégie la protection de l’environnement, en limitant autant que possible l’impact des activités humaines sur la biodiversité, quitte à limiter au passage lesdites activités humaines en modifiant plus ou moins radicalement le mode de vie actuel.
+      help_ecology2: Le <b>productivisme</b> privilégie les besoins humain, notamment en soutenant la hausse de la production ou l’utilisation de méthodes ayant un impact incertain sur l’environnement.
+      help_revo1: Les <b>révolutionnaires</b> auront tendance à privilégier l’action directe, souvent en marge de la légalité, pour parvenir à leur objectifs, afin de remplacer l’organisation politique actuelle par une autre radicalement différente. Cela peut se faire au travers de la guérilla, ou plus généralement par des méthodes qui sortent du cadre de l’acceptable posé par les institutions politiques…
+      help_revo2: Les <b>réformistes</b> auront tendance à privilégier l’action légale pour parvenir à leurs fins, afin de réformer l’organisation politique actuelle petit à petit. Cela peut se faire au travers des institutions, via les élections, les manifestations autorisées, les pétitions…
+      
+      quiz_loading: Chargement...
+      quiz_btn_yes1: Absolument d'accord
+      quiz_btn_yes0: Plutôt d'accord
+      quiz_btn_neutral: Neutre ou hésitant
+      quiz_btn_no0: Plutôt pas d'accord
+      quiz_btn_no1: Absolument pas d'accord
+      quiz_btn_back_q: Retour à la question précédente
+      quiz_btn_back_i: Retour à l'accueil
+      quiz_btn_random: Voir un résultat aléatoire
+      quiz_question_counter: Question %num% sur %sum%
+      
+      result_title: Résultats
+      result_special: Caractéristiques supplémentaires
+      result_desc: Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat. Pour plus d'information sur les differents axes, <a href="help.html">consultez la page d'aide</a>."
+      result_anarchism: "<b>Anarchisme : </b>quand le peuple est frappé avec un bâton, il n'est pas plus heureux si le bâton est appelé « bâton du peuple ». L'État est une oppression qu'il faut supprimer."
+      result_pragmatism: "<b>Pragmatisme : </b>la politique revient à objectivement regarder où sont les problèmes, et chercher à les résoudre en fonction des moyens disponible. La philosophie et les idéologies en générales sont mises de coté au profit de la gestion."
+      result_feminism: "<b>Féminisme radical : </b>le genre doit disparaitre pour mettre à mort le patriarcat."
+      result_complotism: "<b>Complotisme : </b>les grands problèmes de notre société sont l'oeuvre d'un petit groupe de personnes. Il est donc indispensable de les trouver, d'informer le public de leurs objectifs et de les neutraliser."
+      result_veganism: "<b>Véganisme : </b>les humains doivent arrêter à tout prix la consommation et l'exploitation des êtres dit « sensibles »."
+      result_monarchism: "<b>Monarchisme : </b>la société devrait être organisée autour d'un roi."
+      result_religion: "<b>Missionnaire : </b>pour vous, la religion est importante, surtout la votre. Il convient donc de la diffuser le plus largement possible sur l'ensemble du globe."
+      result_btn_redo: Recommencer le test
+      
+      slogan_constructivism: Égalité
+      slogan_internationalism: Humanité
+      slogan_nationalism: Patrie
+      slogan_communism: Socialisme
+      slogan_capitalism: Travail
+      slogan_laissez_faire: Liberté
+      slogan_conservatism: Famille
+      slogan_justice_soft: Justice
+      slogan_justice_hard: Ordre
+      slogan_ecology: Ecologie
+      slogan_revo: Révolution
+      
+      share_facebook: "Mon résultat sur #PolitiScales : %slogan%"
+      share_reddit: "Mon résultat sur #PolitiScales : %slogan%"
+      share_twitter: "Mon résultat sur #PolitiScales : %slogan%"
+
+   de_DE:
+      header_desc: PolitiScales ist ein politisches Experiment, welches sich auf 8 ideologischen Achsen stützt, um Ihr politisches Spektrum einordnen zu können, oder um einfach Ihr Profil mit Freunden zu teilen.
+      footer: PolitiScales ist eine Initiative des Discords « La Commune » (Die Kommune) inspiriert von <a href="https://8values.github.io/">8values</a>.
+      
+      constructivism: Konstruktivismus
+      essentialism: Essentialismus
+      justice_soft: Rehabilitationsjustiz
+      justice_hard: Vergeltungsjustiz
+      progressism: Progressivismus
+      conservatism: Konservatismus
+      internationalism: Internationalismus
+      nationalism: Nationalismus
+      communism: Kommunismus
+      capitalism: Kapitalismus
+      regulationism: Soziale Marktwirtschaft
+      laissez_faire: Laissez-faire (Libertarismus)
+      ecology: Ökologismus
+      productivism: Produktivismus
+      revo: Revolutionär
+      refo: Reformismus
+      
+      result_anarchism: Anarchismus
+      result_pragmatism: Pragmatismus
+      result_feminism: Radikaler Feminismus
+      result_complotism: Konspirationismus 
+      result_veganism: Vegan
+      result_monarchism: Monarchismus
+      result_religion: Missionieren
+      
+      index_welcome: Wilkommen in PolitiScales, das politische Experiment <i>online</i>. Eine Reihe von Aussagen wird angegeben werden, Sie müssen für jede Aussage Ihre entsprechende Meinung wählen.
+      index_context: Die Fragen voraussetzen, dass Sie Bürger einer Nation mit einem pluralistischen Parteisystem und einer Marktwirtschaft sind.
+      index_advice: Sie können sowohl auch eine Frage nicht beantworten. Wenn Sie den Sinn der Frage nicht begreifen, versuchen Sie die Aussage zu verneinen, umzukehren.
+      index_warning: Dieses Experiment versucht eine globale Repräsentativität der öffentlichen Meinungen nachzubilden. Deshalb entählt dieses Experiment Aussagen in Bezug auf Homosexualität oder Rassismus, die schockieren können.
+      index_title_instructions: Anweisungen
+      index_btn_start: Das Experiment beginnen
+         
+      help_whois: Wer sind wir ?
+      help_desc: PolitiScales ist ein politisches Experiment, welches sich auf 8 ideologischen Achsen stützt, um Ihr politisches Spektrum einordnen zu können, oder um einfach Ihr Profil mit Freunden zu teilen. Diese Webseite ist eine Initiative des Discords « La Commune » inspiriert von <a href="https://8values.github.io/">8values</a>.
+      help_constructivism1: Warum sind Menschen so wie sie sind ?  Der Konstruktivismus und der Essentialismus bilden zwei gegensätzliche Ansätze, auch wenn sie die gleiche Frage beantworten. 
+      help_constructivism2: Die <b>Konstruktivisten</b> schätzen, dass ein Individuum in einer bedingten Gesellschaft sich sozial konstruiert, und dass seine bestehenden Eigenschaften erworben sind.
+      help_constructivism3: Dagegen gehen die <b>Essentialisten</b> davon aus, dass ein Individuum durch seine Gene und Natur bestimmt ist. Das bedeutet, dass seine bestehenden Eigenschaften angeboren sind.
+      help_justice1: Die Anhänger der <b>Rehabilitionsjustiz </b> denken, Urteile sind nicht dafür gedacht, Menschen zu verletzen, sondern den Verurteilten zu helfen, indem die Justiz sie auf den rechten Weg begleitet.
+      help_justice2: Stattdessen behaupten die Anhänger der <b>Vergeltungsjustiz</b>, die Urteile seien nur ein Abschreckungsmittel, um Verbrechen zu verhindern. So bilden die Verurteilten eine Verbildlichung, was den Verbrechern oder Bürgern passieren kann.  
+      help_progressism1: Die <b>Progressisten</b>versuchen immer einen sozialen Fortschritt zu richten, die Gesellschaft zu verbessern. Sie achten wenig auf Tradition und finden, dass es Heute besser ist als damals.
+      help_progressism2: Die <b>Konservativen</b> bevorzugen den sog. Status quo, wenn es der Fall ist. Sonst fordern sie die Rückkehr oder den Schutz von bestimmten Werten, die bedroht sind. Diese können religös, historisch geprägt sein.
+      help_internationalism1: "<b>Der internationalismus</b> bildet eine Strömung von vielfältigen Ideen, die in einem gemeinsamen Ziel übereinstimmen : Die vollständige Abschaffung der Grenzen. Die Internationalisten lehnen die Hierarchisierung der Menschen und der Bevölkerungen ab."
+      help_internationalism2: Der <b>Nationalismus</b> streben nach dem Wohlsein des Staates und dessen Bevölkerung. Sie streben nach der Erhaltung einer nationalen Identität. Ihre Interessen sind national zentriert und rechtfertigen die Schaffung eines Staates für ein bestimmtes Volk.
+      help_communism1: Der <b>Kommunismus</b> ist ein sehr politisches, breites Feld. Dieses Experiment illustriert nur, dass Sie für die Aufhebung des Privatseingentum im Rahmen der Produktionsmittel sind.
+      help_communism2: Der <b>capitalisme</b> ist ein ambivalentes Konzept. Dieses Experiment illustriert nur, dass Sie gegen die Aufhebung des Privatseingentum im Rahmen der Produktionsmittel sind.
+      help_regulationism1: Diese Achse stellt die wirtschaftliche Haltung des Staates dar, welche die Marktwirtschaft beeinflusst. In diesem Modell sind die Produktionsmittel mehrheitlich privatisiert. Liberale und Keynesianer streiten sich darüber, welche Methode für den Kapitalismus übernommen wird. Wenn Sie eher ein Kapitalist sind, schildert diese Achse Ihren Arbeitsmethodenunterschied. Sie sind ein Kommunist. Dann bildet diese Achse die Hoffnung, dass ein von den beiden Methoden nicht so schädlich ist.
       help_regulationism2: Le <b>régulationnisme</b>, ou interventionnisme, est une idée selon laquelle l’activité économique doit être régulée dans l’intérêt de tous. Cela peut passer par la législation, la planification, les subventions, une imposition variable…
       help_regulationism3: À l’inverse, le <b>laissez-faire</b> est une idée selon laquelle l’activité économique ne doit pas être régulée, car elle répondrait d’elle-même à l’intérêt général. Cela peut passer par une faible législation, peu ou pas de subventions, une imposition fixe et souvent faible, voire la suppression complète du rôle de l’État en matière d’économie.
       help_ecology1: <b>L’écologie</b>, en politique, privilégie la protection de l’environnement, en limitant autant que possible l’impact des activités humaines sur la biodiversité, quitte à limiter au passage lesdites activités humaines en modifiant plus ou moins radicalement le mode de vie actuel.
