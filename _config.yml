@@ -241,7 +241,7 @@ t:
       result_religion: Missionieren
       
       index_welcome: Wilkommen in PolitiScales, das politische Experiment <i>online</i>. Eine Reihe von Aussagen wird angegeben werden, Sie müssen für jede Aussage Ihre entsprechende Meinung wählen.
-      index_context: Die Fragen voraussetzen, dass Sie Bürger einer Nation mit einem pluralistischen Parteisystem und einer Marktwirtschaft sind.
+      index_context: Die Fragen setzen voraus, dass Sie Bürger einer Nation mit einem pluralistischen Parteisystem und einer Marktwirtschaft sind.
       index_advice: Sie können sowohl auch eine Frage nicht beantworten. Wenn Sie den Sinn der Frage nicht begreifen, versuchen Sie die Aussage zu verneinen, umzukehren.
       index_warning: Dieses Experiment versucht eine globale Repräsentativität der öffentlichen Meinungen nachzubilden. Deshalb entählt dieses Experiment Aussagen in Bezug auf Homosexualität oder Rassismus, die schockieren können.
       index_title_instructions: Anweisungen
@@ -261,48 +261,47 @@ t:
       help_communism1: Der <b>Kommunismus</b> ist ein sehr politisches, breites Feld. Dieses Experiment illustriert nur, dass Sie für die Aufhebung des Privatseingentum im Rahmen der Produktionsmittel sind.
       help_communism2: Der <b>capitalisme</b> ist ein ambivalentes Konzept. Dieses Experiment illustriert nur, dass Sie gegen die Aufhebung des Privatseingentum im Rahmen der Produktionsmittel sind.
       help_regulationism1: Diese Achse stellt die wirtschaftliche Haltung des Staates dar, welche die Marktwirtschaft beeinflusst. In diesem Modell sind die Produktionsmittel mehrheitlich privatisiert. Liberale und Keynesianer streiten sich darüber, welche Methode für den Kapitalismus übernommen wird. Wenn Sie eher ein Kapitalist sind, schildert diese Achse Ihren Arbeitsmethodenunterschied. Sie sind ein Kommunist. Dann bildet diese Achse die Hoffnung, dass ein von den beiden Methoden nicht so schädlich ist.
-      help_regulationism2: Le <b>régulationnisme</b>, ou interventionnisme, est une idée selon laquelle l’activité économique doit être régulée dans l’intérêt de tous. Cela peut passer par la législation, la planification, les subventions, une imposition variable…
-      help_regulationism3: À l’inverse, le <b>laissez-faire</b> est une idée selon laquelle l’activité économique ne doit pas être régulée, car elle répondrait d’elle-même à l’intérêt général. Cela peut passer par une faible législation, peu ou pas de subventions, une imposition fixe et souvent faible, voire la suppression complète du rôle de l’État en matière d’économie.
-      help_ecology1: <b>L’écologie</b>, en politique, privilégie la protection de l’environnement, en limitant autant que possible l’impact des activités humaines sur la biodiversité, quitte à limiter au passage lesdites activités humaines en modifiant plus ou moins radicalement le mode de vie actuel.
-      help_ecology2: Le <b>productivisme</b> privilégie les besoins humain, notamment en soutenant la hausse de la production ou l’utilisation de méthodes ayant un impact incertain sur l’environnement.
-      help_revo1: Les <b>révolutionnaires</b> auront tendance à privilégier l’action directe, souvent en marge de la légalité, pour parvenir à leur objectifs, afin de remplacer l’organisation politique actuelle par une autre radicalement différente. Cela peut se faire au travers de la guérilla, ou plus généralement par des méthodes qui sortent du cadre de l’acceptable posé par les institutions politiques…
-      help_revo2: Les <b>réformistes</b> auront tendance à privilégier l’action légale pour parvenir à leurs fins, afin de réformer l’organisation politique actuelle petit à petit. Cela peut se faire au travers des institutions, via les élections, les manifestations autorisées, les pétitions…
+      help_regulationism2: Die <b>soziale Marktwirtschaft</b> setzt eine gewisse Regulierung der Wirtschaft durch den Staat voraus, weil jedes Individuum von der Wirtschaft profitieren darf und kann. Man kann dies erreichen, indem Maßnahmen wie zum Beispiel Planung, Gesetze, Förderung oder auch unterschiedliche Versteuerungsquoten durchsetzt werden. 
+      help_regulationism3: Dagegen ist das sog. <b>laissez-faire</b> eine wirtschaftliche Doktrine, die ausdrücklich gegen die Verwickelung des Staates in der Wirtschaft ist, weil diese Letzte das gemeinsame Interesse abzielt. Dies lässt sich anhand einer schwachen Gesetzgebung, einer schwachen Versteurungsquote bis zur Abschaffung der Rolle des Staates in der Witschaft erklären.
+      help_ecology2: Der <b>Produktivismus</b> kümmert sich um die menschlichen Bedürfnisse. Der Produktivismus lässt sich durch die Steigerung der Produktion oder der Benutzung von technischen Mitteln veranschaulichen, die die Umwelt gefährdren oder zerstören können.
+      help_revo1: Die <b>Revolutionäre</b> fordern eine direkte Handlung, um die politische Ordnung am Rande der Legalität neu und radikal umzugestalten. (Guerilla, Bürgerkriege,...)
+      help_revo2: Die <b>Reformisten</b> wollen legal und Schritt für Schritt die Gesellschaft umwandeln. (Institutionen, Wahlen, Gesuche, legale Demonstrationen,...)
       
-      quiz_loading: Chargement...
-      quiz_btn_yes1: Absolument d'accord
-      quiz_btn_yes0: Plutôt d'accord
-      quiz_btn_neutral: Neutre ou hésitant
-      quiz_btn_no0: Plutôt pas d'accord
-      quiz_btn_no1: Absolument pas d'accord
-      quiz_btn_back_q: Retour à la question précédente
-      quiz_btn_back_i: Retour à l'accueil
-      quiz_btn_random: Voir un résultat aléatoire
-      quiz_question_counter: Question %num% sur %sum%
+      quiz_loading: Es lädt...
+      quiz_btn_yes1: Stimme voll zu
+      quiz_btn_yes0: Stimme etwas zu
+      quiz_btn_neutral: Weder noch
+      quiz_btn_no0: Lehne etwas ab
+      quiz_btn_no1: Lehne ganz ab
+      quiz_btn_back_q: Zurück zur vorherigen Frage
+      quiz_btn_back_i: Zurück zur Startseite 
+      quiz_btn_random: Ein zufallsbedingtes Experiment
+      quiz_question_counter: Frage %num% von %sum%
       
-      result_title: Résultats
-      result_special: Caractéristiques supplémentaires
-      result_desc: Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat. Pour plus d'information sur les differents axes, <a href="help.html">consultez la page d'aide</a>."
-      result_anarchism: "<b>Anarchisme : </b>quand le peuple est frappé avec un bâton, il n'est pas plus heureux si le bâton est appelé « bâton du peuple ». L'État est une oppression qu'il faut supprimer."
-      result_pragmatism: "<b>Pragmatisme : </b>la politique revient à objectivement regarder où sont les problèmes, et chercher à les résoudre en fonction des moyens disponible. La philosophie et les idéologies en générales sont mises de coté au profit de la gestion."
-      result_feminism: "<b>Féminisme radical : </b>le genre doit disparaitre pour mettre à mort le patriarcat."
-      result_complotism: "<b>Complotisme : </b>les grands problèmes de notre société sont l'oeuvre d'un petit groupe de personnes. Il est donc indispensable de les trouver, d'informer le public de leurs objectifs et de les neutraliser."
-      result_veganism: "<b>Véganisme : </b>les humains doivent arrêter à tout prix la consommation et l'exploitation des êtres dit « sensibles »."
-      result_monarchism: "<b>Monarchisme : </b>la société devrait être organisée autour d'un roi."
-      result_religion: "<b>Missionnaire : </b>pour vous, la religion est importante, surtout la votre. Il convient donc de la diffuser le plus largement possible sur l'ensemble du globe."
-      result_btn_redo: Recommencer le test
+      result_title: Ergebnisse
+      result_special: zusätzliche Eigenschaften
+      result_desc: Ihr PolitiScalesergebnis ist in 8 Achsen verteilt. Jede Achse zeigt Ihre Positionierung zwischen den gegensätzlichen Ideologien an. Spezifizierungen können das Ergebnis ergänzen. Diese werden am Seitenende angezeigt. Für weitere Informationen über die verschiedenen Achsen <a href="help.html"> schlagen Sie die Hilfe </a> nach."
+      result_anarchism: "<b>Anarchismus : </b>Wenn das Volk niedergeschlagen wird, ist es nicht schlimmer den Staat selbst niederzuschlagen, weil der Staat eine Unterdrückung ist, die vernichtet werden muss."
+      result_pragmatism: "<b>Pragmatismus : </b>Die Politik befasst sich mit der Betrachtung, woran Probleme liegen können, und wie sie anhand der verfügbaren Mittel geregelt werden können. Hier ist das Motto : Betriebsverwaltung."
+      result_feminism: "<b>Radikaler Feminismus : </b>Das Gender muss verschwinden, damit das Patriarchat hingerichtet werden kann."
+      result_complotism: "<b>Konspirationismus : </b>Die Probleme unserer Gesellschaft sind das Ergebnis einer Splittergruppe. Sie muss entdeckt werden, die Öffententlichkeit muss aufgeklärt werden. Schließlich muss die Splittergruppe beseigtigt werden."
+      result_veganism: "<b>Vegan : </b>Die Menschen müssen den Verbrauch und die Ausnutzung von Tieren abbrechen."
+      result_monarchism: "<b>Monarchismus : </b>Die Gesellschaft müsste durch die Herrschaft eines Königs organisiert werden. "
+      result_religion: "<b>Missionieren : </b>Ihrer Meinung nach ist Religion sehr wichtig, insbesondere Ihre Religion. Es ist dann angemessen sie auf die ganze Welt zu verbreiten."
+      result_btn_redo: Das Experiment neu beginnen.
       
-      slogan_constructivism: Égalité
-      slogan_internationalism: Humanité
-      slogan_nationalism: Patrie
-      slogan_communism: Socialisme
-      slogan_capitalism: Travail
-      slogan_laissez_faire: Liberté
-      slogan_conservatism: Famille
-      slogan_justice_soft: Justice
-      slogan_justice_hard: Ordre
-      slogan_ecology: Ecologie
-      slogan_revo: Révolution
+      slogan_constructivism: Gleichheit/ Geichstellung
+      slogan_internationalism: Menschlichkeit
+      slogan_nationalism: Vaterland
+      slogan_communism: Sozialismus
+      slogan_capitalism: Arbeit
+      slogan_laissez_faire: Freiheit
+      slogan_conservatism: Familie
+      slogan_justice_soft: Gerechtigkeit
+      slogan_justice_hard: Ordnung
+      slogan_ecology: Umweltfreundlichkeit
+      slogan_revo: Revolution
       
-      share_facebook: "Mon résultat sur #PolitiScales : %slogan%"
-      share_reddit: "Mon résultat sur #PolitiScales : %slogan%"
-      share_twitter: "Mon résultat sur #PolitiScales : %slogan%"
+      share_facebook: "Mein Ergebnis auf #PolitiScales : %slogan%"
+      share_reddit: "Mein Ergebnis auf #PolitiScales : %slogan%"
+      share_twitter: "Mein Ergebnis auf #PolitiScales : %slogan%"
