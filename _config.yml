@@ -16,8 +16,9 @@ collections:
 
 t:
    en_US:
-      header_desc: PolitiScales est un test politique utilisant 8 axes idéologiques pour vous aider à vos situer politiquement, ou simplement partager votre profil avec vos amis.
-      footer: PolitiScales est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
+      header_desc: PolitiScale is a political test using 8 ideological values to help you know approximately where you belong in the political field, or simply to share your profile with your friends.
+      
+      footer: PolitiScale is an initiative of the Discord "La Commune" which is freely inspired by <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Constructivisme
       essentialism: Essentialisme
@@ -44,33 +45,56 @@ t:
       result_monarchism: Monarchisme
       result_religion: Missionnaire
       
-      index_welcome: Bienvenue dans PolitiScales, le test politique <i>online</i>. Vous allez être confronté à une série d'affirmations. Pour chacune d'elles, cliquez sur le bouton correspondant à votre opinion.
-      index_context: Les questions supposent que vous êtes citoyen d’une nation avec un système politique multi-parti et une économie de marché.
-      index_advice: Vous pouvez tout à fait ne pas répondre à une question. Mais si vous ne comprenez pas le sens d'une question, essayez d'inverser son sens pour mieux comprendre ce qu'elle implique.
-      index_warning: Ce test cherche à representer le panel le plus large possible d'opinions et contient donc des phrases qui peuvent vous choquer, en particulier concernant le racisme et l'homophobie.
+      index_welcome: Welcome in the PolitiScle the online political test. You will be confronted to a series of affirmations and for each of them you will have to clic on the button which corresponds most to your opinion.
+      
+      index_context: The questions assume that your are citizen of a multi-parti political system and a market economy.
+      
+      index_advice: You can always avoid answering a question. But if you do not understand the meaning of one of them, try to invert its meaning for a better understanding of what is implied.
+      
+      index_warning: This test tries to represent the wider set of ideas as possible and contains some phrases that can be shocking, notably concerning racism and homosexuality.
+      
       index_title_instructions: Instructions
-      index_btn_start: Commencer le test
+      
+      index_btn_start: Start the test
          
-      help_whois: Qui sommes-nous ?
-      help_desc: PolitiScales est un test politique utilisant 8 axes idéologiques pour vous aider à vos situer politiquement, ou simplement partager votre profil avec vos amis. Ce site internet est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
-      help_constructivism1: Pourquoi les gens sont-ils comme ils sont ? Cet axe permet de vous situer entre deux pôles antagonistes répondant à cette question.
-      help_constructivism2: Les <b>constructivistes</b> estiment qu’un individu se construit à partir de son environnement (notamment social), que les caractères qui le composent sont acquis.
-      help_constructivism3: À l’inverse, les <b>essentialistes</b> partent du principe qu’un individu est par nature tel qu’il est, et que les caractères qui le composent sont innés.
-      help_justice1: Les partisans de la <b>justice réhabilitative</b> estiment que le rôle de la Justice est de remettre les condamnés dans le "droit chemin", en leur faisant comprendre pourquoi ils ne doivent pas faire ce pour quoi ils ont été condamnés, et en les accompagnant tout au long de ce processus.
-      help_justice2: À l’inverse, les partisans de la <b>justice punitive</b> partent du principe que le rôle de la Justice est dissuasif, à la fois pour les condamnés (pour éviter la récidive) et pour le reste de la société (en faisant des condamnés des exemples à ne pas suivre).
-      help_progressism1: Les <b>progressistes</b> cherchent à instaurer un progrès social, à améliorer la société, sans se soucier des traditions. Ils estiment souvent l’époque présente comme meilleure que celles passées, et qu’il est nécessaire de poursuivre dans cette lancée.
-      help_progressism2: À l’inverse, les <b>conservateurs</b> cherchent à garder le statu quo, voire à rétablir certaines valeurs établies jugées disparues ou en perdition. Les traditions, parmi lesquelles l’héritage religieux, sont mises en avant comme source de sagesse.
-      help_internationalism1: <b>L’internationalisme</b> est un ensemble d’idées hétéroclites ayant pour point commun de ne pas hiérarchiser les pays et leurs habitants entre eux, et à promouvoir autant que possible leur coopération. Poussé à son maximum, l’objectif final de l’internationalisme est l’abolition des frontières.
+      help_whois: Who are we?
+      
+      help_desc: PolitiScale is a political test using 8 ideological values to help you know approximately you belong in the political field, or simply to share your profile with your friends. this internet website is an initiative of the Discord "La Commune" which is freely inspired by <a href="https://8values.github.io/">8values</a>.
+      
+      help_constructivism1: Why are the peolple how they are? This axis allows you to situate yourself between two opposite poles which answer this question.
+      
+      help_constructivism2: The <b>constructivists</b> consider that people build themselves from their environment (notably social) and that the caracteristics that make them who they are, are acquired.
+      
+      help_constructivism3: On the contrary, the <b>essentialists</b> consider that an individual is by nature how he/she is and that their caracteristics that make them who they are are innate.
+      
+      help_justice1: The ones in favor of the <b>rehabilitative justice</b> consider that the role of justice is to put the condemned on the "right path" again by making them understand why they should not do what they did and why they were condemned and by accompanying them all along the process.
+      
+      help_justice2: Conversly the ones infavor of the <b>punitive justice</b> consider that the role of justice is dissuasive, both for the condemned (to avoid recidivism) and for the rest of the society (by making them examples not to follow).
+      
+      help_progressism1: The <b>progressists</b> try to build a social progress, make a better society without caring about traditions. They often consider the present as better than the past and that it is necessary to keep on this path.
+      
+      help_progressism2: On the contrary the <b>conservatives</b> want to keep the status quo and even to reinsert some values already considered as disapeared or disapearing. Traditions, among those the religious heritage, are put forward as a source of wisdom.
+      
+      help_internationalism1: <b>internationalism</b> is a set of different ides which have for common point to stop making a hierarchy between contries and their inhabitants and to promote as much as possible their cooperation. Pushed to its maximum the final objective is the abolitions of borders.
       help_internationalism2: À l’inverse, le <b>nationalisme</b> est un ensemble d’idées hétéroclites ayant pour point commun de privilégier le pays et les habitants dans lequel il s’applique par rapport aux autres, et à légitimer l’existence d’une nation par peuple.
-      help_communism1: Le <b>communisme</b> est une doctrine politique très vaste. Dans ce test, une prépondérance pour le communisme signifie simplement que vous êtes partisans de la propriété publique des moyens de productions.
-      help_communism2: Le <b>capitalisme</b> est lui aussi un concept très ambivalent. Dans ce test, une prépondérance pour le capitalisme signifie simplement que vous êtes partisans de la propriété privée des moyens de productions.
-      help_regulationism1: Cet axe représente l'attitude que doit avoir un état dans une économie de marché où une part importante des moyens de production sont privés. Libéraux et keynésiens s’opposent ainsi sur la méthode à adopter sans toutefois remettre en question le capitalisme. Si vous êtes plutôt capitaliste, cet axe représente votre but en matière d’économie. Si vous êtes communiste, cet axe représente ce que vous pouvez attendre de moins mauvais du système actuel.
-      help_regulationism2: Le <b>régulationnisme</b>, ou interventionnisme, est une idée selon laquelle l’activité économique doit être régulée dans l’intérêt de tous. Cela peut passer par la législation, la planification, les subventions, une imposition variable…
-      help_regulationism3: À l’inverse, le <b>laissez-faire</b> est une idée selon laquelle l’activité économique ne doit pas être régulée, car elle répondrait d’elle-même à l’intérêt général. Cela peut passer par une faible législation, peu ou pas de subventions, une imposition fixe et souvent faible, voire la suppression complète du rôle de l’État en matière d’économie.
-      help_ecology1: <b>L’écologie</b>, en politique, privilégie la protection de l’environnement, en limitant autant que possible l’impact des activités humaines sur la biodiversité, quitte à limiter au passage lesdites activités humaines en modifiant plus ou moins radicalement le mode de vie actuel.
-      help_ecology2: Le <b>productivisme</b> privilégie les besoins humain, notamment en soutenant la hausse de la production ou l’utilisation de méthodes ayant un impact incertain sur l’environnement.
-      help_revo1: Les <b>révolutionnaires</b> auront tendance à privilégier l’action directe, souvent en marge de la légalité, pour parvenir à leur objectifs, afin de remplacer l’organisation politique actuelle par une autre radicalement différente. Cela peut se faire au travers de la guérilla, ou plus généralement par des méthodes qui sortent du cadre de l’acceptable posé par les institutions politiques…
-      help_revo2: Les <b>réformistes</b> auront tendance à privilégier l’action légale pour parvenir à leurs fins, afin de réformer l’organisation politique actuelle petit à petit. Cela peut se faire au travers des institutions, via les élections, les manifestations autorisées, les pétitions…
+      
+      help_communism1: <b>Communism</b> is a vast political doctrine. In this test a majority for communism silmply signifies that you are for a public property of the means of production.
+      
+      help_communism2: <b>Capitalisme</b> is as well an ambivalent concept. In this test a majority for capitalism silmply signifies that you are for a private property of the means of production.
+      
+      help_regulationism1: This axis represents the attitude that a government needs to have concerning the market economy in which an important part of the means of production are private. Liberals and kenesiens are opposed to the method that needs to be adopted without putting into question capitalism. If you are more capitalist, this axis represents your goal in terms of economy. If you are more communist, this axis represents the least bad that you can expect of the current system.
+      
+      help_regulationism2: <b>Regulationnism</b> or interventionism is an idea in which the economical activity should be regulated for the commun interst. It can be through legislation, planification, subventions, a variable taxation...
+      
+      help_regulationism3: On the contrary, the <b>laissez-faire</b> is the ideas in which the economical activity should not be regulated because it would in itself correspond to the commun interest. It can be through a weak legislation, few or no subventions, a fixed taxation and often weak or even the complete suppression of the role of the state in the economy.
+      
+      help_ecology1: <b>Ecologie</b> in politics privileges  the protection of the environment by limiting as much as possible the impact of human activities on the biodiversity even if it implies to limit the these human activities by modifying more or less radically our current way of life.
+      
+      help_ecology2: <b>Productivism</b> privileges human needs notably by supporting the increase of the production or the use of methods that have an incertain impact on the environment.
+      
+      help_revo1: <b>Revolutionaries</b> have a tendency to privilege direct action, often in the margin of legality, to reach their goal: replace the current political organisation for totally different one. 
+      
+      help_revo2: <b>Reformists</b> have a tendency to privilege legal action to reach their goal: reform the political organisation step by step. This can be done through the institutions, via elections, authorized demonstrations, petitions...
       
       quiz_loading: Chargement...
       quiz_btn_yes1: Absolument d'accord
@@ -112,7 +136,9 @@ t:
       share_twitter: "Mon résultat sur #PolitiScales : %slogan%"
    
    fr_FR:
-      header_desc: PolitiScales est un test politique utilisant 8 axes idéologiques pour vous aider à vos situer politiquement, ou simplement partager votre profil avec vos amis.
+      header_desc: PolitiScales est un test politique utilisant 8 axes idéologiques pour vous aider à vous situer politiquement, ou simplement partager votre profil avec vos amis.
+      
+      Politiscale is a political test using 8 ideological axis to help you know approximately where you belong politically or 
       footer: PolitiScales est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Constructivisme
