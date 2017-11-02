@@ -90,7 +90,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’orientation sexuelle est acquise.",
+		question: "L’orientation sexuelle est une construction sociale",
 		answer: 0,
 		valuesYes: [
 			{
