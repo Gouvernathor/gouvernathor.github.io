@@ -777,7 +777,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les prêts contractés par la sphère publique ne doivent pas nécessairement être remboursés.",
+		question: "Les prêts contractés par la sphère publique (États, régions, collectivités, ...) ne doivent pas nécessairement être remboursés.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -905,7 +905,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les entreprises publiques doivent être administrées comme des entreprises privées et suivre la logique du marché.",
+		question: "Les entreprises publiques doivent être administrées comme des entreprises privées et suivre la logique du marché (concurrence, rentabilité, ...).",
 		answer: 0,
 		valuesYes: [
 			{

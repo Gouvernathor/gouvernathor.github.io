@@ -13,10 +13,6 @@ collections:
       permalink: fr_FR/:name/
       title: Français
       output: true
-   de_DE:
-      permalink: de_DE/:name/
-      title: Deutsch
-      output: true
 
 t:
    en_US:
