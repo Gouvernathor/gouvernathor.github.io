@@ -45,9 +45,9 @@ t:
       result_monarchism: Monarchisme
       result_religion: Missionnaire
       
-      index_welcome: Welcome in the PolitiScle the online political test. You will be confronted to a series of affirmations and for each of them you will have to clic on the button which corresponds most to your opinion.
+      index_welcome: Welcome to the PolitiScle, the online political test. You will be confronted to a series of affirmations and for each of them you will have to clic on the button which corresponds the most to your opinion.
       
-      index_context: The questions assume that your are citizen of a multi-parti political system and a market economy.
+      index_context: The questions assume that your are a citizen of a multi-parti political system and a market economy.
       
       index_advice: You can always avoid answering a question. But if you do not understand the meaning of one of them, try to invert its meaning for a better understanding of what is implied.
       
@@ -59,19 +59,19 @@ t:
          
       help_whois: Who are we?
       
-      help_desc: PolitiScale is a political test using 8 ideological values to help you know approximately you belong in the political field, or simply to share your profile with your friends. this internet website is an initiative of the Discord "La Commune" which is freely inspired by <a href="https://8values.github.io/">8values</a>.
+      help_desc: PolitiScale is a political test using 8 ideological values to help you know approximately where you belong to in the political field, or simply to share your profile with your friends. this internet website is an initiative of the Discord "La Commune" which is freely inspired by <a href="https://8values.github.io/">8values</a>.
       
       help_constructivism1: Why are the peolple how they are? This axis allows you to situate yourself between two opposite poles which answer this question.
       
       help_constructivism2: The <b>constructivists</b> consider that people build themselves from their environment (notably social) and that the caracteristics that make them who they are, are acquired.
       
-      help_constructivism3: On the contrary, the <b>essentialists</b> consider that an individual is by nature how he/she is and that their caracteristics that make them who they are are innate.
+      help_constructivism3: On the contrary, the <b>essentialists</b> consider that an individual is by nature how he/she is and that his/her caracteristics which make this person who she/he is, are innate.
       
       help_justice1: The ones in favor of the <b>rehabilitative justice</b> consider that the role of justice is to put the condemned on the "right path" again by making them understand why they should not do what they did and why they were condemned and by accompanying them all along the process.
       
       help_justice2: Conversly the ones infavor of the <b>punitive justice</b> consider that the role of justice is dissuasive, both for the condemned (to avoid recidivism) and for the rest of the society (by making them examples not to follow).
       
-      help_progressism1: The <b>progressists</b> try to build a social progress, make a better society without caring about traditions. They often consider the present as better than the past and that it is necessary to keep on this path.
+      help_progressism1: The <b>progressists</b> try to build social progress, make a better society without caring about traditions. They often consider the present as better than the past and that it is necessary to keep on this path.
       
       help_progressism2: On the contrary the <b>conservatives</b> want to keep the status quo and even to reinsert some values already considered as disapeared or disapearing. Traditions, among those the religious heritage, are put forward as a source of wisdom.
       
@@ -96,27 +96,40 @@ t:
       
       help_revo2: <b>Reformists</b> have a tendency to privilege legal action to reach their goal: reform the political organisation step by step. This can be done through the institutions, via elections, authorized demonstrations, petitions...
       
-      quiz_loading: Chargement...
-      quiz_btn_yes1: Absolument d'accord
-      quiz_btn_yes0: Plutôt d'accord
-      quiz_btn_neutral: Neutre ou hésitant
-      quiz_btn_no0: Plutôt pas d'accord
-      quiz_btn_no1: Absolument pas d'accord
-      quiz_btn_back_q: Retour à la question précédente
-      quiz_btn_back_i: Retour à l'accueil
-      quiz_btn_random: Voir un résultat aléatoire
-      quiz_question_counter: Question %num% sur %sum%
+      quiz_loading: Loading...
+      quiz_btn_yes1: Absolutely agree
+      quiz_btn_yes0: Somewhat agree
+      quiz_btn_neutral: Neutral or hesitant
+      quiz_btn_no0: Rather disagree
+      quiz_btn_no1: Absolutely disagree
+      quiz_btn_back_q: Return to the previous question
+      quiz_btn_back_i: Go back to home page
+      quiz_btn_random: See a ramdom result
+      quiz_question_counter: Question %num% on %sum%
       
-      result_title: Résultats
-      result_special: Caractéristiques supplémentaires
-      result_desc: Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat. Pour plus d'information sur les differents axes, <a href="help.html">consultez la page d'aide</a>."
-      result_anarchism: "<b>Anarchisme : </b>quand le peuple est frappé avec un bâton, il n'est pas plus heureux si le bâton est appelé « bâton du peuple ». L'État est une oppression qu'il faut supprimer."
-      result_pragmatism: "<b>Pragmatisme : </b>la politique revient à objectivement regarder où sont les problèmes, et chercher à les résoudre en fonction des moyens disponible. La philosophie et les idéologies en générales sont mises de coté au profit de la gestion."
-      result_feminism: "<b>Féminisme radical : </b>le genre doit disparaitre pour mettre à mort le patriarcat."
-      result_complotism: "<b>Complotisme : </b>les grands problèmes de notre société sont l'oeuvre d'un petit groupe de personnes. Il est donc indispensable de les trouver, d'informer le public de leurs objectifs et de les neutraliser."
-      result_veganism: "<b>Véganisme : </b>les humains doivent arrêter à tout prix la consommation et l'exploitation des êtres dit « sensibles »."
-      result_monarchism: "<b>Monarchisme : </b>la société devrait être organisée autour d'un roi."
-      result_religion: "<b>Missionnaire : </b>pour vous, la religion est importante, surtout la votre. Il convient donc de la diffuser le plus largement possible sur l'ensemble du globe."
+      result_title: Résults
+      result_special: Additional characteristics
+      result_desc: The result of your PolitiScale is decomposed in 8 axes. Each axis indicates your positionning compared with two opposed ideologies. Some particular caracteristics, displayed at the end of the page can also complete your rsult. For further information on the different axis <a href="help.html">Look at the help page</a>."
+      
+      result_anarchism: "<b>Anarchism : </b> When the people are being hit with a stick, they are not happier if the stick is called "the stick of the people". The State is an oppression that must be abolished."
+      
+      
+      result_pragmatism: "<b>Pragmatisme : </b>politics objectively returns to look at where the problems are and tring to solve them according to the means available.
+      
+      
+      result_feminism: "<b>Radical feminism : </b>gender should disappear to put an end to the patriarchy." 
+      
+      result_complotism: "<b>Complotism : </b>the biggest problems of our society are the work of a small group of people. It is then essential to find them, inform the people of there objective and neutralize them."
+      
+      
+      result_veganism: "<b>Véganism : </b>Human beaings must stop at all costs the consumption and exploitation of beings said "sensible"."
+      
+      
+      result_monarchism: "<b>Monarchisme : "<b>Monarchisme : </b>society should be organized around a king."
+      
+      
+      result_religion: "<b>Missionnary : </b>for you religon is important, especially yours. It is therefore appropriate to diffuse it as globally as possible."
+      
       result_btn_redo: Recommencer le test
       
       slogan_constructivism: Égalité
