@@ -2,7 +2,7 @@ questions = [
 
 	/* ESSENTIALISME ************************************************ */
 	{
-		question: "« On ne naît pas femme, on le devient ».",
+		question: "« We are not born women, we become women. ».",
 		answer: 0,
 		valuesYes: [
 			{
@@ -22,7 +22,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les différences de traitements et de qualité de vie dans notre société montrent que le racisme est encore très présent.",
+		question: "The diffences of treatement and quality of life in our society show that racism is still very omnipresent.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -38,7 +38,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les sciences, même la physique ou la biologie, ne sont pas absolues et sont conditionnées par notre société.",
+		question: "All sciences, even chemistry and biology are not uncompromising and are conditioned by our society.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -54,7 +54,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les catégories « homme » et « femme » sont des constructions sociales qu'il convient de dépasser.",
+		question: "The categories "women" and "men" are social constructions that should be overpassed.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -74,7 +74,7 @@ questions = [
 		]
 	},
 	{
-		question: "Personne n’est prédisposé à la criminalité par sa nature.",
+		question: "Nobady is by nature predisposed to criminality.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -90,7 +90,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’orientation sexuelle est acquise.",
+		question: "Sexual orientation is not innate.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -106,7 +106,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les differences sociales entre groupes ethniques ne s'expliquent pas par la biologie.",
+		question: "Social differences between ethnic groups cannot be explained by biology.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -122,27 +122,7 @@ questions = [
 		]
 	},
 	{
-		question: "La place des hommes et des femmes dans la société peut être en partie expliquée par la biologie.",
-		answer: 0,
-		valuesYes: [
-			{
-				axis: "c1",
-				value: 3
-			}
-		],
-		valuesNo: [
-			{
-				axis: "c0",
-				value: 3
-			},
-			{
-				axis: "femi",
-				value: 3
-			}
-		]
-	},
-	{
-		question: "Les différences hormonales expliquent certaines différences de traits de caractère entre les hommes et les femmes.",
+		question: "The place of women and men in society can partly be explained by biology.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -162,7 +142,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les agressions sexuelles sont en partie causées par les pulsions naturelles des hommes.",
+		question: "Hormonal differences can explain some differences in individual caracteristics between women and men.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -182,7 +162,27 @@ questions = [
 		]
 	},
 	{
-		question: "Les personnes transgenres ne seront jamais vraiment du genre qu’elles veulent atteindre.",
+		question: "Sexual agressions are partly caused by men's natural impulse.",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "Transgender individuals will never really by of the gender they would like to be.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -198,7 +198,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les membres d'une même nation ou d'une même culture ont des traits caractéristiques immuables qui les définissent.",
+		question: "Members of a same nation or same culture have some unchangeble caracteristics that define them.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -214,7 +214,7 @@ questions = [
 		]
 	},
 	{
-		question: "Biologiquement, l'espèce humaine est faite pour l'hétérosexualité.",
+		question: "Biologically, human geings are made to be heterosexual.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -230,7 +230,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'égoïsme est prépondérant dans l'espèce humaine, indépendamment du contexte.",
+		question: "Selfishness is overriding in human specie, independently of the context.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -247,7 +247,7 @@ questions = [
 	},
     /* NATIONALISME ************************************************* */
 	{
-		question: "À terme, les frontières doivent être supprimées.",
+		question: "The borders should be abolished eventually.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -263,7 +263,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut défendre ses idéaux, même si cela revient à trahir son pays.",
+		question: "People need to stand up there ideals, even if it makes betray there country.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -279,7 +279,7 @@ questions = [
 		]
 	},
 	{
-		question: "Mon pays doit payer pour réparer les dégâts causés par les crimes qu'il a commis à l'étranger.",
+		question: "My country needs to pay for the damages caused by the crimes it commited in other coutries.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -295,7 +295,7 @@ questions = [
 		]
 	},
 	{
-		question: "Si deux pays ont une économie, des systèmes sociaux, et des normes environnementales similaires, alors le libre échange entre eux ne pose aucun problème.",
+		question: "If two countries have similar economies, social systems and environmental norms, then the free market between them do not cause any problem.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -311,7 +311,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le chauvinisme pendant les compétitions sportives n’est pas acceptable.",
+		question: "Chauvinism during sport competitions is not acceptable.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -327,7 +327,7 @@ questions = [
 		]
 	},
 	{
-		question: "Je suis autant concerné par les habitants des autres pays que par ceux de mon pays. ",
+		question: "I am equally concerned about inhabitants of my country than those of other the countries.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -343,7 +343,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les étrangers vivant dans mon pays doivent pouvoir agir politiquement à égalité avec les porteurs de la nationalité.",
+		question: "Foreigners living in my country should be allowed to act politically, equallay than those who have the nationality.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -359,7 +359,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les citoyens doivent être prioritaires par rapport aux étrangers.",
+		question: "Citizens sould have priority on the foreigners.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -375,7 +375,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les valeurs de mon pays sont supérieures à celles des autres.",
+		question: "The values of my country are superior than those of the other countries.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -391,7 +391,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le multiculturalisme est un danger.",
+		question: "Multiculturalism is a danger.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -407,7 +407,7 @@ questions = [
 		]
 	},
 	{
-		question: "Un bon citoyen est patriote.",
+		question: "A good citizen is a patriot.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -423,7 +423,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est légitime pour un pays d'intervenir militairement à l'étranger pour défendre ses intérêts économiques.",
+		question: "It is legitimate of a country to intervene militarily to defend its economic interests.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -439,7 +439,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut enseigner l'Histoire d'une façon qui permet de créer un sentiment d'appartenance à la nation.",
+		question: "It is nessecery to teach history in a way to create a feeling of belonging to the nation.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -455,7 +455,7 @@ questions = [
 		]
 	},
 	{
-		question: "La recherche produite par mon pays ne devrait pas être accessible aux autres.",
+		question: "Resaerch produced by my country should not be accesible to others.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -472,7 +472,7 @@ questions = [
 	},
     /* PRODUCTION *************************************************** */
 	{
-		question: "Nul ne doit s'enrichir par le fait de posséder une entreprise, un logement ou un terrain.",
+		question: "No one has to get richer by possessing a firm, a housing or a field.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -488,7 +488,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le salariat par une entreprise privée est une forme de vol contre les travailleurs.",
+		question: "The wage by a private firm is a form of stealing of the workers.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -504,7 +504,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est important que la santé reste majoritairement publique.",
+		question: "It is important that health stays a public matter.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -520,7 +520,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'énergie et les infrastructures de transport doivent être publiques.",
+		question: "Energy and transport structures should be a public matter.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -536,7 +536,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les brevets ne devraient pas exister.",
+		question: "Licenses should not exist.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -552,7 +552,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut mettre en place des assemblées pour répartir les productions vers les consommateurs en fonction des besoins.",
+		question: "It is necessary to implement assemblies to distribute productions to consumers according to their needs.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -568,7 +568,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le marché du travail asservit les travailleurs.",
+		question: "Labor market enslaves workers.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -584,7 +584,7 @@ questions = [
 		]
 	},
 	{
-		question: "La recherche de son profit personnel est saine pour l'économie.",
+		question: "Researching for one's own profit is healthy for the economy.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -600,7 +600,7 @@ questions = [
 		]
 	},
 	{
-		question: "C'est le mérite qui explique la différence de richesse entre deux personnes.",
+		question: "It is merit that explains differences of wealth between two individuals.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -616,7 +616,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il n'y a pas de problème à ce que certaines écoles et universités puissent être privées.",
+		question: "There is no problem in that some schools and universities are private.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -632,7 +632,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les délocalisations sont un mal nécessaire pour améliorer la production.",
+		question: "Decolonisation is a necessary evil to improve production.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -648,7 +648,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est acceptable qu'il y ait des riches et des pauvres.",
+		question: "It is acceptable that there are rich and poor people.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -664,7 +664,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est acceptable que certains secteurs de l'industrie soient privés.",
+		question: "It is acceptable that some industry sectors are private.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -680,7 +680,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les banques doivent rester privées.",
+		question: "Banks should remain private.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -697,7 +697,7 @@ questions = [
 	},
     /* MARKET ******************************************************* */
 	{
-		question: "Il faut taxer les revenus et le capital pour redistribuer les richesses.",
+		question: "Revenues and capital should be taxed to redistribute wealth.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -713,7 +713,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'âge du départ à la retraite doit être diminué.",
+		question: "The age of retirement should be reduced.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -729,7 +729,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les licenciements doivent être interdits sauf dans des cas justifiés.",
+		question: "Dissmissals should be forbidden except if it is justified.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -745,7 +745,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le niveau des salaires doit être contrôlé pour garantir qu’un travailleur puisse vivre de son travail.",
+",    "Levels of salary should be ensured to make sure that a worker can live of her/his work."
 		answer: 0,
 		valuesYes: [
 			{
@@ -761,7 +761,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut empêcher la création de monopoles privés.",
+		question: "It is necessary to avoid private monopoly.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -777,7 +777,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les prêts contractés par la sphère publique ne doivent pas nécessairement être remboursés.",
+		question: "The loans contracted in the public sphere should not necessarily be refunded.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -793,7 +793,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut subventionner certains secteurs ou certains types d’emploi.",
+		question: "Some soctors or type of employment should be financially supported.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -809,7 +809,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’économie de marché est optimale quand elle n’est pas régulée.",
+		question: "Market economy is optimal when it is not regualted.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -825,7 +825,7 @@ questions = [
 		]
 	},
 	{
-		question: "Actuellement, un salarié seul est libre de ses choix lors de la signature de son contrat avec son futur employeur.",
+		question: "Curently an employee is free of her.his choices during the signing of the contractwith her/his future employer.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -841,7 +841,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut supprimer des règlementations dans code du travail pour encourager les entreprises à embaucher.",
+		question: "It is necessary to remove reglemention in the labor Code to encourage firms to hire.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -857,7 +857,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le temps de travail légal doit être augmenté.",
+		question: "Legal work time should be increased.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -873,7 +873,7 @@ questions = [
 		]
 	},
 	{
-		question: "C’est par la consommation que les normes environnementales doivent émerger, et non par une autorité.",
+		question: "It is consumption that environmental norms should emerge and not by an authority.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -889,7 +889,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les aides sociales dissuadent de travailler.",
+		question: "Social assistance discourags work.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -905,7 +905,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les entreprises publiques doivent être administrées comme des entreprises privées et suivre la logique du marché.",
+		question: "State firms should be manage like private ones and follow the logic of the market.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -922,7 +922,7 @@ questions = [
 	},
     /* SOCIETE ****************************************************** */
 	{
-		question: "Toute tradition doit pouvoir être remise en question.",
+		question: "Tradition should be questioned.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -938,7 +938,7 @@ questions = [
 		]
 	},
 	{
-		question: "Je n’ai aucun problème avec le fait que d’autres langues officielles soient ajoutées ou remplacent la langue officielle existante de mon pays.",
+		question: "I do not have any problem if other official languages are added or replace the official language existing in my country.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -954,7 +954,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut supprimer le mariage.",
+		question: "Marriage should be abolished.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -974,7 +974,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les étrangers enrichissent notre culture.",
+		question: "Foreigners enriches our culture.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -990,7 +990,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’influence de la religion doit diminuer.",
+		question: "The influence of region should decrease.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1006,7 +1006,7 @@ questions = [
 		]
 	},
 	{
-		question: "Une langue est définie par ceux qui l’utilisent et non pas par des académiciens.",
+		question: "A language is defined by its users, not by academicians.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1022,7 +1022,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'euthanasie doit être autorisée.",
+		question: "Euthanasia should be authorised.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1038,7 +1038,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les homosexuels n’ont pas à avoir une égalité de traitement avec les hétérosexuels en ce qui concerne le mariage, la filiation, l’adoption ou la procréation.",
+		question: "Homosexuals should not have an equlity in treatment concerning marriage, filiation, adoption or procreation.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1054,7 +1054,7 @@ questions = [
 		]
 	},
 	{
-		question: "Dans certaines conditions, la peine de mort est justifiée.",
+		question: "In some conditions, death penalty is justified.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1078,7 +1078,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les progrès techniques ne doivent pas changer trop rapidement la société.",
+		question: "Thechnical progress should not change society too quickly.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1094,7 +1094,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'école doit principalement enseigner nos valeurs, nos traditions et les connaissances fondamentales.",
+		question: "School should mostly teach our values, traditions and fundamental knowledge.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1110,7 +1110,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'avortement devrait être limité à des cas précis.",
+		question: "Aborthion should be limited to precise cases.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1130,7 +1130,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le but principal d’un couple doit être de faire au moins un enfant.",
+		question: "The main goal of a couple is to make at least one child.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1146,7 +1146,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’abstinence devrait être préférée à la contraception pour préserver la vraie nature de l’acte sexuel.",
+		question: "Abstinance should be prefered to contraception, to preserve the true nature of the sexual act.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1163,7 +1163,7 @@ questions = [
 	},
     /* ECOLOGIE ***************************************************** */
 	{
-		question: "Il n’est pas acceptable que les actions humaines entraînent des extinctions d’espèces.",
+		question: "It is not acceptable that human actions lead to exinction of species.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1179,7 +1179,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les OGM doivent être interdits en dehors de la recherche ou du secteur médical.",
+		question: "GMO should be forbidden outside research and medical perposes.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1195,7 +1195,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le réchauffement climatique doit être combattu.",
+		question: "We must fight against global warming.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1211,7 +1211,7 @@ questions = [
 		]
 	},
 	{
-		question: "Nous devons accepter de changer notre mode de consommation alimentaire pour limiter l’exploitation de la nature.",
+		question: "We should accept changes in our food consumption mode to limit the exploitation of nature.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1227,7 +1227,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est important d'encourager une agriculture qui maintienne une biodiversité alimentaire, même si son rendement est inférieur.",
+		question: "It is important to encourage an agriculture that maintains a food biodiversity, even if the production is inferior.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1243,7 +1243,7 @@ questions = [
 		]
 	},
 	{
-		question: "Préserver les écosystèmes non-urbains est plus important que de créer des emplois.",
+		question: "Preserving non urban ecosystem is more important than create jobs.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1259,7 +1259,7 @@ questions = [
 		]
 	},
 	{
-		question: "La réduction des déchets doit se faire par une réduction de la production.",
+		question: "Reduction of waste should be done by a reduction of production.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1275,7 +1275,7 @@ questions = [
 		]
 	},
 	{
-		question: "La colonisation spatiale est une bonne solution pour subvenir au manque de matières premières sur Terre (métaux rares, ...).",
+		question: "Spatial colonistion is a good alternative to supply the lack of raw material on the Earth (rare metals, oil...)",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1291,7 +1291,7 @@ questions = [
 		]
 	},
 	{
-		question: "Transformer durablement les écosystèmes pour augmenter la qualité de vie des humains est légitime.",
+		question: "Transform durably ecosystems to increase the human beings quality of life is legitimate.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1307,7 +1307,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut massivement investir dans la recherche pour améliorer la productivité.",
+		question: "It is necessay to massively invest in research to improve productivity.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1323,7 +1323,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le transhumanisme sera bénéfique car il permettra d’améliorer nos capacités.",
+		question: "Transhumansm will be beneficial because it will allow us to improve ou capcities.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1339,7 +1339,7 @@ questions = [
 		]
 	},
 	{
-		question: "La fission nucléaire, quand elle est bien entretenue, est une bonne source d’énergie.",
+		question: "Nuclear fission, when well maintained, is a good source of energy.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1355,7 +1355,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’exploitation des énergies fossiles est nécessaire.",
+		question: "Exploitation of fossil fuels is necessary.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1371,7 +1371,7 @@ questions = [
 		]
 	},
 	{
-		question: "Maintenir une croissance économique forte doit être un objectif du gouvernement.",
+		Maintaining a poserful economic growth should be an objective for the government.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1388,7 +1388,7 @@ questions = [
 	},
     /* LIBERTAIRE *************************************************** */
 	{
-		question: "Les prisons doivent être supprimées.",
+		question: "Prisons should be suppressed.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1404,7 +1404,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il est injuste de fixer une peine minimale pour un délit ou un crime.",
+		question: "It is unfair to fix a minimal penalty for an offese or a crime.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1420,7 +1420,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les personnes sortant de prison doivent être accompagnées dans leur réinsertion.",
+		question: "Individuals who get out of prison shoudl be accompanied in their reinsertion.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1436,7 +1436,7 @@ questions = [
 		]
 	},
 	{
-		question: "La justice doit toujours prendre en compte le contexte et le passif du condamné et adapter les peines en fonction.",
+		question: "Justice should always take into consideration the context and the past of a condemmed and adapt their penalty accordingly.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1452,7 +1452,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les conditions de vie des détenus doivent être grandement améliorées.",
+		question: "Conditions of life of the detainees should be greatly improved.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1468,7 +1468,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le fichage doit être très encadré et le recoupage des base de données interdit.",
+		question: "The filing system should be very well framed and the database recutting should be forbidden.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1484,7 +1484,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut garantir le droit d’être anonyme sur Internet.",
+		question: "The right to be anonymous on Internet should be guarenteed.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1500,7 +1500,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le but du système judiciaire doit être de punir ceux qui ont enfreint la loi.",
+		question: "The aim of the judicial system should be to punish those who went against the law.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1516,7 +1516,7 @@ questions = [
 		]
 	},
 	{
-		question: "La police doit être armée.",
+		question: "The police should be armed.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1532,7 +1532,23 @@ questions = [
 		]
 	},
 	{
-		question: "Le sacrifice de certaines libertés civiles est nécessaire pour se protéger des actes de terrorisme.",
+		question: "The secrifice of some civil liberties is necessary to be protected from terrorist acts.",
+		answer: 0,
+		valuesYes: [
+			{
+				: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "Order and authority should be respected in all circumstances.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1548,7 +1564,7 @@ questions = [
 		]
 	},
 	{
-		question: "L’ordre et l’autorité doivent être respectés en toute circonstance.",
+		question: "Th heavy penalties are efficient because they ar dissuasive.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1564,23 +1580,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les peines lourdes sont efficaces car elles sont dissuasives.",
-		answer: 0,
-		valuesYes: [
-			{
-				axis: "j1",
-				value: 3
-			}
-		],
-		valuesNo: [
-			{
-				axis: "j0",
-				value: 3
-			}
-		]
-	},
-	{
-		question: "Il vaut mieux arrêter préventivement une personne potentiellement dangereuse que de courir le risque qu'elle commette un crime.",
+		question: "It is better to arrest someone potentially dangerous preventively rather than taking the risk that this person commits a crime.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1597,7 +1597,7 @@ questions = [
 	},
     /* STRATEGIE **************************************************** */
 	{
-		question: "La grève générale est une bonne façon d’obtenir de nouveaux droits.",
+		question: "General strike is a goo way to acquire new rights.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1613,7 +1613,7 @@ questions = [
 		]
 	},
 	{
-		question: "La lutte armée au sein d'un pays est parfois necessaire.",
+		question: "Armed struggle in a country is sometimes necessary.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1629,7 +1629,7 @@ questions = [
 		]
 	},
 	{
-		question: "L'insurrection est nécessaire pour transformer la société en profondeur.",
+		question: "Insurrection is necessary to change profoundly the society.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1645,7 +1645,7 @@ questions = [
 		]
 	},
 	{
-		question: "Militer au sein des institutions politiques en place n’est pas pertinent pour transformer la société.",
+		question: "Militate in existing political organisations is not relevent to change society.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1661,7 +1661,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les élections organisées par l'État ne peuvent pas remettre en question les pouvoirs en place.",
+		question: "Elections organised by the state cannot question the pwers in place.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1677,7 +1677,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le piratage informatique a une place légitime dans la lutte politique.",
+		question: "Hacking has a legitimate place in political struggle.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1693,7 +1693,7 @@ questions = [
 		]
 	},
 	{
-		question: "Le sabotage est légitime dans certaines conditions.",
+		question: "Sabbotage is legitimate in certain conditions.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1709,7 +1709,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut toujours militer dans le strict respect de la loi.",
+		question: "We must always campain in strict compliance with the law.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1725,7 +1725,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les révolutions sont condamnées à toujours finir mal.",
+		question: "Revolutions are always condemned to end up badly.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1741,7 +1741,7 @@ questions = [
 		]
 	},
 	{
-		question: "Changer le système de façon radicale est contre-productif. Il faut plutôt transformer la société progressivement.",
+		question: "Changing the system in a dacical manner is counter-productive. We should rather transform it progressively.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1757,7 +1757,7 @@ questions = [
 		]
 	},
 	{
-		question: "La violence contre les personnes n'est jamais une solution.",
+		question: "Violence against individuals is never productive.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1773,7 +1773,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut toujours se désolidariser des violences commises par les manifestants.",
+		question: "We always need to dissociate from violence commited by protestors.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1789,7 +1789,7 @@ questions = [
 		]
 	},
 	{
-		question: "Il faut faire des compromis avec l’opposition pour faire passer certaines de nos idées.",
+		question: "We need to make compromises with the opposition to pass our ideas.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1805,7 +1805,7 @@ questions = [
 		]
 	},
 	{
-		question: "Les changements des modes de vie individuels peuvent provoquer des changements de société.",
+		question: "Change in individual modes of life can induce changes in society.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1822,7 +1822,7 @@ questions = [
 	},
     /* BONUS ******************************************************** */
 	{
-		question: "Ma religion doit se diffuser le plus largement possible.",
+		question: "My religion must be spreadas widely as possible.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1833,7 +1833,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "C’est un petit groupe qui contrôle secrètement et consciemment le monde.",
+		question: "It is a small group that controls consciously and secretly the world.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1844,7 +1844,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "Une bonne politique, c’est une politique pragmatique et sans idéologie.",
+		question: "A good policy is a pragmatic policy without ideology.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1855,7 +1855,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "Il faut mettre en place une monarchie afin de fédérer le peuple et préserver notre souveraineté.",
+		question: "We need to establish a monarchy to federate the people and preserve our sovereignty.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1866,7 +1866,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "Les humains ne doivent ni manger, ni exploiter les animaux.",
+		question: "Humans should neither eat not exploit animals.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1877,7 +1877,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "L'état doit être aboli.",
+		question: "The State should be abolished.",
 		answer: 0,
 		valuesYes: [
 			{
