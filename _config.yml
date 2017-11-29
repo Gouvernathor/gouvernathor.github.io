@@ -16,9 +16,9 @@ collections:
 
 t:
    en_US:
-      header_desc: PolitiScale is a political test using 8 ideological values to help you know approximately where you belong in the political field, or simply to share your profile with your friends.
+      header_desc: "PolitiScale is a political test using 8 ideological values to help you know approximately where you belong in the political field, or simply to share your profile with your friends."
       
-      footer: PolitiScale is an initiative of the Discord "La Commune" which is freely inspired by <a href="https://8values.github.io/">8values</a>.
+      footer: PolitiScale is an initiative of the Discord “La Commune” which is freely inspired by <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Constructivisme
       essentialism: Essentialisme
@@ -92,9 +92,9 @@ t:
       
       help_ecology2: <b>Productivism</b> privileges human needs notably by supporting the increase of the production or the use of methods that have an incertain impact on the environment.
       
-      help_revo1: <b>Revolutionaries</b> have a tendency to privilege direct action, often in the margin of legality, to reach their goal: replace the current political organisation for totally different one. 
+      help_revo1: "<b>Revolutionaries</b> have a tendency to privilege direct action, often in the margin of legality, to reach their goal: replace the current political organisation for totally different one."
       
-      help_revo2: <b>Reformists</b> have a tendency to privilege legal action to reach their goal: reform the political organisation step by step. This can be done through the institutions, via elections, authorized demonstrations, petitions...
+      help_revo2: "<b>Reformists</b> have a tendency to privilege legal action to reach their goal: reform the political organisation step by step. This can be done through the institutions, via elections, authorized demonstrations, petitions..."
       
       quiz_loading: Loading...
       quiz_btn_yes1: Absolutely agree
@@ -107,14 +107,14 @@ t:
       quiz_btn_random: See a ramdom result
       quiz_question_counter: Question %num% on %sum%
       
-      result_title: Résults
+      result_title: Results
       result_special: Additional characteristics
-      result_desc: The result of your PolitiScale is decomposed in 8 axes. Each axis indicates your positionning compared with two opposed ideologies. Some particular caracteristics, displayed at the end of the page can also complete your rsult. For further information on the different axis <a href="help.html">Look at the help page</a>."
+      result_desc: The result of your PolitiScale is decomposed in 8 axes. Each axis indicates your positionning compared with two opposed ideologies. Some particular caracteristics, displayed at the end of the page can also complete your result. For further information on the different axis <a href="help.html">Look at the help page</a>.
       
-      result_anarchism: "<b>Anarchism : </b> When the people are being hit with a stick, they are not happier if the stick is called "the stick of the people". The State is an oppression that must be abolished."
+      result_anarchism: "<b>Anarchism : </b> When the people are being hit with a stick, they are not happier if the stick is called “the stick of the people”. The State is an oppression that must be abolished."
       
       
-      result_pragmatism: "<b>Pragmatisme : </b>politics objectively returns to look at where the problems are and tring to solve them according to the means available.
+      result_pragmatism: "<b>Pragmatism : </b>politics objectively returns to look at where the problems are and tring to solve them according to the means available."
       
       
       result_feminism: "<b>Radical feminism : </b>gender should disappear to put an end to the patriarchy." 
@@ -122,10 +122,10 @@ t:
       result_complotism: "<b>Complotism : </b>the biggest problems of our society are the work of a small group of people. It is then essential to find them, inform the people of there objective and neutralize them."
       
       
-      result_veganism: "<b>Véganism : </b>Human beaings must stop at all costs the consumption and exploitation of beings said "sensible"."
+      result_veganism: "<b>Véganism : </b>Human beaings must stop at all costs the consumption and exploitation of beings said “sensible”."
       
       
-      result_monarchism: "<b>Monarchisme : "<b>Monarchisme : </b>society should be organized around a king."
+      result_monarchism: "<b>Monarchism : </b>society should be organized around a king."
       
       
       result_religion: "<b>Missionnary : </b>for you religon is important, especially yours. It is therefore appropriate to diffuse it as globally as possible."
@@ -151,7 +151,6 @@ t:
    fr_FR:
       header_desc: PolitiScales est un test politique utilisant 8 axes idéologiques pour vous aider à vous situer politiquement, ou simplement partager votre profil avec vos amis.
       
-      Politiscale is a political test using 8 ideological axis to help you know approximately where you belong politically or 
       footer: PolitiScales est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Constructivisme

@@ -2,7 +2,7 @@ questions = [
 
 	/* ESSENTIALISME ************************************************ */
 	{
-		question: "« We are not born women, we become women. ».",
+		question: "“We are not born women, we become women”.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -54,7 +54,7 @@ questions = [
 		]
 	},
 	{
-		question: "The categories "women" and "men" are social constructions that should be overpassed.",
+		question: "The categories “women” and “men” are social constructions that should be overpassed.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1536,7 +1536,7 @@ questions = [
 		answer: 0,
 		valuesYes: [
 			{
-				: "j1",
+				axis: "j1",
 				value: 3
 			}
 		],
