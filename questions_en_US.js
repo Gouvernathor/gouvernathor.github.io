@@ -90,7 +90,7 @@ questions = [
 		]
 	},
 	{
-		question: "Sexual orientation is not innate.",
+		question: "Sexual orientation is a social construction.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -552,7 +552,7 @@ questions = [
 		]
 	},
 	{
-		question: "It is necessary to implement assemblies to distribute productions to consumers according to their needs.",
+		question: "It is necessary to implement assemblies to ration out productions to the consumers occording to their needs.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -777,7 +777,7 @@ questions = [
 		]
 	},
 	{
-		question: "The loans contracted in the public sphere should not necessarily be refunded.",
+		question: "The loans contracted in the public sphere (State, regions, collectivities...) should not necessarily be refunded.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -905,7 +905,7 @@ questions = [
 		]
 	},
 	{
-		question: "State firms should be manage like private ones and follow the logic of the market.",
+		question: "State firms should be managed like private ones and follow the logic of the market (competition, profitability...).",
 		answer: 0,
 		valuesYes: [
 			{

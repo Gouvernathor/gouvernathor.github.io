@@ -18,7 +18,7 @@ t:
    en_US:
       header_desc: "PolitiScale is a political test using 8 ideological values to help you know approximately where you belong in the political field, or simply to share your profile with your friends."
       
-      footer: PolitiScale is an initiative of the Discord “La Commune” which is freely inspired by <a href="https://8values.github.io/">8values</a>.
+      footer: PolitiScale is an initiative of the <a href="http://www.la-commune.net">Discord “La Commune”</a> which is freely inspired by <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Constructivism
       essentialism: Essentialism
@@ -80,7 +80,7 @@ t:
       
       help_communism1: <b>Communism</b> is a vast political doctrine. In this test a majority for communism silmply signifies that you are for a public property of the means of production.
       
-      help_communism2: <b>Capitalisme</b> is as well an ambivalent concept. In this test a majority for capitalism silmply signifies that you are for a private property of the means of production.
+      help_communism2: <b>Capitalism</b> is as well an ambivalent concept. In this test a majority for capitalism silmply signifies that you are for a private property of the means of production.
       
       help_regulationism1: This axis represents the attitude that a government needs to have concerning the market economy in which an important part of the means of production are private. Liberals and kenesiens are opposed to the method that needs to be adopted without putting into question capitalism. If you are more capitalist, this axis represents your goal in terms of economy. If you are more communist, this axis represents the least bad that you can expect of the current system.
       
@@ -122,7 +122,7 @@ t:
       result_complotism: "<b>Complotism : </b>the biggest problems of our society are the work of a small group of people. It is then essential to find them, inform the people of there objective and neutralize them."
       
       
-      result_veganism: "<b>Véganism : </b>Human beaings must stop at all costs the consumption and exploitation of beings said “sensible”."
+      result_veganism: "<b>Veganism : </b>Human beaings must stop at all costs the consumption and exploitation of beings said “sensible”."
       
       
       result_monarchism: "<b>Monarchism : </b>society should be organized around a king."
@@ -130,11 +130,11 @@ t:
       
       result_religion: "<b>Missionnary : </b>for you religon is important, especially yours. It is therefore appropriate to diffuse it as globally as possible."
       
-      result_btn_redo: Recommencer le test
+      result_btn_redo: Restart the test
       
       slogan_constructivism: Equality
       slogan_internationalism: Humanity
-      slogan_nationalism: contry
+      slogan_nationalism: Fatherland
       slogan_communism: Socialism
       slogan_capitalism: Work
       slogan_laissez_faire: Liberty
@@ -144,14 +144,14 @@ t:
       slogan_ecology: Ecology
       slogan_revo: Revolution
       
-      share_facebook: "Mon résultat sur #PolitiScales : %slogan%"
-      share_reddit: "Mon résultat sur #PolitiScales : %slogan%"
-      share_twitter: "Mon résultat sur #PolitiScales : %slogan%"
+      share_facebook: "My #PolitiScales results: %slogan%"
+      share_reddit: "My #PolitiScales results: %slogan%"
+      share_twitter: "My #PolitiScales results: %slogan%"
    
    fr_FR:
       header_desc: PolitiScales est un test politique utilisant 8 axes idéologiques pour vous aider à vous situer politiquement, ou simplement partager votre profil avec vos amis.
       
-      footer: PolitiScales est une initiative du Discord « La Commune », librement inspirée de <a href="https://8values.github.io/">8values</a>.
+      footer: PolitiScales est une initiative du <a href="http://www.la-commune.net">Discord « La Commune »</a>, librement inspirée de <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Constructivisme
       essentialism: Essentialisme
@@ -247,7 +247,7 @@ t:
 
    de_DE:
       header_desc: PolitiScales ist ein politisches Experiment, welches sich auf 8 ideologischen Achsen stützt, um Ihr politisches Spektrum einordnen zu können, oder um einfach Ihr Profil mit Freunden zu teilen.
-      footer: PolitiScales ist eine Initiative des Discords « La Commune » (Die Kommune) inspiriert von <a href="https://8values.github.io/">8values</a>.
+      footer: PolitiScales ist eine Initiative des <a href="http://www.la-commune.net">Discords « La Commune »</a> (Die Kommune) inspiriert von <a href="https://8values.github.io/">8values</a>.
       
       constructivism: Konstruktivismus
       essentialism: Essentialismus
