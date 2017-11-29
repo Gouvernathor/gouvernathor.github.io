@@ -745,7 +745,7 @@ questions = [
 		]
 	},
 	{
-",    "Levels of salary should be ensured to make sure that a worker can live of her/his work."
+		question: "Levels of salary should be ensured to make sure that a worker can live of her/his work.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1371,7 +1371,7 @@ questions = [
 		]
 	},
 	{
-		Maintaining a poserful economic growth should be an objective for the government.",
+		question: "Maintaining a poserful economic growth should be an objective for the government.",
 		answer: 0,
 		valuesYes: [
 			{
