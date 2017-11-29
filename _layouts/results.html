@@ -493,14 +493,14 @@ if(!bonusEnabled)
 twitterButton = document.getElementById("buttonTwitter")
 if(twitterButton)
 {
-	var text = "{{ site.t[page.language].share_twitter }}".replace("%slogan%", "generatedSlogan");
+	var text = "{{ site.t[page.language].share_twitter }}".replace("%slogan%", generatedSlogan);
 	twitterButton.href = "https://twitter.com/intent/tweet?text="+encodeURIComponent(text+" ")+encodeURIComponent(location.href);
 }
 
 redditButton = document.getElementById("buttonReddit")
 if(redditButton)
 {
-	var text = "{{ site.t[page.language].share_reddit }}".replace("%slogan%", "generatedSlogan");
+	var text = "{{ site.t[page.language].share_reddit }}".replace("%slogan%", generatedSlogan);
 	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent(text);
 }
 
@@ -514,7 +514,7 @@ function shareFacebook()
 	FB.ui({
 	method: 'share',
 	hashtag: '#PolitiScales',
-	quote: "{{ site.t[page.language].share_facebook }}".replace("%slogan%", "generatedSlogan"),
+	quote: "{{ site.t[page.language].share_facebook }}".replace("%slogan%", generatedSlogan),
 	href: uri,
 	}, function(response){});
 }
