@@ -20,30 +20,30 @@ t:
       
       footer: PolitiScale is an initiative of the Discord “La Commune” which is freely inspired by <a href="https://8values.github.io/">8values</a>.
       
-      constructivism: Constructivisme
-      essentialism: Essentialisme
-      justice_soft: Justice réhabilitative
-      justice_hard: Justice punitive
-      progressism: Progressisme
-      conservatism: Conservatisme
-      internationalism: Internationalisme
-      nationalism: Nationalisme
-      communism: Communisme
-      capitalism: Capitalisme
-      regulationism: Régulationnisme
+      constructivism: Constructivism
+      essentialism: Essentialism
+      justice_soft: Rehabilitative justice
+      justice_hard: Punitive justice
+      progressism: Progressism
+      conservatism: Conservatism
+      internationalism: Internationalism
+      nationalism: Nationalism
+      communism: Communism
+      capitalism: Capitalism
+      regulationism: Régulationnism
       laissez_faire: Laissez-faire
-      ecology: Écologie
-      productivism: Productivisme
-      revo: Révolution
-      refo: Réformisme
+      ecology: Ecology
+      productivism: Productivism
+      revo: Revolution
+      refo: Réformism
       
-      result_anarchism: Anarchisme
-      result_pragmatism: Pragmatisme
-      result_feminism: Féminisme radical
-      result_complotism: Complotisme
-      result_veganism: Véganisme
-      result_monarchism: Monarchisme
-      result_religion: Missionnaire
+      result_anarchism: Anarchism
+      result_pragmatism: Pragmatism
+      result_feminism: Radical feminism
+      result_complotism: Conspiracy theories
+      result_veganism: Veganism
+      result_monarchism: Monarchism
+      result_religion: Missionaries
       
       index_welcome: Welcome to the PolitiScle, the online political test. You will be confronted to a series of affirmations and for each of them you will have to clic on the button which corresponds the most to your opinion.
       
@@ -132,17 +132,17 @@ t:
       
       result_btn_redo: Recommencer le test
       
-      slogan_constructivism: Égalité
-      slogan_internationalism: Humanité
-      slogan_nationalism: Patrie
-      slogan_communism: Socialisme
-      slogan_capitalism: Travail
-      slogan_laissez_faire: Liberté
-      slogan_conservatism: Famille
+      slogan_constructivism: Equality
+      slogan_internationalism: Humanity
+      slogan_nationalism: contry
+      slogan_communism: Socialism
+      slogan_capitalism: Work
+      slogan_laissez_faire: Liberty
+      slogan_conservatism: Family
       slogan_justice_soft: Justice
-      slogan_justice_hard: Ordre
-      slogan_ecology: Ecologie
-      slogan_revo: Révolution
+      slogan_justice_hard: Order
+      slogan_ecology: Ecology
+      slogan_revo: Revolution
       
       share_facebook: "Mon résultat sur #PolitiScales : %slogan%"
       share_reddit: "Mon résultat sur #PolitiScales : %slogan%"
