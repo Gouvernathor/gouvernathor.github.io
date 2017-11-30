@@ -22,7 +22,7 @@ questions = [
 		]
 	},
 	{
-		question: "The diffences of treatement and quality of life in our society show that racism is still very omnipresent.",
+		question: "The differences of treatement and quality of life in our society show that racism is still very omnipresent.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -74,7 +74,7 @@ questions = [
 		]
 	},
 	{
-		question: "Nobady is by nature predisposed to criminality.",
+		question: "Nobody is by nature predisposed to criminality.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -142,7 +142,7 @@ questions = [
 		]
 	},
 	{
-		question: "Hormonal differences can explain some differences in individual caracteristics between women and men.",
+		question: "Hormonal differences can explain some differences in individual characteristics between women and men.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -162,7 +162,7 @@ questions = [
 		]
 	},
 	{
-		question: "Sexual agressions are partly caused by men's natural impulse.",
+		question: "Sexual assault are partly caused by men's natural impulse.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -198,7 +198,7 @@ questions = [
 		]
 	},
 	{
-		question: "Members of a same nation or same culture have some unchangeble caracteristics that define them.",
+		question: "Members of a same nation or same culture have some unchangeable characteristics that define them.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -214,7 +214,7 @@ questions = [
 		]
 	},
 	{
-		question: "Biologically, human geings are made to be heterosexual.",
+		question: "Biologically, human beings are made to be heterosexual.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -263,7 +263,7 @@ questions = [
 		]
 	},
 	{
-		question: "People need to stand up there ideals, even if it makes betray there country.",
+		question: "People need to stand up their ideals, even if it makes betray their country.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -279,7 +279,7 @@ questions = [
 		]
 	},
 	{
-		question: "My country needs to pay for the damages caused by the crimes it commited in other coutries.",
+		question: "My country needs to pay for the damages caused by the crimes it commited in other countries.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -343,7 +343,7 @@ questions = [
 		]
 	},
 	{
-		question: "Foreigners living in my country should be allowed to act politically, equallay than those who have the nationality.",
+		question: "Foreigners living in my country should be allowed to act politically, equally than those who have the nationality.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -359,7 +359,7 @@ questions = [
 		]
 	},
 	{
-		question: "Citizens sould have priority on the foreigners.",
+		question: "Citizens should have priority on the foreigners.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -439,7 +439,7 @@ questions = [
 		]
 	},
 	{
-		question: "It is nessecery to teach history in a way to create a feeling of belonging to the nation.",
+		question: "It is necessary to teach history in a way to create a feeling of belonging to the nation.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -455,7 +455,7 @@ questions = [
 		]
 	},
 	{
-		question: "Resaerch produced by my country should not be accesible to others.",
+		question: "Research produced by my country should not be available to others.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -472,7 +472,7 @@ questions = [
 	},
     /* PRODUCTION *************************************************** */
 	{
-		question: "No one has to get richer by possessing a firm, a housing or a field.",
+		question: "No one has to get richer by owning a firm, a housing or a field.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -488,7 +488,7 @@ questions = [
 		]
 	},
 	{
-		question: "The wage by a private firm is a form of stealing of the workers.",
+		question: "The wage by a private firm is a form of stealing from the workers.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -536,7 +536,7 @@ questions = [
 		]
 	},
 	{
-		question: "Licenses should not exist.",
+		question: "Patents should not exist.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -616,7 +616,7 @@ questions = [
 		]
 	},
 	{
-		question: "There is no problem in that some schools and universities are private.",
+		question: "There is no problem that some schools and universities are private.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -632,7 +632,7 @@ questions = [
 		]
 	},
 	{
-		question: "Decolonisation is a necessary evil to improve production.",
+		question: "Delocalization is a necessary evil to improve production.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -729,7 +729,7 @@ questions = [
 		]
 	},
 	{
-		question: "Dissmissals should be forbidden except if it is justified.",
+		question: "Dismissals should be forbidden except if it is justified.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -793,7 +793,7 @@ questions = [
 		]
 	},
 	{
-		question: "Some soctors or type of employment should be financially supported.",
+		question: "Some sectors or type of employment should be financially supported.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -809,7 +809,7 @@ questions = [
 		]
 	},
 	{
-		question: "Market economy is optimal when it is not regualted.",
+		question: "Market economy is optimal when it is not regulated.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -825,7 +825,7 @@ questions = [
 		]
 	},
 	{
-		question: "Curently an employee is free of her.his choices during the signing of the contractwith her/his future employer.",
+		question: "Currently an employee is free of her/his choices during the signing of the contract with her/his future employer.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -841,7 +841,7 @@ questions = [
 		]
 	},
 	{
-		question: "It is necessary to remove reglemention in the labor Code to encourage firms to hire.",
+		question: "It is necessary to remove reglementation in the labour legislation to encourage firms to hire.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -889,7 +889,7 @@ questions = [
 		]
 	},
 	{
-		question: "Social assistance discourags work.",
+		question: "Social assistance discourages work.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -905,7 +905,7 @@ questions = [
 		]
 	},
 	{
-		question: "State firms should be managed like private ones and follow the logic of the market (competition, profitability...).",
+		question: "State-run companies should be managed like private ones and follow the logic of the market (competition, profitability...).",
 		answer: 0,
 		valuesYes: [
 			{
@@ -990,7 +990,7 @@ questions = [
 		]
 	},
 	{
-		question: "The influence of region should decrease.",
+		question: "The influence of religion should decrease.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1038,7 +1038,7 @@ questions = [
 		]
 	},
 	{
-		question: "Homosexuals should not have an equlity in treatment concerning marriage, filiation, adoption or procreation.",
+		question: "Homosexuals should not have an equality in treatment concerning marriage, filiation, adoption or procreation.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1078,7 +1078,7 @@ questions = [
 		]
 	},
 	{
-		question: "Thechnical progress should not change society too quickly.",
+		question: "Technical progress should not change society too quickly.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1163,7 +1163,7 @@ questions = [
 	},
     /* ECOLOGIE ***************************************************** */
 	{
-		question: "It is not acceptable that human actions lead to exinction of species.",
+		question: "It is not acceptable that human actions lead to extinction of species.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1227,7 +1227,7 @@ questions = [
 		]
 	},
 	{
-		question: "It is important to encourage an agriculture that maintains a food biodiversity, even if the production is inferior.",
+		question: "It is important to encourage an agriculture that maintains a food biodiversity, even if the output is inferior.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1243,7 +1243,7 @@ questions = [
 		]
 	},
 	{
-		question: "Preserving non urban ecosystem is more important than create jobs.",
+		question: "Preserving non urban ecosystem is more important than creating jobs.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1275,7 +1275,7 @@ questions = [
 		]
 	},
 	{
-		question: "Spatial colonistion is a good alternative to supply the lack of raw material on the Earth (rare metals, oil...)",
+		question: "Spatial colonization is a good alternative to supply the lack of raw material on the Earth (rare metals, oil...)",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1291,7 +1291,7 @@ questions = [
 		]
 	},
 	{
-		question: "Transform durably ecosystems to increase the human beings quality of life is legitimate.",
+		question: "Transforming durably ecosystems to increase the human beings quality of life is legitimate.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1307,7 +1307,7 @@ questions = [
 		]
 	},
 	{
-		question: "It is necessay to massively invest in research to improve productivity.",
+		question: "It is necessary to massively invest in research to improve productivity.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1323,7 +1323,7 @@ questions = [
 		]
 	},
 	{
-		question: "Transhumansm will be beneficial because it will allow us to improve ou capcities.",
+		question: "Transhumanism will be beneficial because it will allow us to improve our capacities.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1371,7 +1371,7 @@ questions = [
 		]
 	},
 	{
-		question: "Maintaining a poserful economic growth should be an objective for the government.",
+		question: "Maintaining a powerful economic growth should be an objective for the government.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1404,7 +1404,7 @@ questions = [
 		]
 	},
 	{
-		question: "It is unfair to fix a minimal penalty for an offese or a crime.",
+		question: "It is unfair to fix a minimal penalty for an offense or a crime.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1420,7 +1420,7 @@ questions = [
 		]
 	},
 	{
-		question: "Individuals who get out of prison shoudl be accompanied in their reinsertion.",
+		question: "Individuals who get out of prison should be accompanied in their reinsertion.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1436,7 +1436,7 @@ questions = [
 		]
 	},
 	{
-		question: "Justice should always take into consideration the context and the past of a condemmed and adapt their penalty accordingly.",
+		question: "Justice should always take into consideration the context and the past of a condemned and adapt their penalty accordingly.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1532,7 +1532,7 @@ questions = [
 		]
 	},
 	{
-		question: "The secrifice of some civil liberties is necessary to be protected from terrorist acts.",
+		question: "The sacrifice of some civil liberties is necessary to be protected from terrorist acts.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1564,7 +1564,7 @@ questions = [
 		]
 	},
 	{
-		question: "Th heavy penalties are efficient because they ar dissuasive.",
+		question: "The heavy penalties are efficient because they are dissuasive.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1597,7 +1597,7 @@ questions = [
 	},
     /* STRATEGIE **************************************************** */
 	{
-		question: "General strike is a goo way to acquire new rights.",
+		question: "Mass strike is a good way to acquire new rights.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1629,7 +1629,7 @@ questions = [
 		]
 	},
 	{
-		question: "Insurrection is necessary to change profoundly the society.",
+		question: "Insurrection is necessary to change profoundly the society. <3",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1645,7 +1645,7 @@ questions = [
 		]
 	},
 	{
-		question: "Militate in existing political organisations is not relevent to change society.",
+		question: "Militating in existing political organisations is not relevent to change society.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1661,7 +1661,7 @@ questions = [
 		]
 	},
 	{
-		question: "Elections organised by the state cannot question the pwers in place.",
+		question: "Elections organised by the state cannot question the powers in place.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1693,7 +1693,7 @@ questions = [
 		]
 	},
 	{
-		question: "Sabbotage is legitimate in certain conditions.",
+		question: "Sabotage is legitimate under certain conditions.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1709,7 +1709,7 @@ questions = [
 		]
 	},
 	{
-		question: "We must always campain in strict compliance with the law.",
+		question: "We must always militate in strict compliance with the law.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1741,7 +1741,7 @@ questions = [
 		]
 	},
 	{
-		question: "Changing the system in a dacical manner is counter-productive. We should rather transform it progressively.",
+		question: "Changing the system in a radical manner is counter-productive. We should rather transform it progressively.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1822,7 +1822,7 @@ questions = [
 	},
     /* BONUS ******************************************************** */
 	{
-		question: "My religion must be spreadas widely as possible.",
+		question: "My religion must be spread as widely as possible.",
 		answer: 0,
 		valuesYes: [
 			{
@@ -1866,7 +1866,7 @@ questions = [
 		valuesNo: []
 	},
 	{
-		question: "Humans should neither eat not exploit animals.",
+		question: "Humans should neither eat nor exploit animals.",
 		answer: 0,
 		valuesYes: [
 			{
