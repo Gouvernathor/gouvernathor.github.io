@@ -3,7 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>{{ site.name }} - {{ page.title }}</title>
+	{% if page.layout == "index" %}
+	<title>{{ site.name }} - {{ site.t[page.language].index_title }}</title>
+	{% endif %}
+	{% if page.layout == "quiz" %}
+	<title>{{ site.name }} - {{ site.t[page.language].quiz_title }}</title>
+	{% endif %}
+	{% if page.layout == "results" %}
+	<title>{{ site.name }} - {{ site.t[page.language].result_title }}</title>
+	{% endif %}
+	{% if page.layout == "help" %}
+	<title>{{ site.name }} - {{ site.t[page.language].help_title }}</title>
+	{% endif %}
 	<meta name="description" content="{{ site.t[page.language].index_welcome }}" />
 	<link rel="stylesheet" href="{{ site.basepath }}/style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">

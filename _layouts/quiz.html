@@ -22,8 +22,1899 @@
 	<button class="button" onclick="simulate()">{{ site.t[page.language].quiz_btn_random }}</button>
 </div>
 
-<script type="application/javascript" src="{{ site.basepath }}/questions_{{ page.language }}.js"></script>
 <script>
+questions = [
+	/* ESSENTIALISME ************************************************ */
+	{
+		question: "{{site.t[page.language].qe0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "c1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "c0",
+				value: 3
+			}
+		]
+	},
+    /* NATIONALISME ************************************************* */
+	{
+		question: "{{site.t[page.language].qb0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qb13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "b1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "b0",
+				value: 3
+			}
+		]
+	},
+    /* PRODUCTION *************************************************** */
+	{
+		question: "{{site.t[page.language].qp0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qp13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "p1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "p0",
+				value: 3
+			}
+		]
+	},
+    /* MARKET ******************************************************* */
+	{
+		question: "{{site.t[page.language].qm0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qm13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "m1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "m0",
+				value: 3
+			}
+		]
+	},
+    /* SOCIETE ****************************************************** */
+	{
+		question: "{{site.t[page.language].qs0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			},
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			},
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			},
+			{
+				axis: "femi",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qs13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "s1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "s0",
+				value: 3
+			}
+		]
+	},
+    /* ECOLOGIE ***************************************************** */
+	{
+		question: "{{site.t[page.language].qe0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qe13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "e1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "e0",
+				value: 3
+			}
+		]
+	},
+    /* LIBERTAIRE *************************************************** */
+	{
+		question: "{{site.t[page.language].qj0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qj12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "j1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "j0",
+				value: 3
+			}
+		]
+	},
+    /* STRATEGIE **************************************************** */
+	{
+		question: "{{site.t[page.language].qt0}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt1}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt2}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt3}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt4}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt5}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt6}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt7}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt8}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt9}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt10}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt11}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt12}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+	{
+		question: "{{site.t[page.language].qt13}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "t1",
+				value: 3
+			}
+		],
+		valuesNo: [
+			{
+				axis: "t0",
+				value: 3
+			}
+		]
+	},
+    /* BONUS ******************************************************** */
+	{
+		question: "{{site.t[page.language].qreli}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "reli",
+				value: 3
+			}
+		],
+		valuesNo: []
+	},
+	{
+		question: "{{site.t[page.language].qcomp}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "comp",
+				value: 3
+			}
+		],
+		valuesNo: []
+	},
+	{
+		question: "{{site.t[page.language].qprag}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "prag",
+				value: 3
+			}
+		],
+		valuesNo: []
+	},
+	{
+		question: "{{site.t[page.language].qmona}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "mona",
+				value: 3
+			}
+		],
+		valuesNo: []
+	},
+	{
+		question: "{{site.t[page.language].qvega}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "vega",
+				value: 3
+			}
+		],
+		valuesNo: []
+	},
+	{
+		question: "{{site.t[page.language].qanar}}",
+		answer: 0,
+		valuesYes: [
+			{
+				axis: "anar",
+				value: 3
+			}
+		],
+		valuesNo: []
+	}
+];
+
+
+
 var qn = 0; // Question number
 var prev_answer = null;
 
@@ -145,7 +2036,7 @@ function results()
 		}
 	}
 	
-	url = "../results?"+url
+	url = "{{site.basepath}}/{{page.language}}/results?"+url
 	
 	location.href = url;
 }
