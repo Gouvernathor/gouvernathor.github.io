@@ -1,0 +1,10 @@
+name: PolitiScales
+basepath: /politiscales/
+
+plugins:
+  - jekyll-redirect-from
+
+collections:
+	{{BUILD.LANGUAGES}}
+
+{{BUILD.TRANSLATIONS}}
