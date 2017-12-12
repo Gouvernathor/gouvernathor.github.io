@@ -178,7 +178,7 @@
 	"quiz_btn_random": "Voir un résultat aléatoire",
 	"quiz_question_counter": "Question %num% sur %sum%",
 	"result_special": "Caractéristiques supplémentaires",
-	"result_desc": "Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat. Pour plus d'information sur les differents axes, <a href=\"help.html\">consultez la page d'aide</a>.",
+	"result_desc": "Le résultat de votre PolitiScales est décomposé en 8 axes. Chaque axe indique votre positionnement par rapport à deux idéologies contradictoires. Des caractéristiques particulières, affichés en bas de page, peuvent également venir completer votre résultat. Pour plus d'information sur les differents axes, <a href=\"../help.html\">consultez la page d'aide</a>.",
 	"result_anarchism": "<b>Anarchisme : </b>quand le peuple est frappé avec un bâton, il n'est pas plus heureux si le bâton est appelé « bâton du peuple ». L'État est une oppression qu'il faut supprimer.",
 	"result_pragmatism": "<b>Pragmatisme : </b>la politique revient à objectivement regarder où sont les problèmes, et chercher à les résoudre en fonction des moyens disponible. La philosophie et les idéologies en générales sont mises de coté au profit de la gestion.",
 	"result_feminism": "<b>Féminisme radical : </b>le genre doit disparaitre pour mettre à mort le patriarcat.",
