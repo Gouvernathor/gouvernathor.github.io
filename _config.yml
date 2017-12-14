@@ -215,6 +215,7 @@ t:
       help_title: "Help"
       result_title: "Results"
       quiz_title: "Quiz"
+      result_share: "Share your result with this link, or using a sharing button:"
    fr_FR:
       qc0: "« On ne naît pas femme, on le devient »."
       qc1: "Les différences de traitements et de qualité de vie dans notre société montrent que le racisme est encore très présent."
@@ -415,3 +416,4 @@ t:
       help_title: "Aide"
       result_title: "Résultats"
       quiz_title: "Quiz"
+      result_share: "Partagez votre résultat avec ce lien, ou à l'aide des boutons de partage :"

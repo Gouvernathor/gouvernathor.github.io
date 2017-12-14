@@ -110,6 +110,11 @@ h2
 	padding-right:2vmin;
 }
 
+.centered
+{
+	text-align: center;
+}
+
 .columnContainer
 {
 	position: relative;
@@ -488,7 +493,6 @@ h2
 {
 	width:100%;
 	text-align:center;
-	display:none;
 }
 .urlToCopy
 {
