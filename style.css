@@ -110,9 +110,15 @@ h2
 	padding-right:2vmin;
 }
 
-.centered
+.shareText
 {
+	margin-top:5vmin;
+	margin-bottom:5vmin;
 	text-align: center;
+	text-justify: inter-word;
+	font-size: 2vmin;
+	padding-left:2vmin;
+	padding-right:2vmin;
 }
 
 .columnContainer
@@ -493,6 +499,7 @@ h2
 {
 	width:100%;
 	text-align:center;
+	font-size: 2vmin;
 }
 .urlToCopy
 {
