@@ -193,7 +193,7 @@ t:
       quiz_btn_back_q: "Return to the previous question"
       quiz_btn_back_i: "Go back to home page"
       quiz_btn_random: "See a ramdom result"
-      quiz_question_counter: "Question %num% on %sum%"
+      quiz_question_counter: "Question %num% of %sum%"
       result_special: "Additional characteristics"
       result_desc: "The result of your PolitiScale is decomposed in 8 axes. Each axis indicates your positionning compared with two opposed ideologies. Some particular caracteristics, displayed at the end of the page can also complete your result. For further information on the different axis <a href=\"../help.html\">Look at the help page</a>."
       result_btn_redo: "Restart the test"
