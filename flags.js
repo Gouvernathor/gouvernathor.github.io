@@ -402,7 +402,7 @@ flagColors = [
 	//Monarichisme
 	{
 		bgColor: "#ffffff",
-		fgColor: "#1218bb",
+		fgColor: "#fa9e08",
 		cond:
 		[
 			{
@@ -427,7 +427,7 @@ flagColors = [
 	},
 	//Conservatism
 	{
-		bgColor: "#1b0ea1",
+		bgColor: "#062b85",
 		fgColor: "#ffffff",
 		cond:
 		[
@@ -440,7 +440,7 @@ flagColors = [
 	},
 	//Communiste
 	{
-		bgColor: "#c70106",
+		bgColor: "#d71224",
 		fgColor: "#ffffff",
 		cond:
 		[
@@ -488,8 +488,8 @@ flagColors = [
 	},
 	//Liberal
 	{
-		bgColor: "#ffbd00",
-		fgColor: "#ffffff",
+		bgColor: "#fcce0a",
+		fgColor: "#1b67ac",
 		cond:
 		[
 			{
@@ -506,7 +506,7 @@ flagColors = [
 	},
 	//Ecologie
 	{
-		bgColor: "#18ab10",
+		bgColor: "#069839",
 		fgColor: "#ffffff",
 		cond:
 		[
@@ -529,6 +529,32 @@ flagColors = [
 				vmax: 1.0,
 			}
 		]
+	},
+	//Progressisme
+	{
+		bgColor: "#f86d07",
+		fgColor: "#ffffff",
+		cond:
+		[
+			{
+				name: "s0",
+				vmin: 0.4,
+				vmax: 1.0,
+			}
+		]
+	},
+	//Productivisme
+	{
+		bgColor: "#2fa2d3",
+		fgColor: "#ffffff",
+		cond:
+		[
+			{
+				name: "e1",
+				vmin: 0.4,
+				vmax: 1.0,
+			}
+		]
 	}
 ];
 
@@ -540,7 +566,7 @@ flagSymbols = [
 		[
 			{
 				name: "c1",
-				vmin: 0.85,
+				vmin: 0.8,
 				vmax: 1.0,
 			},
 			{
