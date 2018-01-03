@@ -8,7 +8,14 @@ redirect_from: "/quiz.html"
 
 <h2>Choose your language</h2>
 
+<p class="simpleText" style="text-align:center">Please note that translations are made by volunteers and may be incorrect. You can report mistranslations and typos in our <a href="https://crowdin.com/project/politiscales">Crowdin Project</a>.</p>
+
 <div class="navButtons">
 	<a class="button" href="{{ site.basepath }}/en_US/">English</a>
-	<a class="button" href="{{ site.basepath }}/fr_FR/">Français</a>
+{% assign llist = site.collections | sort: 'title' %}
+{% for l in llist %}
+	{% if l.label != "posts" and l.label != "en_US" %}
+		<a class="button" href="{{ site.basepath }}/{{ l.label }}/">{{ l.title }}</a>
+	{% endif %}
+{% endfor %}
 </div>

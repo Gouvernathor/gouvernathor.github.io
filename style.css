@@ -110,6 +110,15 @@ h2
 	padding-right:2vmin;
 }
 
+.ltr
+{
+	text-align: left;
+}
+.rtl
+{
+	text-align: right;
+}
+
 .shareText
 {
 	margin-top:5vmin;
