@@ -1,9 +1,6 @@
 name: PolitiScales
 basepath: 
 
-plugins:
-  - jekyll-redirect-from
-
 collections:
    en_US:
       permalink: en_US/:name/
