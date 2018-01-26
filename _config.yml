@@ -1,5 +1,6 @@
 name: PolitiScales
-basepath: 
+basepath:
+debug: true
 
 collections:
    en_US:

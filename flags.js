@@ -1,5 +1,5 @@
 flagShapes = [
-	// 3Col, Int++, Revo+
+	// Révo, Int++
 	{
 		numColors: 3,
 		shapes:
@@ -16,18 +16,23 @@ flagShapes = [
 		cond:
 		[
 			{
-				name: "b0",
-				vmin: 0.6,
-				vmax: 1.0,
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
 			},
 			{
-				name: "t0",
-				vmin: 0.4,
-				vmax: 1.0,
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: -1.0,
+				vmax: -0.66,
 			}
 		]
 	},
-	// 3Col, Int+, Revo+
+	// Révo, Int+
 	{
 		numColors: 3,
 		shapes:
@@ -43,18 +48,84 @@ flagShapes = [
 		cond:
 		[
 			{
-				name: "b0",
-				vmin: 0.0,
-				vmax: 1.0,
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
 			},
 			{
-				name: "t0",
-				vmin: 0.4,
-				vmax: 1.0,
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: -0.66,
+				vmax: -0.33,
 			}
 		]
 	},
-	// 3Col, Revo+
+	// Révo
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/4, 0, 1/4],
+			[2, 0, 1/4, 1, 1/4, 1, 2/4, 0, 2/4],
+			[1, 0, 2/4, 1, 2/4, 1, 3/4, 0, 3/4],
+			[2, 0, 3/4, 1, 3/4, 1, 1  , 0, 1  ],
+			[0, 0, 0, 0.5, 0.5, 0, 1],
+		],
+		symbol: [0.2, 0.5, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: -0.33,
+				vmax: 0.33,
+			}
+		]
+	},
+	// Révo, Nat+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/3, 0, 1/3],
+			[2, 0, 1/3, 1, 1/3, 1, 2/3, 0, 2/3],
+			[1, 0, 2/3, 1, 2/3, 1, 1  , 0, 1  ],
+			[0, 0, 0, 0.5, 0.5, 0, 1],
+		],
+		symbol: [0.2, 0.5, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: 0.33,
+				vmax: 0.66,
+			}
+		]
+	},
+	// Révo, Nat++
 	{
 		numColors: 3,
 		shapes:
@@ -67,12 +138,462 @@ flagShapes = [
 		cond:
 		[
 			{
-				name: "t0",
-				vmin: 0.4,
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: 0.66,
 				vmax: 1.0,
 			}
 		]
 	},
+	// Réfo, Int++
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/8, 0, 1/8],
+			[2, 0, 1/8, 1, 1/8, 1, 2/8, 0, 2/8],
+			[1, 0, 2/8, 1, 2/8, 1, 3/8, 0, 3/8],
+			[2, 0, 3/8, 1, 3/8, 1, 4/8, 0, 4/8],
+			[1, 0, 4/8, 1, 4/8, 1, 5/8, 0, 5/8],
+			[2, 0, 5/8, 1, 5/8, 1, 6/8, 0, 6/8],
+			[1, 0, 6/8, 1, 6/8, 1, 7/8, 0, 7/8],
+			[2, 0, 7/8, 1, 7/8, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1/2, 0, 1/2]
+		],
+		symbol: [1/6, 1/4, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: -1.0,
+				vmax: -0.5,
+			}
+		]
+	},
+	// Réfo, Int+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/6, 0, 1/6],
+			[2, 0, 1/6, 1, 1/6, 1, 2/6, 0, 2/6],
+			[1, 0, 2/6, 1, 2/6, 1, 3/6, 0, 3/6],
+			[2, 0, 3/6, 1, 3/6, 1, 4/6, 0, 4/6],
+			[1, 0, 4/6, 1, 4/6, 1, 5/6, 0, 5/6],
+			[2, 0, 5/6, 1, 5/6, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1/2, 0, 1/2]
+		],
+		symbol: [1/6, 1/4, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: -0.5,
+				vmax: 0.0,
+			}
+		]
+	},
+	// Réfo, Nat+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/4, 0, 1/4],
+			[2, 0, 1/4, 1, 1/4, 1, 2/4, 0, 2/4],
+			[1, 0, 2/4, 1, 2/4, 1, 3/4, 0, 3/4],
+			[2, 0, 3/4, 1, 3/4, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1/2, 0, 1/2]
+		],
+		symbol: [1/6, 1/4, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: 0.0,
+				vmax: 0.5,
+			}
+		]
+	},
+	// Réfo, Nat++
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/2, 0, 1/2],
+			[2, 0, 1/2, 1, 1/2, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1/2, 0, 1/2]
+		],
+		symbol: [1/6, 1/4, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: 0.5,
+				vmax: 1.0,
+			}
+		]
+	},
+	// JPun, Int++
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/8, 0, 1/8],
+			[2, 0, 1/8, 1, 1/8, 1, 2/8, 0, 2/8],
+			[1, 0, 2/8, 1, 2/8, 1, 3/8, 0, 3/8],
+			[2, 0, 3/8, 1, 3/8, 1, 4/8, 0, 4/8],
+			[1, 0, 4/8, 1, 4/8, 1, 5/8, 0, 5/8],
+			[2, 0, 5/8, 1, 5/8, 1, 6/8, 0, 6/8],
+			[1, 0, 6/8, 1, 6/8, 1, 7/8, 0, 7/8],
+			[2, 0, 7/8, 1, 7/8, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1, 0, 1]
+		],
+		symbol: [1/6, 1/2, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: -1.0,
+				vmax: -0.6,
+			}
+		]
+	},
+	// JPun, Int+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/6, 0, 1/6],
+			[2, 0, 1/6, 1, 1/6, 1, 2/6, 0, 2/6],
+			[1, 0, 2/6, 1, 2/6, 1, 3/6, 0, 3/6],
+			[2, 0, 3/6, 1, 3/6, 1, 4/6, 0, 4/6],
+			[1, 0, 4/6, 1, 4/6, 1, 5/6, 0, 5/6],
+			[2, 0, 5/6, 1, 5/6, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1, 0, 1]
+		],
+		symbol: [1/6, 1/2, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: -0.6,
+				vmax: -0.2,
+			}
+		]
+	},
+	// JPun
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/4, 0, 1/4],
+			[2, 0, 1/4, 1, 1/4, 1, 2/4, 0, 2/4],
+			[1, 0, 2/4, 1, 2/4, 1, 3/4, 0, 3/4],
+			[2, 0, 3/4, 1, 3/4, 1, 1  , 0, 1  ],
+			[0, 0, 0, 1/3, 0, 1/3, 1, 0, 1]
+		],
+		symbol: [1/6, 1/2, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: -0.2,
+				vmax: 0.2,
+			}
+		]
+	},
+	// JPun, Nat+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/2, 0, 1/2],
+			[2, 0, 1/2, 1, 1/2, 1, 1, 0, 1],
+			[0, 0, 0, 1/3, 0, 1/3, 1, 0, 1]
+		],
+		symbol: [1/6, 1/2, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: 0.2,
+				vmax: 0.6,
+			}
+		]
+	},
+	// JPun, Nat++
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0, 1/3, 0, 1/3, 1, 0, 1],
+			[2, 2/3, 0, 1, 0, 1, 1, 2/3, 1],
+			[0, 1/3, 0, 2/3, 0, 2/3, 1, 1/3, 1]
+		],
+		symbol: [1/2, 1/2, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "j",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "b",
+				vmin: 0.6,
+				vmax: 1.0,
+			}
+		]
+	},
+	// JReh, Int++
+	{
+		numColors: 3,
+		shapes:
+		[
+			[0, 0, 0, 1, 0, 1, 1, 0, 1],
+			[1, 4/16, 0, 6/16, 0, 6/16, 1, 4/16, 1],
+			[1, 0, 3/8, 0, 5/8, 1, 5/8, 1, 3/8],
+			[2, 4.4/16, 0, 5.6/16, 0, 5.6/16, 1, 4.4/16, 1],
+			[2, 0, 3.4/8, 0, 4.6/8, 1, 4.6/8, 1, 3.4/8],
+		],
+		symbol: [2/16, 1.5/8, 0.8],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: -1.0,
+				vmax: -0.6,
+			}
+		]
+	},
+	// JReh, Int+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[0, 0, 0, 1, 0, 1, 1, 0, 1],
+			[1, 7/16, 0, 9/16, 0, 9/16, 1, 7/16, 1],
+			[1, 0, 3/8, 0, 5/8, 1, 5/8, 1, 3/8],
+			[2, 7.4/16, 0, 8.6/16, 0, 8.6/16, 1, 7.4/16, 1],
+			[2, 0, 3.4/8, 0, 4.6/8, 1, 4.6/8, 1, 3.4/8],
+		],
+		symbol: [3.5/16, 1.5/8, 0.8],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: -0.6,
+				vmax: -0.2,
+			}
+		]
+	},
+	// JReh
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 3/12, 0, 3/12],
+			[2, 0, 3/12, 1, 3/12, 1, 4/12, 0, 4/12],
+			[0, 0, 4/12, 1, 4/12, 1, 8/12, 0, 8/12],
+			[2, 0, 8/12, 1, 8/12, 1, 9/12, 0, 9/12],
+			[1, 0, 9/12, 1, 9/12, 1, 1  , 0, 1  ],
+		],
+		symbol: [1/2, 1/2, 0.9],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: -0.2,
+				vmax: 0.2,
+			}
+		]
+	},
+	// JReh, Nat+
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0  , 1, 0  , 1, 1/6, 0, 1/6],
+			[2, 0, 1/6, 1, 1/6, 1, 2/6, 0, 2/6],
+			[0, 0, 2/6, 1, 2/6, 1, 3/6, 0, 3/6],
+			[0, 0, 3/6, 1, 3/6, 1, 4/6, 0, 4/6],
+			[2, 0, 4/6, 1, 4/6, 1, 5/6, 0, 5/6],
+			[1, 0, 5/6, 1, 5/6, 1, 1  , 0, 1  ],
+		],
+		symbol: [1/2, 1/2, 0.9],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: 0.2,
+				vmax: 0.6,
+			}
+		]
+	},
+	// JReh, Nat++
+	{
+		numColors: 3,
+		shapes:
+		[
+			[1, 0, 0, 0, 1/3, 1, 1/3, 1, 0],
+			[2, 0, 2/3, 0, 1, 1, 1, 1, 2/3],
+			[0, 0, 1/3, 0, 2/3, 1, 2/3, 1, 1/3]
+		],
+		symbol: [1/2, 1/2, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			},
+			{
+				name: "j",
+				vmin: -1.0,
+				vmax: 0.0,
+			},
+			{
+				name: "b",
+				vmin: 0.6,
+				vmax: 1.0,
+			}
+		]
+	},
+	/*
 	// 3Col, Refo+, Int++
 	{
 		numColors: 3,
@@ -84,7 +605,6 @@ flagShapes = [
 			[2, 0, 3/6, 1, 3/6, 1, 4/6, 0, 4/6],
 			[1, 0, 4/6, 1, 4/6, 1, 5/6, 0, 5/6],
 			[2, 0, 5/6, 1, 5/6, 1, 1  , 0, 1  ],
-			[0, 0, 0, 1/3, 0, 1/3, 1/2, 0, 1/2]
 		],
 		symbol: [1/6, 1/4, 1.0],
 		cond:
@@ -383,6 +903,7 @@ flagShapes = [
 		symbol: [0.5, 0.5, 1.0],
 		cond: [ ]
 	}
+	*/
 ];
 
 flagColors = [
@@ -559,105 +1080,662 @@ flagColors = [
 ];
 
 flagSymbols = [
-	//Nazisme
+	//Internationalisme
 	{
-		id: 5,
-		cond:
-		[
-			{
-				name: "c1",
-				vmin: 0.8,
-				vmax: 1.0,
-			},
-			{
-				name: "j1",
-				vmin: 0.6,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "curve",
+			transforms: [
+				{
+					child_type: "none",
+					x: 3,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 3,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: -13,
+					child_ty: -20,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 3,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 2,
+					child_ty: 0,
+					child_sx: 0.55,
+					child_sy: 0.55,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "b0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
-	//Monarchisme
+	//Féminisme
 	{
-		id: 2,
-		cond:
-		[
-			{
-				name: "mona",
-				vmin: 0.5,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "curve",
+			transforms: [
+				{
+					child_type: "none",
+					x: 2,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 2,
+					y: 0,
+					main: true,
+					parent_tx: 10,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: -2,
+					child_ty: 0,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 1
+				},
+				{
+					child_type: "dot",
+					x: 2,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 3,
+					child_ty: 17,
+					child_sx: 0.55,
+					child_sy: 0.55,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "femi",
+			vmin: 0.95,
+			vmax: 1.0,
+		}
 	},
-	//Feminisme
+	//Productivisme
 	{
-		id: 1,
-		cond:
-		[
-			{
-				name: "femi",
-				vmin: 0.95,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "curve",
+			transforms: [
+				{
+					child_type: "none",
+					x: 1,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 1,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: -17,
+					child_ty: -20,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 1
+				},
+				{
+					child_type: "dot",
+					x: 1,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 4,
+					child_ty: 2,
+					child_sx: 0.55,
+					child_sy: 0.55,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "e1",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
 	//Communisme
 	{
-		id: 0,
-		cond:
-		[
-			{
-				name: "p0",
-				vmin: 0.8,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "curve",
+			transforms: [
+				{
+					child_type: "none",
+					x: 0,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 0,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: -17,
+					child_ty: -14,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 0,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 6,
+					child_sx: 0.55,
+					child_sy: 0.55,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "p0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
-	//Conservatisme
+	//Régulationnisme
 	{
-		id: 4,
-		cond:
-		[
-			{
-				name: "s1",
-				vmin: 0.6,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "line",
+			transforms: [
+				{
+					child_type: "none",
+					x: 0,
+					y: 2,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 45,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 0,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 0,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 0,
+					y: 2,
+					main: true,
+					parent_tx: 0,
+					parent_ty: -18,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: -45,
+					child_tx: 0,
+					child_ty: 18,
+					child_sx: 0.6,
+					child_sy: 0.6,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "m0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
+	},
+	//Punitif
+	{
+		data: {
+			parent_type: "line",
+			transforms: [
+				{
+					child_type: "none",
+					x: 1,
+					y: 2,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: -45,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 1,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 1,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 1,
+					y: 2,
+					main: true,
+					parent_tx: 0,
+					parent_ty: -18,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: -45,
+					child_tx: 0,
+					child_ty: 18,
+					child_sx: 0.6,
+					child_sy: 0.6,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "j1",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
 	//Ecologie
 	{
-		id: 6,
-		cond:
-		[
-			{
-				name: "e0",
-				vmin: 0.7,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "line",
+			transforms: [
+				{
+					child_type: "none",
+					x: 3,
+					y: 2,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 2,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 2,
+					y: 2,
+					main: false,
+					parent_tx: -6,
+					parent_ty: 0,
+					parent_sx: 0.95,
+					parent_sy: 0.95,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 2,
+					y: 2,
+					main: true,
+					parent_tx: 5,
+					parent_ty: -5,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 90,
+					child_tx: -10,
+					child_ty: 22,
+					child_sx: 0.6,
+					child_sy: 0.6,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "e0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
-	//Internationalisme
+	//Essentialisme
 	{
-		id: 7,
-		cond:
-		[
-			{
-				name: "b0",
-				vmin: 0.7,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "dot",
+			transforms: [
+				{
+					child_type: "none",
+					x: 0,
+					y: 3,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 0,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 0,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "c1",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
-	//Revolution
+	//Révolution
 	{
-		id: 3,
-		cond:
-		[
-			{
-				name: "t0",
-				vmin: 0.6,
-				vmax: 1.0,
-			}
-		]
+		data: {
+			parent_type: "dot",
+			transforms: [
+				{
+					child_type: "none",
+					x: 1,
+					y: 3,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 1,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 1,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "t0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
 	},
+	//Monarchie
+	{
+		data: {
+			parent_type: "dot",
+			transforms: [
+				{
+					child_type: "none",
+					x: 2,
+					y: 3,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 2,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 2,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "mona",
+			vmin: 0.9,
+			vmax: 1.0,
+		}
+	}
 ];
