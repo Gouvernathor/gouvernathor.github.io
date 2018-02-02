@@ -1398,6 +1398,27 @@ flagShapes = [
 			[0, 0, 0, 1, 0, 1, 1, 0, 1],
 		],
 		symbol: [0.5, 0.5, 1.0],
+		cond:
+		[
+			{
+				name: "t",
+				vmin: 0.0,
+				vmax: 1.0,
+			}
+		]
+	},
+	/*
+	****************************************************************************
+	0C
+	****************************************************************************
+	*/
+	{
+		numColors: 0,
+		shapes:
+		[
+			[0, 0, 0, 1, 0, 1, 1, 0, 1],
+		],
+		symbol: [0.5, 0.5, 1.0],
 		cond: [ ]
 	},
 ];
@@ -1890,11 +1911,120 @@ flagSymbols = [
 					child_sx: 0.6,
 					child_sy: 0.6,
 					child_r: 0
+				},
+				{
+					child_type: "tri",
+					x: 0,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 5,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
 				}
 			]
 		},
 		cond: {
 			name: "m0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
+	},
+	//Conservatisme
+	{
+		data: {
+			parent_type: "line",
+			transforms: [
+				{
+					child_type: "none",
+					x: 0,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: -45,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "curve",
+					x: 0,
+					y: 1,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 0,
+					y: 1,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 0,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: -18,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: -45,
+					child_tx: 0,
+					child_ty: 18,
+					child_sx: 0.6,
+					child_sy: 0.6,
+					child_r: 0
+				},
+				{
+					child_type: "tri",
+					x: 0,
+					y: 1,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "s1",
 			vmin: 0.7,
 			vmax: 1.0,
 		}
@@ -1967,6 +2097,22 @@ flagSymbols = [
 					child_sx: 0.6,
 					child_sy: 0.6,
 					child_r: 0
+				},
+				{
+					child_type: "tri",
+					x: 1,
+					y: 2,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
 				}
 			]
 		},
@@ -2035,14 +2181,30 @@ flagSymbols = [
 					y: 2,
 					main: true,
 					parent_tx: 5,
-					parent_ty: -5,
+					parent_ty: -15,
 					parent_sx: 1,
 					parent_sy: 1,
 					parent_r: 90,
 					child_tx: -10,
-					child_ty: 22,
+					child_ty: 15,
 					child_sx: 0.6,
 					child_sy: 0.6,
+					child_r: 0
+				},
+				{
+					child_type: "tri",
+					x: 3,
+					y: 2,
+					main: false,
+					parent_tx: -20,
+					parent_ty: -20,
+					parent_sx: 0.6,
+					parent_sy: 0.6,
+					parent_r: 45,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
 					child_r: 0
 				}
 			]
@@ -2092,6 +2254,22 @@ flagSymbols = [
 				},
 				{
 					child_type: "line",
+					x: 0,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "tri",
 					x: 0,
 					y: 3,
 					main: false,
@@ -2166,6 +2344,22 @@ flagSymbols = [
 					child_sx: 1,
 					child_sy: 1,
 					child_r: 0
+				},
+				{
+					child_type: "tri",
+					x: 1,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
 				}
 			]
 		},
@@ -2227,12 +2421,89 @@ flagSymbols = [
 					child_sx: 1,
 					child_sy: 1,
 					child_r: 0
+				},
+				{
+					child_type: "tri",
+					x: 2,
+					y: 3,
+					main: false,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
 				}
 			]
 		},
 		cond: {
 			name: "mona",
 			vmin: 0.9,
+			vmax: 1.0,
+		}
+	},
+	//Constructivisme
+	{
+		data: {
+			parent_type: "tri",
+			transforms: [
+				{
+					child_type: "none",
+					x: 1,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 1,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 5,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: -45
+				},
+				{
+					child_type: "dot",
+					x: 1,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: -18,
+					child_sx: 0.65,
+					child_sy: 0.65,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "c0",
+			vmin: 0.7,
 			vmax: 1.0,
 		}
 	}

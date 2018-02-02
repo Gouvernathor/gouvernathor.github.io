@@ -491,7 +491,7 @@ function findFlagShape(numColors)
 			for(var j=0; j<flagShapes[i].cond.length; j++)
 			{
 				var value = axesValues[flagShapes[i].cond[j].name];
-				if(value < flagShapes[i].cond[j].vmin || value > flagShapes[i].cond[j].vmax)
+				if(value <= flagShapes[i].cond[j].vmin || value >= flagShapes[i].cond[j].vmax)
 				{
 					accepted = 0;
 				}
@@ -564,7 +564,7 @@ function getCharacteristic(name, vmin, vmax)
 	return -1.0;
 }
 
-function findFlagSymbol()
+function findFlagSymbol(numColors)
 {
 	var symbol0 = {
 		parent_type: "none",
@@ -575,6 +575,27 @@ function findFlagSymbol()
 		transform: {}
 	}
 	var valueMax = 0;
+
+	if(numColors == 0)
+	{
+		symbol0.parent_type = "dot";
+		symbol0.transform = {
+			child_type: "none",
+			x: 3,
+			y: 3,
+			main: true,
+			parent_tx: 0,
+			parent_ty: 0,
+			parent_sx: 1,
+			parent_sy: 1,
+			parent_r: 0,
+			child_tx: 0,
+			child_ty: 0,
+			child_sx: 1,
+			child_sy: 1,
+			child_r: 0
+		}
+	}
 
 	for(var s0=0; s0<flagSymbols.length; s0++)
 	{
@@ -746,13 +767,13 @@ function onImageLoaded()
 		var spriteY = 128;
 		var spriteS = 1.0;
 
-		var symbolData = findFlagSymbol();
 		var colors = findFlagColors();
+		var symbolData = findFlagSymbol(colors.length);
+
+		var flagId = findFlagShape(colors.length);
 
 		if(colors.length <= 0)
 			colors.push({ bgColor: "#ffffff", fgColor: "#000000" });
-
-		var flagId = findFlagShape(colors.length);
 
 		if(flagId < 0)
 		{
