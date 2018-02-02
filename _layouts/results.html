@@ -32,6 +32,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/essentialism.png" alt="{{ site.t[page.language].essentialism }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_c" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_c" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].justice_soft }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].justice_hard }}</p></div></div>
@@ -44,6 +45,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/justice_hard.png" alt="{{ site.t[page.language].justice_hard }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_j" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_j" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].progressism }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].conservatism }}</p></div></div>
@@ -56,6 +58,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/conservatism.png" alt="{{ site.t[page.language].conservatism }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_s" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_s" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].internationalism }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].nationalism }}</p></div></div>
@@ -68,6 +71,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/nationalism.png" alt="{{ site.t[page.language].nationalism }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_b" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_b" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 	</div>
@@ -83,6 +87,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/capitalism.png" alt="{{ site.t[page.language].capitalism }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_p" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_p" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].regulationism }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].laissez_faire }}</p></div></div>
@@ -95,6 +100,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/laissezfaire.png" alt="{{ site.t[page.language].laissez_faire }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_m" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_m" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].ecology }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].productivism }}</p></div></div>
@@ -107,6 +113,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/productivism.png" alt="{{ site.t[page.language].productivism }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_e" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_e" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].revo }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].refo }}</p></div></div>
@@ -119,6 +126,7 @@
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/reformism.png" alt="{{ site.t[page.language].refo }}" \></div>
 {% if site.debug %}
 		<input type="range" id="debug_t" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
+		<input type="range" id="debugNeutral_t" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
 {% endif %}
 
 	</div>
@@ -361,6 +369,11 @@ for(var i=0; i<axes.length; i++)
 	{
 		debugInput.value = 100 - ((1 + positiveValue - negativeValue)/2)*100;
 	}
+	var debugNeutralInput = document.getElementById("debugNeutral_"+axes[i])
+	if(debugNeutralInput)
+	{
+		debugNeutralInput.value = (1 - positiveValue - negativeValue)*100;
+	}
 {% endif %}
 
 	axesValues[axes[i]] = positiveValue - negativeValue
@@ -473,21 +486,32 @@ function findFlagShape(numColors)
 
 		var condValue = [0, 0];
 		var accepted = 1;
-		for(var j=0; j<flagShapes[i].cond.length; j++)
+		if(flagShapes[i].cond.length > 0)
 		{
-			var value = axesValues[flagShapes[i].cond[j].name];
-			if(value < flagShapes[i].cond[j].vmin || value > flagShapes[i].cond[j].vmax)
+			for(var j=0; j<flagShapes[i].cond.length; j++)
 			{
-				accepted = 0;
-			}
-			if(j<3)
-				condValue[j] = Math.abs(value);
+				var value = axesValues[flagShapes[i].cond[j].name];
+				if(value < flagShapes[i].cond[j].vmin || value > flagShapes[i].cond[j].vmax)
+				{
+					accepted = 0;
+				}
+				if(j<3)
+					condValue[j] = Math.abs(value);
 
-			if(!accepted)
-				break;
+				if(!accepted)
+					break;
+			}
 		}
-		if(accepted)
+		else
 		{
+			var condValue = [0.0001, 0.0001];
+		}
+
+		if(accepted && flagColor <= flagShapes[i].numColors)
+		{
+
+
+			flagColor = flagShapes[i].numColors;
 			if(condValue[0] > flagValue[0])
 			{
 				flagValue[0] = condValue[0];
@@ -747,9 +771,20 @@ function onImageLoaded()
 				ctx.beginPath();
 				ctx.moveTo(path[1]*512, path[2]*256);
 
-				for(var j=1; j<numPoints; j++)
+				if(path[1] == "circle")
 				{
-					ctx.lineTo(path[1+j*2+0]*512, path[1+j*2+1]*256);
+					ctx.arc(path[2]*512, path[3]*256, path[4]*256, 0, 2 * Math.PI, false);
+				}
+				else if(path[1] == "circleSymbol" && symbolData[0].parent_type != "none")
+				{
+					ctx.arc(path[2]*512, path[3]*256, path[4]*256, 0, 2 * Math.PI, false);
+				}
+				else
+				{
+					for(var j=1; j<numPoints; j++)
+					{
+						ctx.lineTo(path[1+j*2+0]*512, path[1+j*2+1]*256);
+					}
 				}
 				ctx.fillStyle = colors[path[0]].bgColor;
 				ctx.fill();
@@ -1039,10 +1074,13 @@ function debug()
 	for(var i=0; i<axes.length; i++)
 	{
 		var debugAxis = document.getElementById("debug_"+axes[i]);
-		if(debugAxis)
+		var debugAxisNeutral = document.getElementById("debugNeutral_"+axes[i]);
+		if(debugAxis && debugAxisNeutral)
 		{
-			negativeValue = (debugAxis.value)/100.0;
-			positiveValue = 1-(debugAxis.value)/100.0;
+			neutralValue = 1 - (debugAxisNeutral.value)/100.0;
+			negativeValue = neutralValue*(debugAxis.value/100.0);
+			positiveValue = neutralValue*(1-(debugAxis.value)/100.0);
+
 			setAxisValue(axes[i]+"AxisNeg", negativeValue);
 			setAxisValue(axes[i]+"AxisPos", positiveValue);
 			setAxisValue(axes[i]+"AxisMid", 1-negativeValue-positiveValue);
