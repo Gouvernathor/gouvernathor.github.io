@@ -491,7 +491,7 @@ function findFlagShape(numColors)
 			for(var j=0; j<flagShapes[i].cond.length; j++)
 			{
 				var value = axesValues[flagShapes[i].cond[j].name];
-				if(value <= flagShapes[i].cond[j].vmin || value >= flagShapes[i].cond[j].vmax)
+				if(value < flagShapes[i].cond[j].vmin || value > flagShapes[i].cond[j].vmax)
 				{
 					accepted = 0;
 				}
@@ -504,16 +504,22 @@ function findFlagShape(numColors)
 		}
 		else
 		{
-			var condValue = [0.0001, 0.0001];
+			var condValue = [0, 0];
 		}
 
 		if(accepted && flagColor <= flagShapes[i].numColors)
 		{
-
-
-			flagColor = flagShapes[i].numColors;
-			if(condValue[0] > flagValue[0])
+			if(flagShapes[i].numColors > flagColor)
 			{
+				flagColor = flagShapes[i].numColors;
+				flagValue[0] = condValue[0];
+				flagValue[1] = condValue[1];
+				flagValue[2] = condValue[2];
+				flagFound = i;
+			}
+			else if(condValue[0] > flagValue[0])
+			{
+				flagColor = flagShapes[i].numColors;
 				flagValue[0] = condValue[0];
 				flagValue[1] = condValue[1];
 				flagValue[2] = condValue[2];
@@ -523,6 +529,7 @@ function findFlagShape(numColors)
 			{
 				if(condValue[1] > flagValue[1])
 				{
+					flagColor = flagShapes[i].numColors;
 					flagValue[0] = condValue[0];
 					flagValue[1] = condValue[1];
 					flagValue[2] = condValue[2];
@@ -532,6 +539,7 @@ function findFlagShape(numColors)
 				{
 					if(condValue[2] > flagValue[2])
 					{
+						flagColor = flagShapes[i].numColors;
 						flagValue[0] = condValue[0];
 						flagValue[1] = condValue[1];
 						flagValue[2] = condValue[2];

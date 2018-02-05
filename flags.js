@@ -1599,67 +1599,6 @@ flagColors = [
 ];
 
 flagSymbols = [
-	//Internationalisme
-	{
-		data: {
-			parent_type: "curve",
-			transforms: [
-				{
-					child_type: "none",
-					x: 3,
-					y: 1,
-					main: true,
-					parent_tx: 0,
-					parent_ty: 0,
-					parent_sx: 1,
-					parent_sy: 1,
-					parent_r: 0,
-					child_tx: 0,
-					child_ty: 0,
-					child_sx: 1,
-					child_sy: 1,
-					child_r: 0
-				},
-				{
-					child_type: "line",
-					x: 3,
-					y: 0,
-					main: true,
-					parent_tx: 0,
-					parent_ty: 0,
-					parent_sx: 1,
-					parent_sy: 1,
-					parent_r: 0,
-					child_tx: -13,
-					child_ty: -20,
-					child_sx: -1,
-					child_sy: 1,
-					child_r: 0
-				},
-				{
-					child_type: "dot",
-					x: 3,
-					y: 0,
-					main: true,
-					parent_tx: 0,
-					parent_ty: 0,
-					parent_sx: 1,
-					parent_sy: 1,
-					parent_r: 0,
-					child_tx: 2,
-					child_ty: 0,
-					child_sx: 0.55,
-					child_sy: 0.55,
-					child_r: 0
-				}
-			]
-		},
-		cond: {
-			name: "b0",
-			vmin: 0.7,
-			vmax: 1.0,
-		}
-	},
 	//Féminisme
 	{
 		data: {
@@ -1721,67 +1660,6 @@ flagSymbols = [
 			vmax: 1.0,
 		}
 	},
-	//Productivisme
-	{
-		data: {
-			parent_type: "curve",
-			transforms: [
-				{
-					child_type: "none",
-					x: 1,
-					y: 0,
-					main: true,
-					parent_tx: 0,
-					parent_ty: 0,
-					parent_sx: 1,
-					parent_sy: 1,
-					parent_r: 0,
-					child_tx: 0,
-					child_ty: 0,
-					child_sx: 1,
-					child_sy: 1,
-					child_r: 0
-				},
-				{
-					child_type: "line",
-					x: 1,
-					y: 0,
-					main: true,
-					parent_tx: 0,
-					parent_ty: 0,
-					parent_sx: 1,
-					parent_sy: 1,
-					parent_r: 0,
-					child_tx: -17,
-					child_ty: -20,
-					child_sx: -1,
-					child_sy: 1,
-					child_r: 1
-				},
-				{
-					child_type: "dot",
-					x: 1,
-					y: 0,
-					main: true,
-					parent_tx: 0,
-					parent_ty: 0,
-					parent_sx: 1,
-					parent_sy: 1,
-					parent_r: 0,
-					child_tx: 4,
-					child_ty: 2,
-					child_sx: 0.55,
-					child_sy: 0.55,
-					child_r: 0
-				}
-			]
-		},
-		cond: {
-			name: "e1",
-			vmin: 0.7,
-			vmax: 1.0,
-		}
-	},
 	//Communisme
 	{
 		data: {
@@ -1839,6 +1717,128 @@ flagSymbols = [
 		},
 		cond: {
 			name: "p0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
+	},
+	//Internationalisme
+	{
+		data: {
+			parent_type: "curve",
+			transforms: [
+				{
+					child_type: "none",
+					x: 3,
+					y: 1,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 3,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: -13,
+					child_ty: -20,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "dot",
+					x: 3,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 2,
+					child_ty: 0,
+					child_sx: 0.55,
+					child_sy: 0.55,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "b0",
+			vmin: 0.7,
+			vmax: 1.0,
+		}
+	},
+	//Productivisme
+	{
+		data: {
+			parent_type: "curve",
+			transforms: [
+				{
+					child_type: "none",
+					x: 1,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 0,
+					child_ty: 0,
+					child_sx: 1,
+					child_sy: 1,
+					child_r: 0
+				},
+				{
+					child_type: "line",
+					x: 1,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: -17,
+					child_ty: -20,
+					child_sx: -1,
+					child_sy: 1,
+					child_r: 1
+				},
+				{
+					child_type: "dot",
+					x: 1,
+					y: 0,
+					main: true,
+					parent_tx: 0,
+					parent_ty: 0,
+					parent_sx: 1,
+					parent_sy: 1,
+					parent_r: 0,
+					child_tx: 4,
+					child_ty: 2,
+					child_sx: 0.55,
+					child_sy: 0.55,
+					child_r: 0
+				}
+			]
+		},
+		cond: {
+			name: "e1",
 			vmin: 0.7,
 			vmax: 1.0,
 		}
