@@ -2,7 +2,7 @@
 
 python3 _build/generate_config.py > _config.yml
 
-for l in $(cat _build/languages.txt)
+for l in $(cat _build/languages.csv | cut -d";" -f1)
 do
 	mkdir -p _$l
 	

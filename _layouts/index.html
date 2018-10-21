@@ -1,11 +1,17 @@
 {% include header.html %}
 
 <h2>{{ site.t[page.language].index_title_instructions }}</h2>
-<p class="simpleText">{{ site.t[page.language].index_welcome }}</p>
+<p class="simpleText {{ site.t[page.language].wdir }}">{{ site.t[page.language].index_welcome }}</p>
 <br/>
-<p class="simpleText"><i class="fa fa-bell" aria-hidden="true"></i> {{ site.t[page.language].index_context }}</p>
-<p class="simpleText"><i class="fa fa-bell" aria-hidden="true"></i> {{ site.t[page.language].index_advice }}</p>
-<p class="simpleText"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> {{ site.t[page.language].index_warning }}</p>
+{% if site.t[page.language].wdir == "ltr" %}
+<p class="simpleText {{ site.t[page.language].wdir }}"><i class="fa fa-bell" aria-hidden="true"></i> {{ site.t[page.language].index_context }}</p>
+<p class="simpleText {{ site.t[page.language].wdir }}"><i class="fa fa-bell" aria-hidden="true"></i> {{ site.t[page.language].index_advice }}</p>
+<p class="simpleText {{ site.t[page.language].wdir }}"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> {{ site.t[page.language].index_warning }}</p>
+{% else %}
+<p class="simpleText {{ site.t[page.language].wdir }}">{{ site.t[page.language].index_context }} <i class="fa fa-bell" aria-hidden="true"></i></p>
+<p class="simpleText {{ site.t[page.language].wdir }}">{{ site.t[page.language].index_advice }} <i class="fa fa-bell" aria-hidden="true"></i></p>
+<p class="simpleText {{ site.t[page.language].wdir }}">{{ site.t[page.language].index_warning }} <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></p>
+{% endif %}
 
 <div class="navButtons">
 	<a class="button" href="{{ site.basepath }}/{{ page.language }}/quiz">{{ site.t[page.language].index_btn_start }}</a>
