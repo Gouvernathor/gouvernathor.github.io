@@ -10,10 +10,5 @@ redirect_from: "/quiz.html"
 
 <div class="navButtons">
 	<a class="button" href="{{ site.basepath }}/en_US/">English</a>
-{% assign llist = site.collections | sort: 'title' %}
-{% for l in llist %}
-	{% if l.label != "posts" and l.label != "en_US" %}
-		<a class="button" href="{{ site.basepath }}/{{ l.label }}/">{{ l.title }}</a>
-	{% endif %}
-{% endfor %}
+	<a class="button" href="{{ site.basepath }}/fr_FR/">Français</a>
 </div>

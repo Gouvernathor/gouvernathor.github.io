@@ -2,10 +2,9 @@
 
 <h2>{{ site.t[page.language].result_title }}</h2>
 
-<p class="simpleText {{ site.t[page.language].wdir }}">{{ site.t[page.language].result_desc }}</p>
+<p class="simpleText">{{ site.t[page.language].result_desc }}</p>
 
-<div class="generatedResultsDecorations"><canvas id="generatedResults" width="800" height="1200"></canvas></div>
-
+<div class="flagDecoration"><canvas id="generatedFlag" width="512" height="256"></canvas><div id="slogan"></div></div>
 <div class="shareText">{{ site.t[page.language].result_share }}</div>
 <div id="urlToCopyContainer" class="urlToCopyContainer"><div id="urlToCopy" class="urlToCopy"></div></div>
 <div class="navButtons">
@@ -16,8 +15,6 @@
 </div>
 
 <hr/>
-
-<div class="flagDecoration"><canvas id="generatedFlag" width="512" height="256"></canvas><div id="slogan"></div></div>
 
 <div class="columnContainer">
 	<div class="columnLeft">
@@ -30,10 +27,6 @@
 		--><div id="cAxisPos" class="axisSubProgress axisEssentialism"><span id="cAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/essentialism.png" alt="{{ site.t[page.language].essentialism }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_c" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_c" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].justice_soft }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].justice_hard }}</p></div></div>
 		<div class="axisEnd axisEndLeft"><img src="{{ site.basepath }}/images/justice_soft.png" alt="{{ site.t[page.language].justice_soft }}" \></div><!--
@@ -43,10 +36,6 @@
 		--><div id="jAxisPos" class="axisSubProgress axisAuthoritarism"><span id="jAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/justice_hard.png" alt="{{ site.t[page.language].justice_hard }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_j" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_j" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].progressism }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].conservatism }}</p></div></div>
 		<div class="axisEnd axisEndLeft"><img src="{{ site.basepath }}/images/progressism.png" alt="{{ site.t[page.language].progessism }}" \></div><!--
@@ -56,10 +45,6 @@
 		--><div id="sAxisPos" class="axisSubProgress axisConservatism"><span id="sAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/conservatism.png" alt="{{ site.t[page.language].conservatism }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_s" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_s" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].internationalism }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].nationalism }}</p></div></div>
 		<div class="axisEnd axisEndLeft"><img src="{{ site.basepath }}/images/internationalism.png" alt="{{ site.t[page.language].internationalism }}" \></div><!--
@@ -69,10 +54,6 @@
 		--><div id="bAxisPos" class="axisSubProgress axisNationalism"><span id="bAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/nationalism.png" alt="{{ site.t[page.language].nationalism }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_b" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_b" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 	</div>
 	<div class="columnRight">
@@ -85,10 +66,6 @@
 		--><div id="pAxisPos" class="axisSubProgress axisCapitalism"><span id="pAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/capitalism.png" alt="{{ site.t[page.language].capitalism }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_p" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_p" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].regulationism }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].laissez_faire }}</p></div></div>
 		<div class="axisEnd axisEndLeft"><img src="{{ site.basepath }}/images/regulation.png" alt="{{ site.t[page.language].regulationism }}" \></div><!--
@@ -98,10 +75,6 @@
 		--><div id="mAxisPos" class="axisSubProgress axisLaissez"><span id="mAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/laissezfaire.png" alt="{{ site.t[page.language].laissez_faire }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_m" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_m" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].ecology }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].productivism }}</p></div></div>
 		<div class="axisEnd axisEndLeft"><img src="{{ site.basepath }}/images/ecology.png" alt="{{ site.t[page.language].ecology }}" \></div><!--
@@ -111,10 +84,6 @@
 		--><div id="eAxisPos" class="axisSubProgress axisProductivism"><span id="eAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/productivism.png" alt="{{ site.t[page.language].productivism }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_e" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_e" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 		<div class="axisDesc"><div class="axisDescLeft"><p>{{ site.t[page.language].revo }}</p></div><div class="axisDescRight"><p>{{ site.t[page.language].refo }}</p></div></div>
 		<div class="axisEnd axisEndLeft"><img src="{{ site.basepath }}/images/revolution.png" alt="{{ site.t[page.language].revo }}" \></div><!--
@@ -124,10 +93,6 @@
 		--><div id="tAxisPos" class="axisSubProgress axisRefo"><span id="tAxisPosText"></span></div>
 		</div><!--
 		--><div class="axisEnd axisEndRight"><img src="{{ site.basepath }}/images/reformism.png" alt="{{ site.t[page.language].refo }}" \></div>
-{% if site.debug %}
-		<input type="range" id="debug_t" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-		<input type="range" id="debugNeutral_t" value="50" min="0" max="100" step="1" style="width: 90%;" onchange="debug()"/>
-{% endif %}
 
 	</div>
 </div>
@@ -140,9 +105,6 @@
 		<div class="descImg"><img src="{{ site.basepath }}/images/anarchism.png" alt="{{ site.t[page.language].anarchism }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_anarchism }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_anar" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
 
@@ -150,9 +112,6 @@
 		<div class="descImg"><img src="{{ site.basepath }}/images/pragmatism.png" alt="{{ site.t[page.language].pragmatism }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_pragmatism }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_prag" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
 
@@ -160,9 +119,6 @@
 		<div class="descImg"><img src="{{ site.basepath }}/images/feminism.png" alt="{{ site.t[page.language].feminism }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_feminism }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_femi" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
 
@@ -170,9 +126,6 @@
 		<div class="descImg"><img src="{{ site.basepath }}/images/complotism.png" alt="{{ site.t[page.language].complotism }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_complotism }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_comp" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
 
@@ -180,29 +133,20 @@
 		<div class="descImg"><img src="{{ site.basepath }}/images/veganism.png" alt="{{ site.t[page.language].veganism }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_veganism }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_vega" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
-
+	
 	<div id="monaBonus" class="description">
 		<div class="descImg"><img src="{{ site.basepath }}/images/monarchism.png" alt="{{ site.t[page.language].monarchism }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_monarchism }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_mona" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
-
+	
 	<div id="reliBonus" class="description">
 		<div class="descImg"><img src="{{ site.basepath }}/images/religion.png" alt="{{ site.t[page.language].religion }}"/></div><!--
 		--><div class="descTextMono">
 			<p>{{ site.t[page.language].result_religion }}</p>
-{% if site.debug %}
-			<input type="checkbox" id="debug_reli" onchange="debug()"/>
-{% endif %}
 		</div>
 	</div>
 </div>
@@ -247,10 +191,10 @@ function shareLink()
 					}, 2000);
 				}
 			}
-		}
+		} 
 		catch (err)
 		{
-
+			
 		}
 	}
 }
@@ -282,18 +226,16 @@ function setAxisValue(name, value)
 	var axis = document.getElementById(name)
 	if(!axis)
 		return
-
+	
 	var text = document.getElementById(name+"Text")
 	if(!text)
 		return
-
+	
 	axis.style.width = ((100*value).toFixed(1) + "%");
-
+	
 	text.innerHTML = ((100*value).toFixed(0) + "%");
 	if (text.offsetWidth > axis.offsetWidth)
 		text.style.visibility = "hidden";
-	else
-		text.style.visibility = "visible";
 }
 
 function setBonus(name, value, limit)
@@ -301,7 +243,7 @@ function setBonus(name, value, limit)
 	axis = document.getElementById(name)
 	if(!axis)
 		return
-
+	
 	if(value > limit)
 	{
 		axis.style.display = "block";
@@ -335,16 +277,6 @@ bonus = {
 }
 
 characteristics = []
-axesValues = {
-	"c": 0,
-	"b": 0,
-	"p": 0,
-	"m": 0,
-	"s": 0,
-	"j": 0,
-	"e": 0,
-	"t": 0
-}
 
 for(var i=0; i<axes.length; i++)
 {
@@ -353,7 +285,7 @@ for(var i=0; i<axes.length; i++)
 	setAxisValue(axes[i]+"AxisNeg", negativeValue);
 	setAxisValue(axes[i]+"AxisPos", positiveValue);
 	setAxisValue(axes[i]+"AxisMid", 1-negativeValue-positiveValue);
-
+	
 	if(negativeValue > positiveValue)
 	{
 		characteristics.push({ name: axes[i]+"0", value: negativeValue});
@@ -362,42 +294,16 @@ for(var i=0; i<axes.length; i++)
 	{
 		characteristics.push({ name: axes[i]+"1", value: positiveValue});
 	}
-
-{% if site.debug %}
-	var debugInput = document.getElementById("debug_"+axes[i])
-	if(debugInput)
-	{
-		debugInput.value = 100 - ((1 + positiveValue - negativeValue)/2)*100;
-	}
-	var debugNeutralInput = document.getElementById("debugNeutral_"+axes[i])
-	if(debugNeutralInput)
-	{
-		debugNeutralInput.value = (1 - positiveValue - negativeValue)*100;
-	}
-{% endif %}
-
-	axesValues[axes[i]] = positiveValue - negativeValue
 }
 
-{% if site.debug %}
-bonusEnabled = 1
-{% else %}
 bonusEnabled = 0
-{% endif %}
 for(var b in bonus)
 {
+	
 	value = getQueryVariable(b);
-
-{% if site.debug %}
-	var debugInput = document.getElementById("debug_"+b)
-	if(debugInput)
-	{
-		debugInput.checked = (value > 0.95 ? true : false);
-	}
-{% else %}
+	
 	setBonus(b+"Bonus", value, bonus[b]);
-{% endif %}
-
+	
 	if(value > bonus[b])
 	{
 		bonusEnabled = 1;
@@ -427,14 +333,14 @@ charSlogan = {
 function findFlagColors()
 {
 	colors = [];
-
+	
 	for(var i=0; i<flagColors.length; i++)
 	{
 		var accepted = 1;
-
+		
 		var mainValue = 0;
 		var mainValueFound = 0;
-
+	
 		for(var j=0; j<flagColors[i].cond.length; j++)
 		{
 			var charFound = 0;
@@ -450,231 +356,102 @@ function findFlagColors()
 						mainValueFound = 1;
 						mainValue = characteristics[k].value;
 					}
-
+					
 					break;
 				}
 			}
-
+			
 			if(!charFound)
 				accepted = 0;
-
+			
 			if(!accepted)
 				break;
 		}
-
+		
 		if(accepted)
 		{
 			colors.push({ bgColor: flagColors[i].bgColor, fgColor: flagColors[i].fgColor, value: mainValue });
 		}
 	}
-
+	
 	colors.sort(function(a, b) { return a.value < b.value; });
-
+	
 	return colors;
 }
 
 function findFlagShape(numColors)
 {
-	var flagFound = -1;
-	var flagValue = [0, 0, 0];
-	var flagColor = 0;
-
 	for(var i=0; i<flagShapes.length; i++)
 	{
-		if(flagShapes[i].numColors > numColors)
-			continue;
-
-		var condValue = [0, 0];
 		var accepted = 1;
-		if(flagShapes[i].cond.length > 0)
+		
+		if(flagShapes[i].numColors > numColors)
+			accepted = 0;
+		else
 		{
 			for(var j=0; j<flagShapes[i].cond.length; j++)
 			{
-				var value = axesValues[flagShapes[i].cond[j].name];
-				if(value < flagShapes[i].cond[j].vmin || value > flagShapes[i].cond[j].vmax)
+				var charFound = 0;
+				for(var k=0; k<characteristics.length; k++)
 				{
-					accepted = 0;
+					if(characteristics[k].name == flagShapes[i].cond[j].name)
+					{
+						charFound = 1;
+						if(characteristics[k].value < flagShapes[i].cond[j].vmin || characteristics[k].value > flagShapes[i].cond[j].vmax)
+							accepted = 0;
+						
+						break;
+					}
 				}
-				if(j<3)
-					condValue[j] = Math.abs(value);
-
+				
+				if(!charFound)
+					accepted = 0;
+				
 				if(!accepted)
 					break;
 			}
 		}
-		else
-		{
-			var condValue = [0, 0];
-		}
-
-		if(accepted && flagColor <= flagShapes[i].numColors)
-		{
-			if(flagShapes[i].numColors > flagColor)
-			{
-				flagColor = flagShapes[i].numColors;
-				flagValue[0] = condValue[0];
-				flagValue[1] = condValue[1];
-				flagValue[2] = condValue[2];
-				flagFound = i;
-			}
-			else if(condValue[0] > flagValue[0])
-			{
-				flagColor = flagShapes[i].numColors;
-				flagValue[0] = condValue[0];
-				flagValue[1] = condValue[1];
-				flagValue[2] = condValue[2];
-				flagFound = i;
-			}
-			else if(condValue[0] == flagValue[0])
-			{
-				if(condValue[1] > flagValue[1])
-				{
-					flagColor = flagShapes[i].numColors;
-					flagValue[0] = condValue[0];
-					flagValue[1] = condValue[1];
-					flagValue[2] = condValue[2];
-					flagFound = i;
-				}
-				else if(condValue[1] == flagValue[1])
-				{
-					if(condValue[2] > flagValue[2])
-					{
-						flagColor = flagShapes[i].numColors;
-						flagValue[0] = condValue[0];
-						flagValue[1] = condValue[1];
-						flagValue[2] = condValue[2];
-						flagFound = i;
-					}
-				}
-			}
-		}
+		
+		if(accepted)
+			return i;
 	}
-
-	return flagFound;
+	
+	return -1;
 }
 
-function getCharacteristic(name, vmin, vmax)
+function findFlagSymbol()
 {
-	for(var k=0; k<characteristics.length; k++)
+	for(var i=0; i<flagSymbols.length; i++)
 	{
-		if(characteristics[k].name != name)
-			continue;
-
-		if(
-			characteristics[k].value >= vmin &&
-			characteristics[k].value <= vmax
-		)
-			return characteristics[k].value;
-		else
-			return -1.0;
-	}
-
-	return -1.0;
-}
-
-function findFlagSymbol(numColors)
-{
-	var symbol0 = {
-		parent_type: "none",
-		transform: {}
-	}
-	var symbol1 = {
-		parent_type: "none",
-		transform: {}
-	}
-	var valueMax = 0;
-
-	if(numColors == 0)
-	{
-		symbol0.parent_type = "dot";
-		symbol0.transform = {
-			child_type: "none",
-			x: 3,
-			y: 3,
-			main: true,
-			parent_tx: 0,
-			parent_ty: 0,
-			parent_sx: 1,
-			parent_sy: 1,
-			parent_r: 0,
-			child_tx: 0,
-			child_ty: 0,
-			child_sx: 1,
-			child_sy: 1,
-			child_r: 0
-		}
-	}
-
-	for(var s0=0; s0<flagSymbols.length; s0++)
-	{
-		var charVal0 = getCharacteristic(flagSymbols[s0].cond.name, flagSymbols[s0].cond.vmin, flagSymbols[s0].cond.vmax);
-		if(charVal0 > 0)
+		var accepted = 1;
+		
+		for(var j=0; j<flagSymbols[i].cond.length; j++)
 		{
-			var value = charVal0*1.5;
-			var transform0 = -1;
-			if(value > valueMax)
+			var charFound = 0;
+			for(var k=0; k<characteristics.length; k++)
 			{
-				for(k0=0; k0<flagSymbols[s0].data.transforms.length; k0++)
+				if(characteristics[k].name == flagSymbols[i].cond[j].name)
 				{
-					if(flagSymbols[s0].data.transforms[k0].child_type == "none")
-					{
-						transform0 = k0;
-					}
-				}
-
-				if(transform0 >= 0)
-				{
-					symbol0.parent_type = flagSymbols[s0].data.parent_type;
-					symbol0.transform = flagSymbols[s0].data.transforms[transform0];
-					symbol1.parent_type = "none";
-					valueMax = value;
+					charFound = 1;
+					if(characteristics[k].value < flagSymbols[i].cond[j].vmin || characteristics[k].value > flagSymbols[i].cond[j].vmax)
+						accepted = 0;
+					
+					break;
 				}
 			}
-
-			for(var s1=s0+1; s1<flagSymbols.length; s1++)
-			{
-				transform0 = -1;
-				var transform1 = -1;
-				var k0 = -1;
-				for(k0=0; k0<flagSymbols[s0].data.transforms.length; k0++)
-				{
-					for(k1=0; k1<flagSymbols[s1].data.transforms.length; k1++)
-					{
-						if(
-							flagSymbols[s0].data.parent_type == flagSymbols[s1].data.transforms[k1].child_type &&
-							flagSymbols[s1].data.parent_type == flagSymbols[s0].data.transforms[k0].child_type
-						)
-						{
-							transform0 = k0;
-							transform1 = k1;
-						}
-					}
-				}
-
-				if(transform1 < 0 || transform0 < 0)
-					continue;
-
-				var charVal1 = getCharacteristic(flagSymbols[s1].cond.name, flagSymbols[s1].cond.vmin, flagSymbols[s1].cond.vmax);
-				if(charVal1 > 0)
-				{
-					value = charVal0 + charVal1;
-					if(value > valueMax)
-					{
-						symbol0.parent_type = flagSymbols[s0].data.parent_type;
-						symbol0.transform = flagSymbols[s0].data.transforms[transform0];
-						symbol1.parent_type = flagSymbols[s1].data.parent_type;
-						symbol1.transform = flagSymbols[s1].data.transforms[transform1];
-						valueMax = value;
-					}
-				}
-			}
+			
+			if(!charFound)
+				accepted = 0;
+			
+			if(!accepted)
+				break;
 		}
+		
+		if(accepted)
+			return flagSymbols[i].id;
 	}
-
-	if(symbol0.parent_type != "none" && symbol1.parent_type != "none" && symbol1.transform.main && !symbol0.transform.main)
-		return [symbol1, symbol0];
-	else
-		return [symbol0, symbol1];
+	
+	return -1;
 }
 
 generatedSlogan = "";
@@ -682,7 +459,7 @@ sloganDiv = document.getElementById("slogan");
 if(sloganDiv)
 {
 	selectedSlogan = []
-
+	
 	for(var i=0; i<characteristics.length; i++)
 	{
 		if(characteristics[i].value > 0 && charSlogan.hasOwnProperty(characteristics[i].name))
@@ -690,9 +467,9 @@ if(sloganDiv)
 			selectedSlogan.push({ text: charSlogan[characteristics[i].name], value: characteristics[i].value });
 		}
 	}
-
+	
 	selectedSlogan.sort(function(a, b) { return a.value < b.value; });
-
+	
 	var counter = 0;
 	for(var i=0; i<selectedSlogan.length; i++)
 	{
@@ -700,11 +477,11 @@ if(sloganDiv)
 			generatedSlogan += " · ";
 		generatedSlogan += selectedSlogan[i].text;
 		counter++;
-
+		
 		if(counter >= 3)
 			break;
 	}
-
+	
 	sloganDiv.innerHTML = generatedSlogan;
 }
 
@@ -728,61 +505,40 @@ if(redditButton)
 	redditButton.href = "http://www.reddit.com/submit?url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent(text);
 }
 
-images = {
-	'sprites': '{{ site.basepath }}/images/flag_sprites.png',
-	'c0': '{{ site.basepath }}/images/constructivism_small.png',
-	'c1': '{{ site.basepath }}/images/essentialism_small.png',
-	'j0': '{{ site.basepath }}/images/justice_soft_small.png',
-	'j1': '{{ site.basepath }}/images/justice_hard_small.png',
-	's0': '{{ site.basepath }}/images/progressism_small.png',
-	's1': '{{ site.basepath }}/images/conservatism_small.png',
-	'b0': '{{ site.basepath }}/images/internationalism_small.png',
-	'b1': '{{ site.basepath }}/images/nationalism_small.png',
-	'p0': '{{ site.basepath }}/images/communism_small.png',
-	'p1': '{{ site.basepath }}/images/capitalism_small.png',
-	'm0': '{{ site.basepath }}/images/regulation_small.png',
-	'm1': '{{ site.basepath }}/images/laissezfaire_small.png',
-	'e0': '{{ site.basepath }}/images/ecology_small.png',
-	'e1': '{{ site.basepath }}/images/productivism_small.png',
-	't0': '{{ site.basepath }}/images/revolution_small.png',
-	't1': '{{ site.basepath }}/images/reformism_small.png',
-	'anar': '{{ site.basepath }}/images/anarchism_small.png',
-	'prag': '{{ site.basepath }}/images/pragmatism_small.png',
-	'femi': '{{ site.basepath }}/images/feminism_small.png',
-	'comp': '{{ site.basepath }}/images/complotism_small.png',
-	'vega': '{{ site.basepath }}/images/veganism_small.png',
-	'mona': '{{ site.basepath }}/images/monarchism_small.png',
-	'reli': '{{ site.basepath }}/images/religion_small.png'
+var sprites = new Image();
+sprites.src = '{{ site.basepath }}/images/flag_sprites.png';
+
+function shareFacebook()
+{
+	uri = location.href;
+	
+	FB.ui({
+	method: 'share',
+	hashtag: '#PolitiScales',
+	quote: "{{ site.t[page.language].share_facebook }}".replace("%slogan%", generatedSlogan),
+	href: uri,
+	}, function(response){});
 }
 
-var numImageLoaded = 0
-
-function onImageLoaded()
+sprites.onload = function()
 {
-	numImageLoaded++;
-
-	if(numImageLoaded < images.length)
-	{
-		return;
-	}
-
 	flag = document.getElementById("generatedFlag");
 	if(flag)
 	{
 		var ctx = flag.getContext("2d");
-
+		
 		var spriteX = 256;
 		var spriteY = 128;
 		var spriteS = 1.0;
-
+		
+		var symbolId = findFlagSymbol();
 		var colors = findFlagColors();
-		var symbolData = findFlagSymbol(colors.length);
-
-		var flagId = findFlagShape(colors.length);
-
+		
 		if(colors.length <= 0)
 			colors.push({ bgColor: "#ffffff", fgColor: "#000000" });
-
+		
+		var flagId = findFlagShape(colors.length);
+		
 		if(flagId < 0)
 		{
 			ctx.beginPath();
@@ -796,399 +552,44 @@ function onImageLoaded()
 			{
 				var path = flagShapes[flagId].shapes[i];
 				var numPoints = path.length/2;
-
+				
 				ctx.beginPath();
 				ctx.moveTo(path[1]*512, path[2]*256);
-
-				if(path[1] == "circle")
+				
+				for(var j=1; j<numPoints; j++)
 				{
-					ctx.arc(path[2]*512, path[3]*256, path[4]*256, 0, 2 * Math.PI, false);
-				}
-				else if(path[1] == "circleSymbol" && symbolData[0].parent_type != "none")
-				{
-					ctx.arc(path[2]*512, path[3]*256, path[4]*256, 0, 2 * Math.PI, false);
-				}
-				else
-				{
-					for(var j=1; j<numPoints; j++)
-					{
-						ctx.lineTo(path[1+j*2+0]*512, path[1+j*2+1]*256);
-					}
+					ctx.lineTo(path[1+j*2+0]*512, path[1+j*2+1]*256);
 				}
 				ctx.fillStyle = colors[path[0]].bgColor;
 				ctx.fill();
 			}
-
+			
 			spriteX = flagShapes[flagId].symbol[0]*512;
 			spriteY = flagShapes[flagId].symbol[1]*256;
 			spriteS = flagShapes[flagId].symbol[2];
 		}
-
-		if(symbolData[0].parent_type != "none")
+		
+		if(symbolId >= 0)
 		{
 			var tmpC = document.createElement('canvas');
-			tmpC.width = images["sprites"].width;
-			tmpC.height = images["sprites"].height;
+			tmpC.width = sprites.width;
+			tmpC.height = sprites.height;
 			var tmpCtx = tmpC.getContext('2d');
 			var coloredSprites = tmpCtx.getImageData(0, 0, tmpC.width, tmpC.height);
-
+			
 			tmpCtx.beginPath();
 			tmpCtx.rect(0, 0, tmpC.width, tmpC.height);
 			tmpCtx.fillStyle = colors[0].fgColor;
 			tmpCtx.fill();
-
+			
 			tmpCtx.globalCompositeOperation = "destination-in";
-			tmpCtx.drawImage(images["sprites"], 0, 0);
-
-			ctx.save();
-			ctx.translate(spriteX, spriteY);
-			ctx.scale(spriteS, spriteS);
-
-			var sx = symbolData[0].transform.x;
-			var sy = symbolData[0].transform.y;
-
-			ctx.save();
-			ctx.translate(symbolData[0].transform.parent_tx, -symbolData[0].transform.parent_ty);
-			ctx.rotate(symbolData[0].transform.parent_r * Math.PI / 180);
-			ctx.scale(symbolData[0].transform.parent_sx, symbolData[0].transform.parent_sy);
-			ctx.drawImage(tmpC, sx*128, sy*128, 128, 128, -64, -64, 128, 128);
-			ctx.restore();
-
-			if(symbolData[1].parent_type != "none")
-			{
-				var sx = symbolData[1].transform.x;
-				var sy = symbolData[1].transform.y;
-
-				ctx.translate(symbolData[0].transform.child_tx, -symbolData[0].transform.child_ty);
-				ctx.rotate(symbolData[0].transform.child_r * Math.PI / 180);
-				ctx.scale(symbolData[0].transform.child_sx, symbolData[0].transform.child_sy);
-
-				ctx.translate(symbolData[1].transform.parent_tx, -symbolData[1].transform.parent_ty);
-				ctx.rotate(symbolData[1].transform.parent_r * Math.PI / 180);
-				ctx.scale(symbolData[1].transform.parent_sx, symbolData[1].transform.parent_sy);
-
-				ctx.drawImage(tmpC, sx*128, sy*128, 128, 128, -64, -64, 128, 128);
-				ctx.restore();
-			}
-
-			ctx.restore();
-		}
-	}
-
-	rPreview = document.getElementById("generatedResults");
-	if(rPreview)
-	{
-		var ctx = rPreview.getContext("2d");
-
-		ctx.beginPath();
-		ctx.rect(0, 0, rPreview.width, rPreview.height);
-		ctx.fillStyle = "#ebebeb";
-		ctx.fill();
-
-		yPos = 20;
-
-		if(flag)
-		{
-			var flagCtx = flag.getContext('2d');
-			var flagSize = 160;
-
-			//Logo
-			ctx.beginPath();
-			ctx.rect(0, 0, rPreview.width, 42);
-			ctx.fillStyle = "#500076";
-			ctx.fill();
-
-			ctx.fillStyle = "#ffffff";
-			ctx.font = "bold 25px Montserrat";
-			ctx.textAlign = "left";
-			ctx.fillText("PolitiScales", 10, 30);
-
-			ctx.fillStyle = "#ffffff";
-			ctx.font = "bold 15px Montserrat";
-			ctx.textAlign = "right";
-			ctx.fillText("http://www.politiscales-armise.net", rPreview.width-10, 27);
-
-
-			yPos += 48;
-
-			//Flag
-			ctx.drawImage(flag, 0, 0, flag.width, flag.height, rPreview.width/2.0 - flagSize, yPos, flagSize*2, flagSize);
-			yPos += flagSize+10;
-
-			//Slogan
-			ctx.fillStyle = "#000000";
-			ctx.font = "25px Montserrat";
-			ctx.textAlign = "center";
-			ctx.fillText(generatedSlogan, rPreview.width/2.0, yPos + 30);
-			yPos += 70;
-
-			//Axes
-			var axesDrawInfo = [
-				{
-					"key": "c",
-					"color0": "#a425b6",
-					"color1": "#34b634",
-					"name0": "{{ site.t[page.language].constructivism }}",
-					"name1": "{{ site.t[page.language].essentialism }}"
-				},
-				{
-					"key": "j",
-					"color0": "#14bee1",
-					"color1": "#e6cc27",
-					"name0": "{{ site.t[page.language].justice_soft }}",
-					"name1": "{{ site.t[page.language].justice_hard }}"
-				},
-				{
-					"key": "s",
-					"color0": "#850083",
-					"color1": "#970000",
-					"name0": "{{ site.t[page.language].progressism }}",
-					"name1": "{{ site.t[page.language].conservatism }}"
-				},
-				{
-					"key": "b",
-					"color0": "#3e6ffd",
-					"color1": "#ff8500",
-					"name0": "{{ site.t[page.language].internationalism }}",
-					"name1": "{{ site.t[page.language].nationalism }}"
-				},
-				{
-					"key": "p",
-					"color0": "#cc0000",
-					"color1": "#ffb800",
-					"name0": "{{ site.t[page.language].communism }}",
-					"name1": "{{ site.t[page.language].capitalism }}"
-				},
-				{
-					"key": "m",
-					"color0": "#269B32",
-					"color1": "#6608C0",
-					"name0": "{{ site.t[page.language].regulationism }}",
-					"name1": "{{ site.t[page.language].laissez_faire }}"
-				},
-				{
-					"key": "e",
-					"color0": "#a0e90d",
-					"color1": "#4deae9",
-					"name0": "{{ site.t[page.language].ecology }}",
-					"name1": "{{ site.t[page.language].productivism }}"
-				},
-				{
-					"key": "t",
-					"color0": "#eb1a66",
-					"color1": "#0ee4c8",
-					"name0": "{{ site.t[page.language].revo }}",
-					"name1": "{{ site.t[page.language].refo }}"
-				}
-			]
-
-			var axeMargin = 100;
-			var axeWidth = rPreview.width - axeMargin*2;
-			ctx.strokeStyle = "#888888";
-			for(var i=0; i<axesDrawInfo.length; i++)
-			{
-				var negativeValue = getQueryVariable(axesDrawInfo[i]["key"]+"0");
-				var positiveValue = getQueryVariable(axesDrawInfo[i]["key"]+"1");
-				var neutralValue = 1-negativeValue-positiveValue;
-
-				var negSize = axeWidth * negativeValue;
-				var posSize = axeWidth * positiveValue;
-				var ntrSize = axeWidth * neutralValue;
-
-				ctx.beginPath();
-				ctx.rect(0.5 + axeMargin + negSize, 0.5 + yPos, ntrSize, 30);
-				ctx.stroke();
-
-				ctx.beginPath();
-				ctx.rect(0.5 + axeMargin, 0.5 + yPos, negSize, 30);
-				ctx.fillStyle = axesDrawInfo[i]["color0"];
-				ctx.fill();
-				ctx.stroke();
-
-				ctx.beginPath();
-				ctx.rect(0.5 + rPreview.width - axeMargin - posSize, 0.5 + yPos, posSize, 30);
-				ctx.fillStyle = axesDrawInfo[i]["color1"];
-				ctx.fill();
-				ctx.stroke();
-
-				if(negSize > 40)
-				{
-					ctx.fillStyle = "#ffffff";
-					ctx.font = "20px serif";
-					ctx.textAlign = "right";
-					ctx.fillText(Math.round(negativeValue*100)+"%", axeMargin + negSize - 5, yPos + 23);
-				}
-
-				if(posSize > 40)
-				{
-					ctx.fillStyle = "#ffffff";
-					ctx.font = "20px serif";
-					ctx.textAlign = "left";
-					ctx.fillText(Math.round(positiveValue*100)+"%", axeMargin + negSize + ntrSize + 5, yPos + 23);
-				}
-
-				if(ntrSize > 40)
-				{
-					ctx.fillStyle = "#888888";
-					ctx.font = "20px serif";
-					ctx.textAlign = "center";
-					ctx.fillText(Math.round(neutralValue*100)+"%", axeMargin + negSize + ntrSize/2, yPos + 23);
-				}
-
-				ctx.drawImage(images[axesDrawInfo[i]["key"]+"0"], axeMargin - 73, yPos - 27);
-				ctx.drawImage(images[axesDrawInfo[i]["key"]+"1"], rPreview.width - axeMargin + 73 - 86, yPos - 27);
-
-				ctx.fillStyle = "#000000";
-				ctx.font = "16px serif";
-				ctx.textAlign = "left";
-				ctx.fillText(axesDrawInfo[i]["name0"], axeMargin + 8, yPos-6);
-
-				ctx.textAlign = "right";
-				ctx.fillText(axesDrawInfo[i]["name1"], rPreview.width - axeMargin - 8, yPos-6);
-
-				yPos += 100;
-			}
-
-			var xShift = 0;
-			numBonus = 0;
-			for(var b in bonus)
-			{
-				value = getQueryVariable(b);
-				if(value > bonus[b])
-				{
-					numBonus++;
-				}
-			}
-
-			for(var b in bonus)
-			{
-				value = getQueryVariable(b);
-				if(value > bonus[b])
-				{
-					ctx.drawImage(images[b], rPreview.width/2 - (numBonus-1)*100/2 + xShift - 43, yPos - 27);
-					xShift += 100;
-				}
-			}
+			tmpCtx.drawImage(sprites, 0, 0);
+			
+			ctx.drawImage(tmpC, symbolId*128, 0, 128, 128, spriteX-64*spriteS, spriteY-64*spriteS, 128*spriteS, 128*spriteS);
 		}
 	}
 }
 
-for(var b in images)
-{
-	src = images[b];
-	images[b] = new Image();
-	images[b].src = src;
-	images[b].onload = onImageLoaded;
-
-}
-
-function shareFacebook()
-{
-	uri = location.href;
-
-	FB.ui({
-	method: 'share',
-	hashtag: '#PolitiScales',
-	quote: "{{ site.t[page.language].share_facebook }}".replace("%slogan%", generatedSlogan),
-	href: uri,
-	}, function(response){});
-}
-
-{% if site.debug %}
-function debug()
-{
-	bonusEnabled = 1;
-	characteristics = [];
-
-	for(var i=0; i<axes.length; i++)
-	{
-		var debugAxis = document.getElementById("debug_"+axes[i]);
-		var debugAxisNeutral = document.getElementById("debugNeutral_"+axes[i]);
-		if(debugAxis && debugAxisNeutral)
-		{
-			neutralValue = 1 - (debugAxisNeutral.value)/100.0;
-			negativeValue = neutralValue*(debugAxis.value/100.0);
-			positiveValue = neutralValue*(1-(debugAxis.value)/100.0);
-
-			setAxisValue(axes[i]+"AxisNeg", negativeValue);
-			setAxisValue(axes[i]+"AxisPos", positiveValue);
-			setAxisValue(axes[i]+"AxisMid", 1-negativeValue-positiveValue);
-
-			if(negativeValue > positiveValue)
-			{
-				characteristics.push({ name: axes[i]+"0", value: negativeValue});
-			}
-			else
-			{
-				characteristics.push({ name: axes[i]+"1", value: positiveValue});
-			}
-
-			if(negativeValue+positiveValue > 0)
-				axesValues[axes[i]] = positiveValue - negativeValue;
-		}
-	}
-
-	for(var b in bonus)
-	{
-		var debugBonus = document.getElementById("debug_"+b);
-		value = (debugBonus.checked ? 1 : 0);
-
-		if(value > bonus[b])
-		{
-			bonusEnabled = 1;
-			characteristics.push({ name: b, value: value});
-		}
-	}
-
-	characteristics.sort(function(a, b)
-	{
-		return a.value < b.value;
-	});
-
-	generatedSlogan = "";
-	sloganDiv = document.getElementById("slogan");
-	if(sloganDiv)
-	{
-		selectedSlogan = []
-
-		for(var i=0; i<characteristics.length; i++)
-		{
-			if(characteristics[i].value > 0 && charSlogan.hasOwnProperty(characteristics[i].name))
-			{
-				selectedSlogan.push({ text: charSlogan[characteristics[i].name], value: characteristics[i].value });
-			}
-		}
-
-		selectedSlogan.sort(function(a, b) { return a.value < b.value; });
-
-		var counter = 0;
-		for(var i=0; i<selectedSlogan.length; i++)
-		{
-			if(generatedSlogan != "")
-				generatedSlogan += " · ";
-			generatedSlogan += selectedSlogan[i].text;
-			counter++;
-
-			if(counter >= 3)
-				break;
-		}
-
-		sloganDiv.innerHTML = generatedSlogan;
-	}
-
-	bonusBox = document.getElementById("bonusBox")
-	if(!bonusEnabled)
-	{
-		bonusBox.style.display = "none";
-	}
-	else
-	{
-		bonusBox.style.display = "block";
-	}
-
-	onImageLoaded();
-}
-{% endif %}
 </script>
 
 {% include footer.html %}
