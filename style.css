@@ -110,6 +110,15 @@ h2
 	padding-right:2vmin;
 }
 
+.ltr
+{
+	text-align: left;
+}
+.rtl
+{
+	text-align: right;
+}
+
 .shareText
 {
 	margin-top:5vmin;
@@ -486,6 +495,15 @@ h2
 	text-align:center;
 }
 .flagDecoration canvas
+{
+	border: solid 1px grey;
+	max-width: 70vmin;
+}
+.generatedResultsDecorations
+{
+	text-align:center;
+}
+.generatedResultsDecorations canvas
 {
 	border: solid 1px grey;
 	max-width: 70vmin;
